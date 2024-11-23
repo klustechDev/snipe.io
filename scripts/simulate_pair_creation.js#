@@ -1,0 +1,39 @@
+const { ethers } = require("hardhat");
+
+async function main() {
+  console.log("Simulating PairCreated Event...");
+
+  // Correctly format addresses using ethers.utils.getAddress
+  const tokenA = ethers.utils.getAddress("0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"); // USDC
+  const tokenB = ethers.utils.getAddress("0xdAC17F958D2ee523a2206206994597C13D831ec7"); // USDT
+  const factoryAddress = ethers.utils.getAddress("0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f"); // Uniswap V2 Factory
+
+  // ABI for Uniswap V2 Factory
+  const factoryABI = [
+    "function createPair(address tokenA, address tokenB) external returns (address pair)"
+  ];
+
+  try {
+    // Get signer and factory contract instance
+    const [signer] = await ethers.getSigners();
+    const factory = new ethers.Contract(factoryAddress, factoryABI, signer);
+
+    console.log(`Creating pair for tokens ${tokenA} and ${tokenB}...`);
+    const tx = await factory.createPair(tokenA, tokenB);
+    console.log("Transaction Hash:", tx.hash);
+
+    // Wait for transaction confirmation
+    await tx.wait();
+    console.log("Transaction Confirmed!");
+  } catch (error) {
+    console.error("Error occurred:", error.message);
+  }
+}
+
+// Execute the script
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error("Error occurred in execution:", error.message);
+    process.exit(1);
+  });
