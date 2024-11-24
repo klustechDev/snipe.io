@@ -1,0 +1,75 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.App-header {
+  padding: 40px;
+}
+
+.control-panel, .logs-viewer {
+  background-color: #282c34;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.control-panel h2, .logs-viewer h2 {
+  margin-bottom: 10px;
+}
+
+.control-panel p {
+  font-size: 1.2em;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:disabled {
+  background-color: #555555;
+  cursor: not-allowed;
+}
+
+.buttons button:not(:disabled) {
+  background-color: #61dafb;
+  color: #000000;
+}
+
+.logs-viewer ul {
+  list-style-type: none;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.logs-viewer li {
+  background-color: #3c4048;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.timestamp {
+  color: #61dafb;
+}
+
+.message {
+  color: #ffffff;
+}
