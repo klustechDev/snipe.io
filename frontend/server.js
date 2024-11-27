@@ -1,54 +1,21 @@
+// frontend/server.js
 
 const express = require('express');
-const cors = require('cors');
+const path = require('path');
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 3002;
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'build')));
 
-// Example bot functions (placeholder)
-let botRunning = false;
-const logs = [];
+// API proxy (if needed)
+// ...
 
-const startBot = () => {
-  botRunning = true;
-  logs.push({ timestamp: Date.now(), message: 'Bot started' });
-};
-
-const stopBot = () => {
-  botRunning = false;
-  logs.push({ timestamp: Date.now(), message: 'Bot stopped' });
-};
-
-const getStatus = () => (botRunning ? 'Running' : 'Stopped');
-
-const getLogs = () => logs;
-
-// Start Bot
-app.post('/api/start', (req, res) => {
-  startBot();
-  res.json({ message: 'Bot started' });
+// The "catchall" handler: for any request that doesn't match one above, send back React's index.html.
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/build/index.html'));
 });
 
-// Stop Bot
-app.post('/api/stop', (req, res) => {
-  stopBot();
-  res.json({ message: 'Bot stopped' });
-});
-
-// Get Status
-app.get('/api/status', (req, res) => {
-  res.json({ status: getStatus() });
-});
-
-// Get Logs
-app.get('/api/logs', (req, res) => {
-  res.json(getLogs());
-});
-
-// Start Server
 app.listen(port, () => {
-  console.log(`Backend API running at http://localhost:${port}`);
+  console.log(`Frontend server is running on port ${port}`);
 });

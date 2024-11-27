@@ -1,48 +1,60 @@
-// frontend/src/components/LogsViewer.js
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const LogsViewer = () => {
-  const [logs, setLogs] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+    const [trades, setTrades] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
-  const fetchLogs = async () => {
-    try {
-      const response = await axios.get('/api/logs');
-      setLogs(response.data);
-      setIsLoading(false);
-    } catch (error) {
-      console.error('Error fetching logs:', error);
-      setIsLoading(false);
-    }
-  };
+    const fetchTrades = async () => {
+        try {
+            const response = await axios.get('/api/trades');
+            setTrades(response.data);
+            setIsLoading(false);
+        } catch (error) {
+            console.error('Error fetching trades:', error);
+            setIsLoading(false);
+        }
+    };
 
-  useEffect(() => {
-    fetchLogs();
-    const interval = setInterval(fetchLogs, 5000); // Refresh logs every 5 seconds
-    return () => clearInterval(interval);
-  }, []);
+    useEffect(() => {
+        fetchTrades();
+        const interval = setInterval(fetchTrades, 5000);
+        return () => clearInterval(interval);
+    }, []);
 
-  return (
-    <div className="logs-viewer">
-      <h2>Activity Logs</h2>
-      {isLoading ? (
-        <p>Loading logs...</p>
-      ) : (
-        <ul>
-          {logs.map((log, index) => (
-            <li key={index}>
-              <span className="timestamp">
-                {new Date(log.timestamp).toLocaleString()}:
-              </span>{' '}
-              <span className="message">{log.message}</span>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
+    return (
+        <div className="content">
+            <div className="navbar">
+                <Link to="/">Dashboard</Link>
+                <Link to="/logs">Trades</Link>
+                <Link to="/settings">Settings</Link>
+            </div>
+            <h2>Successful Trades</h2>
+            {isLoading ? (
+                <p>Loading trades...</p>
+            ) : (
+                trades.length > 0 ? (
+                    <div className="logs">
+                        <ul>
+                            {trades.map((trade, index) => (
+                                <li key={index}>
+                                    <span className="timestamp">
+                                        {new Date(trade.timestamp).toLocaleString()}:
+                                    </span>{' '}
+                                    <span className="message">
+                                        Bought {trade.amountIn} ETH worth of token {trade.token} (Tx: <a href={`https://etherscan.io/tx/${trade.txHash}`} target="_blank" rel="noopener noreferrer">{trade.txHash.substring(0, 10)}...</a>)
+                                    </span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ) : (
+                    <p>No trades executed yet.</p>
+                )
+            )}
+        </div>
+    );
 };
 
 export default LogsViewer;
