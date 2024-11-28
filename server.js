@@ -11,58 +11,55 @@ const {
   getSettings,
   getSuccessfulTrades,
   getDetectedPairs,
+  logMessage,
 } = require('./scripts/index');
 
 const app = express();
-const port = 3001;
+const PORT = 3001;
 
 app.use(cors());
 app.use(express.json());
 
-// Endpoint to start the bot
-app.post('/api/start', (req, res) => {
-  startBot();
-  res.json({ status: 'Bot started' });
-});
+// Initialize bot
+startBot();
 
-// Endpoint to stop the bot
-app.post('/api/stop', (req, res) => {
-  stopBot();
-  res.json({ status: 'Bot stopped' });
-});
-
-// Endpoint to get bot status
+// API Endpoints
 app.get('/api/status', (req, res) => {
   res.json({ status: getStatus() });
 });
 
-// Endpoint to get logs
 app.get('/api/logs', (req, res) => {
   res.json(getLogs());
 });
 
-// Endpoint to get successful trades
-app.get('/api/trades', (req, res) => {
-  res.json(getSuccessfulTrades());
-});
-
-// Endpoint to get detected pairs
 app.get('/api/detected-pairs', (req, res) => {
   res.json(getDetectedPairs());
 });
 
-// Endpoint to update settings
-app.post('/api/settings', (req, res) => {
-  const newSettings = req.body;
-  updateSettings(newSettings);
-  res.json({ status: 'Settings updated' });
+app.get('/api/successful-trades', (req, res) => {
+  res.json(getSuccessfulTrades());
 });
 
-// Endpoint to get current settings
 app.get('/api/settings', (req, res) => {
   res.json(getSettings());
 });
 
-app.listen(port, () => {
-  console.log(`Backend server is running on port ${port}`);
+app.post('/api/settings', (req, res) => {
+  updateSettings(req.body);
+  res.json({ status: 'Settings updated successfully.' });
+});
+
+app.post('/api/start', (req, res) => {
+  startBot();
+  res.json({ status: 'Bot started.' });
+});
+
+app.post('/api/stop', (req, res) => {
+  stopBot();
+  res.json({ status: 'Bot stopped.' });
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Backend server is running on port ${PORT}`);
 });

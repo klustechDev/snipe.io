@@ -3,15 +3,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
-import Trades from './components/Trades'; // Ensure you have this component
-import Settings from './components/Settings'; // Ensure you have this component
+import Trades from './components/Trades';
+import Settings from './components/Settings';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/logs" element={<Trades />} />
+        <Route path="/trades" element={<Trades />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
     </div>

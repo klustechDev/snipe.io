@@ -3,10 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './Dashboard.css'; // Ensure you have the corresponding CSS
 
 const Dashboard = () => {
   const [status, setStatus] = useState('Stopped');
-  const [logs, setLogs] = useState([]);
+  const [detectedPairs, setDetectedPairs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchStatus = async () => {
@@ -18,21 +19,21 @@ const Dashboard = () => {
     }
   };
 
-  const fetchLogs = async () => {
+  const fetchDetectedPairs = async () => {
     try {
       const response = await axios.get('/api/detected-pairs');
       const data = response.data;
 
       if (Array.isArray(data)) {
-        setLogs(data);
+        setDetectedPairs(data);
       } else {
-        console.error('Invalid log data format received:', data);
-        setLogs([]);
+        console.error('Invalid detected pairs data format:', data);
+        setDetectedPairs([]);
       }
 
       setIsLoading(false);
     } catch (error) {
-      console.error('Error fetching logs:', error);
+      console.error('Error fetching detected pairs:', error);
       setIsLoading(false);
     }
   };
@@ -59,16 +60,16 @@ const Dashboard = () => {
 
   useEffect(() => {
     fetchStatus();
-    fetchLogs();
-    const interval = setInterval(fetchLogs, 5000); // Refresh logs every 5 seconds
-    return () => clearInterval(interval);
+    fetchDetectedPairs();
+    const interval = setInterval(fetchDetectedPairs, 5000); // Refresh every 5 seconds
+    return () => clearInterval(interval); // Clean up interval on unmount
   }, []);
 
   return (
-    <div className="content">
+    <div className="dashboard">
       <div className="navbar">
         <Link to="/">Dashboard</Link>
-        <Link to="/logs">Trades</Link>
+        <Link to="/trades">Trades</Link>
         <Link to="/settings">Settings</Link>
       </div>
       <h2>Dashboard</h2>
@@ -88,7 +89,7 @@ const Dashboard = () => {
         <h3>Detected Pairs</h3>
         {isLoading ? (
           <p>Loading detected pairs...</p>
-        ) : logs.length > 0 ? (
+        ) : detectedPairs.length > 0 ? (
           <table className="pairs-table">
             <thead>
               <tr>
@@ -99,42 +100,44 @@ const Dashboard = () => {
               </tr>
             </thead>
             <tbody>
-              {logs.map((log, index) => (
+              {detectedPairs.map((pair, index) => (
                 <tr key={index}>
-                  <td>{new Date(log.timestamp).toLocaleString()}</td>
+                  <td>{new Date(pair.timestamp).toLocaleString()}</td>
                   <td>
-                    {log.tokenAddress ? (
+                    {pair.tokenAddress !== 'N/A' ? (
                       <a
-                        href={`https://etherscan.io/address/${log.tokenAddress}`}
+                        href={`https://etherscan.io/address/${pair.tokenAddress}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {log.tokenAddress.slice(0, 6)}...{log.tokenAddress.slice(-4)}
+                        {pair.tokenAddress.slice(0, 6)}...{pair.tokenAddress.slice(-4)}
                       </a>
                     ) : (
                       'N/A'
                     )}
                   </td>
                   <td>
-                    {log.pairAddress ? (
+                    {pair.pairAddress !== 'N/A' ? (
                       <a
-                        href={`https://etherscan.io/address/${log.pairAddress}`}
+                        href={`https://etherscan.io/address/${pair.pairAddress}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {log.pairAddress.slice(0, 6)}...{log.pairAddress.slice(-4)}
+                        {pair.pairAddress.slice(0, 6)}...{pair.pairAddress.slice(-4)}
                       </a>
                     ) : (
                       'N/A'
                     )}
                   </td>
-                  <td>{log.liquidity ? `${log.liquidity} ETH` : 'N/A'}</td>
+                  <td>
+                    {pair.liquidity !== 'N/A' ? `${pair.liquidity} ETH` : 'N/A'}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         ) : (
-          <p>No detected pairs yet.</p>
+          <p>No detected pairs found.</p>
         )}
       </div>
     </div>

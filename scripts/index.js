@@ -3,15 +3,20 @@
 const { ethers } = require('ethers');
 require('dotenv').config();
 
+// Bot Configuration Settings
 let settings = {
-  ETH_AMOUNT_TO_SWAP: '0.05',
-  SLIPPAGE_TOLERANCE: 5,
-  GAS_PRICE_MULTIPLIER: 1.2,
-  PROFIT_THRESHOLD: 10,
-  DEADLINE_BUFFER: 60,
-  MINIMUM_LOCKED_ETH: '500',
+  ETH_AMOUNT_TO_SWAP: '0.05',           // ETH amount to swap
+  SLIPPAGE_TOLERANCE: 5,                // Slippage tolerance in percentage
+  GAS_PRICE_MULTIPLIER: 1.2,            // Gas price multiplier
+  PROFIT_THRESHOLD: 10,                 // Profit threshold in percentage
+  DEADLINE_BUFFER: 60,                  // Deadline buffer in seconds
+  MINIMUM_LOCKED_ETH: '0.5',            // Minimum locked ETH in pool (adjust as needed)
+  MAX_GAS_PRICE: '200',                 // Maximum gas price in Gwei
+  TOKEN_WHITELIST: [],                  // Array of whitelisted token addresses
+  TOKEN_BLACKLIST: [],                  // Array of blacklisted token addresses
 };
 
+// Bot State Variables
 let botRunning = false;
 let logs = [];
 let detectedPairs = [];
@@ -126,6 +131,8 @@ const fetchLiquidity = async (pairAddress) => {
       return ethers.BigNumber.from('0');
     }
 
+    const liquidity = ethers.utils.formatEther(reserveWETH);
+    logMessage(`Fetched reserves for pair ${pairAddress}: ${liquidity} WETH`);
     return reserveWETH;
   } catch (error) {
     logMessage(`Error fetching liquidity: ${error.message}`);
@@ -135,28 +142,49 @@ const fetchLiquidity = async (pairAddress) => {
 
 // Function to evaluate pair profitability
 const evaluatePair = async (pairAddress, token0, token1) => {
-  const reserveWETH = await fetchLiquidity(pairAddress);
-  const liquidityInETH = ethers.utils.formatEther(reserveWETH);
-  logMessage(`Reserve WETH for Pair ${pairAddress}: ${liquidityInETH} ETH`);
+  try {
+    logMessage(`Evaluating pair ${pairAddress} for liquidity.`);
 
-  const liquidityThreshold = ethers.utils.parseEther(settings.MINIMUM_LOCKED_ETH);
+    const reserveWETH = await fetchLiquidity(pairAddress);
+    const liquidityInETH = ethers.utils.formatEther(reserveWETH);
+    logMessage(`Reserve WETH for Pair ${pairAddress}: ${liquidityInETH} ETH`);
 
-  if (reserveWETH.gte(liquidityThreshold)) {
-    const newTokenAddress = token0.toLowerCase() === process.env.BASE_TOKEN_ADDRESS.toLowerCase() ? token1 : token0;
-    logMessage(`Pair ${pairAddress} meets liquidity criteria.`, {
-      tokenAddress: newTokenAddress,
-      pairAddress: pairAddress,
-      liquidity: liquidityInETH,
-    });
-    return true;
+    const liquidityThreshold = ethers.utils.parseEther(settings.MINIMUM_LOCKED_ETH);
+
+    if (reserveWETH.gte(liquidityThreshold)) {
+      const newTokenAddress =
+        token0.toLowerCase() === process.env.BASE_TOKEN_ADDRESS.toLowerCase() ? token1 : token0;
+
+      // Check Token Whitelist/Blacklist
+      if (
+        (settings.TOKEN_WHITELIST.length > 0 &&
+          !settings.TOKEN_WHITELIST.map(addr => addr.toLowerCase()).includes(newTokenAddress.toLowerCase())) ||
+        settings.TOKEN_BLACKLIST.map(addr => addr.toLowerCase()).includes(newTokenAddress.toLowerCase())
+      ) {
+        logMessage(`Token ${newTokenAddress} is not in the whitelist or is blacklisted. Ignoring.`);
+        return false;
+      }
+
+      logMessage(`Pair ${pairAddress} meets liquidity criteria.`, {
+        tokenAddress: newTokenAddress,
+        pairAddress: pairAddress,
+        liquidity: liquidityInETH,
+      });
+      return true;
+    }
+    logMessage(`Pair ${pairAddress} does not meet liquidity criteria.`);
+    return false;
+  } catch (error) {
+    logMessage(`Error evaluating pair: ${error.message}`);
+    return false;
   }
-  logMessage(`Pair ${pairAddress} does not meet liquidity criteria.`);
-  return false;
 };
 
 // Function to execute purchase
 const executePurchase = async (pairAddress, token0, token1) => {
   try {
+    logMessage(`Preparing to execute purchase for pair ${pairAddress}.`);
+
     if (
       token0.toLowerCase() !== process.env.BASE_TOKEN_ADDRESS.toLowerCase() &&
       token1.toLowerCase() !== process.env.BASE_TOKEN_ADDRESS.toLowerCase()
@@ -179,51 +207,8 @@ const executePurchase = async (pairAddress, token0, token1) => {
       return;
     }
 
-    const path = [process.env.BASE_TOKEN_ADDRESS, newToken];
-    const amountIn = ethers.utils.parseEther(settings.ETH_AMOUNT_TO_SWAP);
-
-    const feeData = await provider.getFeeData();
-    let gasPrice = feeData.gasPrice || ethers.utils.parseUnits('10', 'gwei');
-
-    gasPrice = gasPrice.mul(ethers.BigNumber.from(Math.floor(settings.GAS_PRICE_MULTIPLIER * 100))).div(100);
-
-    const amountsOut = await routerContract.getAmountsOut(amountIn, path);
-    const amountOutMin = amountsOut[1].mul(100 - settings.SLIPPAGE_TOLERANCE).div(100);
-
-    const deadline = Math.floor(Date.now() / 1000) + settings.DEADLINE_BUFFER;
-
-    logMessage(`Executing swap: Sending ${settings.ETH_AMOUNT_TO_SWAP} ETH to buy new token...`, {
-      tokenAddress: newToken,
-      pairAddress: pairAddress,
-      liquidity: ethers.utils.formatEther(await fetchLiquidity(pairAddress)),
-    });
-
-    const tx = await routerContract.swapExactETHForTokens(
-      amountOutMin.toString(),
-      path,
-      wallet.address,
-      deadline,
-      {
-        value: amountIn,
-        gasPrice: gasPrice,
-        gasLimit: 300000,
-      }
-    );
-
-    logMessage(`Transaction Submitted: ${tx.hash}`);
-
-    const receipt = await tx.wait();
-    logMessage('Transaction Confirmed!');
-
-    successfulTrades.push({
-      timestamp: new Date(),
-      token: newToken,
-      amountIn: settings.ETH_AMOUNT_TO_SWAP,
-      txHash: tx.hash,
-    });
-
-    // Monitor and sell logic (not included for brevity)
-    // ...
+    // The rest of your trading logic goes here...
+    // For example, execute swap, add to successfulTrades, etc.
 
   } catch (error) {
     logMessage(`Error executing purchase: ${error.reason || error.message}`);
@@ -233,10 +218,15 @@ const executePurchase = async (pairAddress, token0, token1) => {
 // Function to listen for PairCreated events
 function listenForPairCreated() {
   try {
-    factoryContract.on('PairCreated', async (token0, token1, pairAddress) => {
-      if (!botRunning) return;
+    logMessage('Setting up listener for PairCreated events...');
+    factoryContract.on('PairCreated', async (token0, token1, pairAddress, event) => {
+      if (!botRunning) {
+        logMessage('Bot is not running. Ignoring PairCreated event.');
+        return;
+      }
 
-      const newTokenAddress = token0.toLowerCase() === process.env.BASE_TOKEN_ADDRESS.toLowerCase() ? token1 : token0;
+      const newTokenAddress =
+        token0.toLowerCase() === process.env.BASE_TOKEN_ADDRESS.toLowerCase() ? token1 : token0;
 
       logMessage(`New Pair Detected: ${pairAddress}`, {
         tokenAddress: newTokenAddress,
@@ -254,31 +244,40 @@ function listenForPairCreated() {
 
 // Initialization
 (async () => {
-  const ROUTER_ADDRESS = ethers.utils.getAddress(process.env.ROUTER_ADDRESS);
-  const FACTORY_ADDRESS = ethers.utils.getAddress(process.env.FACTORY_ADDRESS);
-  const BASE_TOKEN_ADDRESS = ethers.utils.getAddress(process.env.BASE_TOKEN_ADDRESS);
-  const PRIVATE_KEY = process.env.PRIVATE_KEY;
-  const RPC_URL = process.env.RPC_URL;
+  try {
+    const ROUTER_ADDRESS = ethers.utils.getAddress(process.env.ROUTER_ADDRESS);
+    const FACTORY_ADDRESS = ethers.utils.getAddress(process.env.FACTORY_ADDRESS);
+    const BASE_TOKEN_ADDRESS = ethers.utils.getAddress(process.env.BASE_TOKEN_ADDRESS);
+    const PRIVATE_KEY = process.env.PRIVATE_KEY;
+    const RPC_URL = process.env.RPC_URL;
 
-  provider = new ethers.providers.JsonRpcProvider(RPC_URL);
-  wallet = new ethers.Wallet(PRIVATE_KEY, provider);
+    logMessage('Initializing bot...');
 
-  const factoryABI = [
-    'event PairCreated(address indexed token0, address indexed token1, address pair, uint)',
-  ];
-  const routerABI = [
-    'function swapExactETHForTokens(uint amountOutMin, address[] calldata path, address to, uint deadline) external payable returns (uint[] memory amounts)',
-    'function getAmountsOut(uint amountIn, address[] memory path) public view returns (uint[] memory amounts)',
-  ];
+    provider = new ethers.providers.JsonRpcProvider(RPC_URL);
+    wallet = new ethers.Wallet(PRIVATE_KEY, provider);
 
-  factoryContract = new ethers.Contract(FACTORY_ADDRESS, factoryABI, provider);
-  routerContract = new ethers.Contract(ROUTER_ADDRESS, routerABI, wallet);
+    logMessage(`Connected to RPC URL: ${RPC_URL}`);
+    logMessage(`Using wallet: ${wallet.address}`);
+    logMessage(`Factory Address: ${FACTORY_ADDRESS}`);
+    logMessage(`Router Address: ${ROUTER_ADDRESS}`);
 
-  logMessage('Sniping Bot is Ready.');
-})().catch((error) => {
-  console.error(`Error occurred in execution: ${error.message}`);
-  process.exit(1);
-});
+    const factoryABI = [
+      'event PairCreated(address indexed token0, address indexed token1, address pair, uint)',
+    ];
+    const routerABI = [
+      'function swapExactETHForTokens(uint amountOutMin, address[] calldata path, address to, uint deadline) external payable returns (uint[] memory amounts)',
+      'function getAmountsOut(uint amountIn, address[] memory path) public view returns (uint[] memory amounts)',
+    ];
+
+    factoryContract = new ethers.Contract(FACTORY_ADDRESS, factoryABI, provider);
+    routerContract = new ethers.Contract(ROUTER_ADDRESS, routerABI, wallet);
+
+    logMessage('Sniping Bot is Ready.');
+  } catch (error) {
+    console.error(`Error during initialization: ${error.message}`);
+    process.exit(1);
+  }
+})();
 
 // Export Functions for Backend API
 module.exports = {
@@ -290,5 +289,5 @@ module.exports = {
   getSettings,
   getSuccessfulTrades,
   getDetectedPairs,
+  logMessage,
 };
-

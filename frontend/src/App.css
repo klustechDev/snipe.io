@@ -84,41 +84,46 @@ h1 {
   font-size: 0.9em;
 }
 
-.logs {
-  max-height: 300px;
-  overflow-y: auto;
-  background-color: #1a1a1a;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
+/* Trades Component */
+.trades {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #000000;
 }
 
-.logs ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.logs li {
+.trades h2 {
+  font-size: 1.5em;
   margin-bottom: 10px;
+}
+
+.trades-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.trades-table th,
+.trades-table td {
   padding: 10px;
-  background-color: #282c34;
-  border-radius: 5px;
+  text-align: left;
   border: 1px solid #444444;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.timestamp {
+.trades-table th {
+  background-color: #333333;
+  text-transform: uppercase;
+}
+
+.trades-table td {
+  background-color: #222222;
+}
+
+.trades-table a {
   color: #61dafb;
-  font-weight: bold;
-  font-size: 0.9em;
 }
 
-.message {
-  color: #c0c0c0;
-  font-size: 0.9em;
+.trades-table a:hover {
+  text-decoration: underline;
 }
 
 /* Detected Pairs Section */
@@ -168,4 +173,38 @@ h1 {
 
 .pairs-table td {
   word-wrap: break-word;
+}
+
+/* Settings Component */
+.settings {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.settings h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.settings-form .label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.settings-form .input {
+  margin-top: 5px;
+}
+
+.settings-form .button {
+  align-self: flex-start;
 }

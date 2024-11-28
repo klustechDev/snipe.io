@@ -1,0 +1,42 @@
+/* frontend/src/components/Trades.css */
+
+.trades {
+  padding: 20px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.trades h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.trades-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.trades-table th,
+.trades-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #444444;
+}
+
+.trades-table th {
+  background-color: #333333;
+  text-transform: uppercase;
+}
+
+.trades-table td {
+  background-color: #222222;
+}
+
+.trades-table a {
+  color: #61dafb;
+}
+
+.trades-table a:hover {
+  text-decoration: underline;
+}
