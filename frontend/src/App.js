@@ -1,25 +1,21 @@
+// frontend/src/App.js
+
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
-import LogsViewer from './components/LogsViewer';
-import Settings from './components/Settings';
+import Trades from './components/Trades'; // Ensure you have this component
+import Settings from './components/Settings'; // Ensure you have this component
 
 function App() {
-    return (
-        <Router>
-            <div className="App">
-                <header className="App-header">
-                    <h1>Snipe.io Dashboard</h1>
-                </header>
-                <Routes>
-                    <Route path="/" element={<Dashboard />} />
-                    <Route path="/logs" element={<LogsViewer />} />
-                    <Route path="/settings" element={<Settings />} />
-                </Routes>
-            </div>
-        </Router>
-    );
+  return (
+    <div className="App">
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/logs" element={<Trades />} />
+        <Route path="/settings" element={<Settings />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

@@ -1,0 +1,64 @@
+.dashboard {
+    padding: 20px;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #444444;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #555555;
+}
+
+.detected-pairs {
+    margin-top: 20px;
+}
+
+.detected-pairs h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pairs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.pairs-table th,
+.pairs-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #444444;
+}
+
+.pairs-table th {
+    background-color: #333333;
+    text-transform: uppercase;
+}
+
+.pairs-table td {
+    background-color: #222222;
+}
+
+.pairs-table a {
+    color: #61dafb;
+}
+
+.pairs-table a:hover {
+    text-decoration: underline;
+}

@@ -1,60 +1,59 @@
 // frontend/src/components/Dashboard.js
 
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
-  const [status, setStatus] = useState("Stopped");
+  const [status, setStatus] = useState('Stopped');
   const [logs, setLogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   const fetchStatus = async () => {
     try {
-      const response = await axios.get("/api/status");
+      const response = await axios.get('/api/status');
       setStatus(response.data.status);
     } catch (error) {
-      console.error("Error fetching status:", error);
+      console.error('Error fetching status:', error);
     }
   };
 
   const fetchLogs = async () => {
     try {
-      const response = await axios.get("/api/logs");
+      const response = await axios.get('/api/detected-pairs');
       const data = response.data;
 
-      // Ensure logs are valid
       if (Array.isArray(data)) {
         setLogs(data);
       } else {
-        console.error("Invalid log data format received:", data);
+        console.error('Invalid log data format received:', data);
         setLogs([]);
       }
 
       setIsLoading(false);
     } catch (error) {
-      console.error("Error fetching logs:", error);
+      console.error('Error fetching logs:', error);
       setIsLoading(false);
     }
   };
 
   const handleStart = async () => {
     try {
-      const response = await axios.post("/api/start");
+      const response = await axios.post('/api/start');
       alert(response.data.status);
       fetchStatus();
     } catch (error) {
-      console.error("Error starting bot:", error);
+      console.error('Error starting bot:', error);
     }
   };
 
   const handleStop = async () => {
     try {
-      const response = await axios.post("/api/stop");
+      const response = await axios.post('/api/stop');
       alert(response.data.status);
       fetchStatus();
     } catch (error) {
-      console.error("Error stopping bot:", error);
+      console.error('Error stopping bot:', error);
     }
   };
 
@@ -113,7 +112,7 @@ const Dashboard = () => {
                         {log.tokenAddress.slice(0, 6)}...{log.tokenAddress.slice(-4)}
                       </a>
                     ) : (
-                      "N/A"
+                      'N/A'
                     )}
                   </td>
                   <td>
@@ -126,10 +125,10 @@ const Dashboard = () => {
                         {log.pairAddress.slice(0, 6)}...{log.pairAddress.slice(-4)}
                       </a>
                     ) : (
-                      "N/A"
+                      'N/A'
                     )}
                   </td>
-                  <td>{log.liquidity ? `${log.liquidity} ETH` : "N/A"}</td>
+                  <td>{log.liquidity ? `${log.liquidity} ETH` : 'N/A'}</td>
                 </tr>
               ))}
             </tbody>
