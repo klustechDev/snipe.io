@@ -10,7 +10,7 @@ const DetectedPairs = () => {
 
   const fetchPairs = async () => {
     try {
-      const response = await axios.get('/api/detected-pairs');
+      const response = await axios.get('http://localhost:3001/api/detected-pairs');
       setPairs(response.data);
     } catch (error) {
       console.error('Error fetching detected pairs:', error);

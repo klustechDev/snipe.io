@@ -1,11 +1,15 @@
 // scripts/contracts.js
 
-require('dotenv').config(); // Load environment variables
+/**
+ * contracts.js
+ * 
+ * Initializes blockchain contracts and related providers.
+ */
 
 const { ethers } = require('ethers');
 const { FlashbotsBundleProvider } = require('@flashbots/ethers-provider-bundle');
 const { logMessage } = require('./logging');
-const settings = require('./settings');
+const { getSettings } = require('./settings');
 
 let provider, wallet, factoryContract, routerContract, flashbotsProvider;
 
@@ -15,10 +19,10 @@ let provider, wallet, factoryContract, routerContract, flashbotsProvider;
  */
 async function initContracts() {
     try {
-        logMessage('Initializing contracts...', {});
+        logMessage('Initializing contracts...', {}, 'info');
 
         // Validate and format PRIVATE_KEY
-        let privateKey = settings.PRIVATE_KEY;
+        let privateKey = getSettings().PRIVATE_KEY;
         if (!privateKey) {
             throw new Error('PRIVATE_KEY is missing in .env file.');
         }
@@ -32,7 +36,7 @@ async function initContracts() {
         }
 
         // Validate RPC_URL
-        const RPC_URL = settings.RPC_URL_MAINNET;
+        const RPC_URL = getSettings().RPC_URL_MAINNET;
         if (!RPC_URL) {
             throw new Error('RPC_URL_MAINNET must be defined in .env file.');
         }
@@ -57,7 +61,7 @@ async function initContracts() {
                     logMessage('WebSocket connection established.', {}, 'info');
                 });
 
-                logMessage('WebSocketProvider initialized.', {});
+                logMessage('WebSocketProvider initialized.', {}, 'info');
             } catch (error) {
                 logMessage(`Error initializing WebSocketProvider: ${error.message}`, {}, 'error');
                 throw new Error('Failed to initialize WebSocketProvider. Check RPC URL.');
@@ -68,7 +72,7 @@ async function initContracts() {
 
         // Initialize Wallet
         wallet = new ethers.Wallet(privateKey, provider);
-        logMessage(`Wallet initialized: ${wallet.address}`, {});
+        logMessage(`Wallet initialized: ${wallet.address}`, {}, 'info');
 
         // Initialize Flashbots Provider
         flashbotsProvider = await FlashbotsBundleProvider.create(
@@ -76,11 +80,11 @@ async function initContracts() {
             wallet,
             'https://relay.flashbots.net/' // Ensure this URL is correct or replace with your relay URL
         );
-        logMessage('FlashbotsBundleProvider initialized.', {});
+        logMessage('FlashbotsBundleProvider initialized.', {}, 'info');
 
         // Initialize Contracts
-        const FACTORY_ADDRESS = ethers.utils.getAddress(settings.FACTORY_ADDRESS);
-        const ROUTER_ADDRESS = ethers.utils.getAddress(settings.ROUTER_ADDRESS);
+        const FACTORY_ADDRESS = ethers.utils.getAddress(getSettings().FACTORY_ADDRESS);
+        const ROUTER_ADDRESS = ethers.utils.getAddress(getSettings().ROUTER_ADDRESS);
 
         const factoryABI = [
             'event PairCreated(address indexed token0, address indexed token1, address pair, uint)',
@@ -93,11 +97,11 @@ async function initContracts() {
 
         factoryContract = new ethers.Contract(FACTORY_ADDRESS, factoryABI, provider);
         routerContract = new ethers.Contract(ROUTER_ADDRESS, routerABI, wallet);
-        logMessage('Factory and Router contracts initialized.', {});
+        logMessage('Factory and Router contracts initialized.', {}, 'info');
 
         // Validate connection
         const blockNumber = await provider.getBlockNumber();
-        logMessage(`Connected to the blockchain. Current block number: ${blockNumber}`, {});
+        logMessage(`Connected to the blockchain. Current block number: ${blockNumber}`, {}, 'info');
 
         return { provider, wallet, factoryContract, routerContract, flashbotsProvider };
     } catch (error) {
@@ -110,7 +114,7 @@ async function initContracts() {
  * Getter for the factory contract.
  * @returns {ethers.Contract} The factory contract instance.
  */
-function getFactoryContract() {
+function getFactoryContractInstance() {
     if (!factoryContract) {
         throw new Error('Factory contract is not initialized. Call initContracts() first.');
     }
@@ -121,7 +125,7 @@ function getFactoryContract() {
  * Getter for the router contract.
  * @returns {ethers.Contract} The router contract instance.
  */
-function getRouterContract() {
+function getRouterContractInstance() {
     if (!routerContract) {
         throw new Error('Router contract is not initialized. Call initContracts() first.');
     }
@@ -132,7 +136,7 @@ function getRouterContract() {
  * Getter for the provider.
  * @returns {ethers.providers.WebSocketProvider} The provider instance.
  */
-function getProvider() {
+function getProviderInstance() {
     if (!provider) {
         throw new Error('Provider is not initialized.');
     }
@@ -143,7 +147,7 @@ function getProvider() {
  * Getter for the wallet.
  * @returns {ethers.Wallet} The wallet instance.
  */
-function getWallet() {
+function getWalletInstance() {
     if (!wallet) {
         throw new Error('Wallet is not initialized.');
     }
@@ -152,8 +156,8 @@ function getWallet() {
 
 module.exports = {
     initContracts,
-    getFactoryContract,
-    getRouterContract,
-    getProvider,
-    getWallet,
+    getFactoryContract: getFactoryContractInstance,
+    getRouterContract: getRouterContractInstance,
+    getProvider: getProviderInstance,
+    getWallet: getWalletInstance,
 };

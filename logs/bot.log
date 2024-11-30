@@ -985,3 +985,305 @@
 {"timestamp":"2024-11-30T03:28:16.835Z","level":"info","message":"Pair Reserves: reserve0 = 420690000000000000000000000000, reserve1 = 1000000000000000000","data":{}}
 {"timestamp":"2024-11-30T03:28:16.836Z","level":"error","message":"Pair reserves too low. reserve0: 420690000000000000000000000000, reserve1: 1000000000000000000","data":{}}
 {"timestamp":"2024-11-30T03:28:16.836Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T07:50:49.582Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-30T07:50:49.583Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T07:50:49.643Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T07:50:49.707Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T07:50:49.715Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-30T07:50:49.720Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-30T07:50:50.090Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T07:50:50.188Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T07:50:50.196Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T07:50:50.295Z","level":"info","message":"Connected to the blockchain. Current block number: 21299114","data":{}}
+{"timestamp":"2024-11-30T07:50:50.296Z","level":"info","message":"Setting up event listeners...","data":{}}
+{"timestamp":"2024-11-30T07:50:50.299Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T07:50:50.300Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-30T07:50:50.300Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-30T07:52:02.203Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x500ceE6c24BB0f71281D655fb83D0DDe0B23d6EB","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x0b28aC1d9bEad27E163f12C5F501F75625507fC3","event":{"type":"BigNumber","hex":"0x05f9fa"}}}
+{"timestamp":"2024-11-30T07:52:02.204Z","level":"info","message":"Preparing to execute purchase for pair 0x0b28aC1d9bEad27E163f12C5F501F75625507fC3.","data":{}}
+{"timestamp":"2024-11-30T07:52:02.204Z","level":"info","message":"Evaluating pair 0x0b28aC1d9bEad27E163f12C5F501F75625507fC3 for viability.","data":{}}
+{"timestamp":"2024-11-30T07:52:02.204Z","level":"info","message":"New Token Address: 0x500ceE6c24BB0f71281D655fb83D0DDe0B23d6EB","data":{}}
+{"timestamp":"2024-11-30T07:52:02.692Z","level":"info","message":"Pair token0: 0x500ceE6c24BB0f71281D655fb83D0DDe0B23d6EB, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T07:52:02.787Z","level":"info","message":"Pair Reserves: reserve0 = 24000000000000000000000000000, reserve1 = 6660000000000000000","data":{}}
+{"timestamp":"2024-11-30T07:52:02.789Z","level":"error","message":"Pair reserves too low. reserve0: 24000000000000000000000000000, reserve1: 6660000000000000000","data":{}}
+{"timestamp":"2024-11-30T07:52:02.789Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T08:01:01.465Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xEc0CF29b08806939C12A814B3D87b3d743f5057b","pairAddress":"0x8a4a4847F563a2F7D9350ca4d981084E82bF878D","event":{"type":"BigNumber","hex":"0x05f9fb"}}}
+{"timestamp":"2024-11-30T08:01:01.465Z","level":"info","message":"Preparing to execute purchase for pair 0x8a4a4847F563a2F7D9350ca4d981084E82bF878D.","data":{}}
+{"timestamp":"2024-11-30T08:01:01.466Z","level":"info","message":"New Token Address: 0xEc0CF29b08806939C12A814B3D87b3d743f5057b","data":{}}
+{"timestamp":"2024-11-30T08:01:01.466Z","level":"info","message":"Evaluating pair 0x8a4a4847F563a2F7D9350ca4d981084E82bF878D for viability.","data":{}}
+{"timestamp":"2024-11-30T08:01:01.786Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xEc0CF29b08806939C12A814B3D87b3d743f5057b","data":{}}
+{"timestamp":"2024-11-30T08:01:01.882Z","level":"info","message":"Pair Reserves: reserve0 = 26000000000000000000, reserve1 = 393280000000000000000000000","data":{}}
+{"timestamp":"2024-11-30T08:01:01.883Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T08:01:01.883Z","level":"error","message":"Pair reserves too low. reserve0: 26000000000000000000, reserve1: 393280000000000000000000000","data":{}}
+{"timestamp":"2024-11-30T08:01:38.803Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x15a1AFf3DBc80296A68Ea9eA57d8aA84676BDA68","token1":"0x2Dd636C514Bb4705c756D161585Ff9ec665f18A2","pairAddress":"0x00B6bafe0eb9297dC9Db3a89F360847c8E61F48c","event":{"type":"BigNumber","hex":"0x05f9fc"}}}
+{"timestamp":"2024-11-30T08:01:38.803Z","level":"info","message":"Preparing to execute purchase for pair 0x00B6bafe0eb9297dC9Db3a89F360847c8E61F48c.","data":{}}
+{"timestamp":"2024-11-30T08:01:38.803Z","level":"info","message":"Pair does not include base token. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T08:02:16.049Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x15a1AFf3DBc80296A68Ea9eA57d8aA84676BDA68","token1":"0x1dC622B9A9d8C65E1903b665Fa638A34B22AA2ed","pairAddress":"0xCcaff778915731BD8cD57F325Ff15D5Dc374419E","event":{"type":"BigNumber","hex":"0x05f9fd"}}}
+{"timestamp":"2024-11-30T08:02:16.049Z","level":"info","message":"Preparing to execute purchase for pair 0xCcaff778915731BD8cD57F325Ff15D5Dc374419E.","data":{}}
+{"timestamp":"2024-11-30T08:02:16.049Z","level":"info","message":"Pair does not include base token. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T08:15:02.108Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xA278BdefC95EF0536Baa23312761a7bb6D0C4AF9","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x5881DAd13798A70bc3DcE8dE3fDa95eE11a723E1","event":{"type":"BigNumber","hex":"0x05f9fe"}}}
+{"timestamp":"2024-11-30T08:15:02.109Z","level":"info","message":"Preparing to execute purchase for pair 0x5881DAd13798A70bc3DcE8dE3fDa95eE11a723E1.","data":{}}
+{"timestamp":"2024-11-30T08:15:02.109Z","level":"info","message":"New Token Address: 0xA278BdefC95EF0536Baa23312761a7bb6D0C4AF9","data":{}}
+{"timestamp":"2024-11-30T08:15:02.109Z","level":"info","message":"Evaluating pair 0x5881DAd13798A70bc3DcE8dE3fDa95eE11a723E1 for viability.","data":{}}
+{"timestamp":"2024-11-30T08:15:02.425Z","level":"info","message":"Pair token0: 0xA278BdefC95EF0536Baa23312761a7bb6D0C4AF9, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T08:15:02.526Z","level":"info","message":"Pair Reserves: reserve0 = 690834064000000000, reserve1 = 10133080249620445","data":{}}
+{"timestamp":"2024-11-30T08:15:02.527Z","level":"error","message":"Pair reserves too low. reserve0: 690834064000000000, reserve1: 10133080249620445","data":{}}
+{"timestamp":"2024-11-30T08:15:02.527Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T08:44:14.362Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x288B3aC1fb10f6cf2E2491406941318EFAc38100","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xd8D74665426B874763Fe1dC52C29A34aA25BFb44","event":{"type":"BigNumber","hex":"0x05f9ff"}}}
+{"timestamp":"2024-11-30T08:44:14.362Z","level":"info","message":"Preparing to execute purchase for pair 0xd8D74665426B874763Fe1dC52C29A34aA25BFb44.","data":{}}
+{"timestamp":"2024-11-30T08:44:14.363Z","level":"info","message":"New Token Address: 0x288B3aC1fb10f6cf2E2491406941318EFAc38100","data":{}}
+{"timestamp":"2024-11-30T08:44:14.363Z","level":"info","message":"Evaluating pair 0xd8D74665426B874763Fe1dC52C29A34aA25BFb44 for viability.","data":{}}
+{"timestamp":"2024-11-30T08:44:14.694Z","level":"info","message":"Pair token0: 0x288B3aC1fb10f6cf2E2491406941318EFAc38100, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T08:44:14.809Z","level":"info","message":"Pair Reserves: reserve0 = 680452624000000000, reserve1 = 51440713942557953","data":{}}
+{"timestamp":"2024-11-30T08:44:14.809Z","level":"error","message":"Pair reserves too low. reserve0: 680452624000000000, reserve1: 51440713942557953","data":{}}
+{"timestamp":"2024-11-30T08:44:14.810Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T08:57:49.613Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xae9875ad3f97383AD96Edc00523977b8387a0681","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xb601ca2709AfD40b383e7f60C0Fc171D91681eA6","event":{"type":"BigNumber","hex":"0x05fa00"}}}
+{"timestamp":"2024-11-30T08:57:49.613Z","level":"info","message":"Preparing to execute purchase for pair 0xb601ca2709AfD40b383e7f60C0Fc171D91681eA6.","data":{}}
+{"timestamp":"2024-11-30T08:57:49.613Z","level":"info","message":"New Token Address: 0xae9875ad3f97383AD96Edc00523977b8387a0681","data":{}}
+{"timestamp":"2024-11-30T08:57:49.613Z","level":"info","message":"Evaluating pair 0xb601ca2709AfD40b383e7f60C0Fc171D91681eA6 for viability.","data":{}}
+{"timestamp":"2024-11-30T08:57:49.944Z","level":"info","message":"Pair token0: 0xae9875ad3f97383AD96Edc00523977b8387a0681, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T08:57:50.040Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T08:57:50.041Z","level":"error","message":"Pair reserves too low. reserve0: 0, reserve1: 0","data":{}}
+{"timestamp":"2024-11-30T08:57:50.041Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T11:32:24.532Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T11:32:24.535Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-30T11:32:24.544Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-30T11:34:00.293Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T11:34:00.350Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:00.422Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T11:34:00.813Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T11:34:00.920Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:00.929Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:01.035Z","level":"info","message":"Connected to the blockchain. Current block number: 21300223","data":{}}
+{"timestamp":"2024-11-30T11:34:01.036Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:01.036Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T11:34:01.039Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T11:34:09.870Z","level":"info","message":"Bot stopped.","data":{}}
+{"timestamp":"2024-11-30T11:34:09.873Z","level":"info","message":"Database connection closed.","data":{}}
+{"timestamp":"2024-11-30T11:34:19.568Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T11:34:19.570Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:19.577Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T11:34:19.945Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T11:34:20.038Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:20.040Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:20.140Z","level":"info","message":"Connected to the blockchain. Current block number: 21300225","data":{}}
+{"timestamp":"2024-11-30T11:34:20.140Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T11:34:20.141Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T11:34:20.141Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T11:34:41.061Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T11:34:46.376Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T11:34:50.008Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T11:34:52.068Z","level":"error","message":"Error fetching successful trades: SQLITE_MISUSE: Database is closed","data":{}}
+{"timestamp":"2024-11-30T11:34:52.071Z","level":"error","message":"Error fetching trades: SQLITE_MISUSE: Database is closed","data":{}}
+{"timestamp":"2024-11-30T11:35:58.762Z","level":"info","message":"Bot is already running.","data":{}}
+{"timestamp":"2024-11-30T11:37:25.581Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T11:37:25.583Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-30T11:37:25.590Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-30T11:38:33.207Z","level":"info","message":"Bot is not running.","data":{}}
+{"timestamp":"2024-11-30T11:38:36.431Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T11:38:36.478Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:38:36.556Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T11:38:36.910Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T11:38:37.005Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:38:37.013Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T11:38:37.116Z","level":"info","message":"Connected to the blockchain. Current block number: 21300245","data":{}}
+{"timestamp":"2024-11-30T11:38:37.117Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T11:38:37.117Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T11:38:37.121Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T11:39:26.536Z","level":"info","message":"Bot stopped.","data":{}}
+{"timestamp":"2024-11-30T11:39:26.544Z","level":"info","message":"Database connection closed.","data":{}}
+{"timestamp":"2024-11-30T11:39:34.439Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T11:39:34.441Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:39:34.448Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T11:39:34.816Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T11:39:34.911Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:39:34.913Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T11:39:35.015Z","level":"info","message":"Connected to the blockchain. Current block number: 21300250","data":{}}
+{"timestamp":"2024-11-30T11:39:35.016Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T11:39:35.016Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T11:39:35.017Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T11:41:03.177Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xAE095621b9fF4F6443B649d2930c249D77d6AFCA","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6ae1b563C32F3504d7DbDA8D590bFc1A4f2D6753"}}
+{"timestamp":"2024-11-30T11:41:03.177Z","level":"error","message":"Error handling PairCreated event for 0x6ae1b563C32F3504d7DbDA8D590bFc1A4f2D6753: settings is not defined","data":{}}
+{"timestamp":"2024-11-30T11:44:26.653Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T11:44:26.653Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T11:44:31.656Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:44:32.050Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T11:46:34.111Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T11:55:40.425Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T11:55:40.477Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:55:40.546Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T11:55:40.911Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T11:55:41.009Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T11:55:41.017Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T11:55:41.118Z","level":"info","message":"Connected to the blockchain. Current block number: 21300330","data":{}}
+{"timestamp":"2024-11-30T11:55:41.119Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T11:55:41.119Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T11:55:41.122Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T11:56:55.163Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T11:57:00.015Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T11:57:05.319Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T11:57:10.012Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T11:57:14.362Z","level":"error","message":"Error fetching trades: Cannot read properties of undefined (reading 'all')","data":{}}
+{"timestamp":"2024-11-30T11:59:06.753Z","level":"info","message":"Bot is already running.","data":{}}
+{"timestamp":"2024-11-30T11:59:10.004Z","level":"error","message":"Failed to stop bot: Cannot read properties of undefined (reading 'close')","data":{}}
+{"timestamp":"2024-11-30T11:59:33.322Z","level":"info","message":"Bot is already running.","data":{}}
+{"timestamp":"2024-11-30T12:04:10.108Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T12:04:10.109Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T12:04:15.112Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T12:04:15.494Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T12:09:15.785Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T12:09:15.786Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T12:09:20.788Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T12:09:21.150Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T12:14:21.169Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T12:14:21.169Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T12:14:26.171Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T12:14:26.553Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T12:19:26.660Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T12:19:26.660Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T12:19:31.662Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T12:19:32.010Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T12:21:25.519Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T12:21:54.697Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T12:21:54.776Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T12:21:54.938Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T12:21:55.307Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T12:21:55.400Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T12:21:55.408Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T12:21:55.508Z","level":"info","message":"Connected to the blockchain. Current block number: 21300460","data":{}}
+{"timestamp":"2024-11-30T12:21:55.508Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T12:21:55.508Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T12:21:55.511Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T12:22:55.562Z","level":"error","message":"Error fetching trades: Cannot read properties of undefined (reading 'all')","data":{}}
+{"timestamp":"2024-11-30T12:22:58.917Z","level":"info","message":"Bot is already running.","data":{}}
+{"timestamp":"2024-11-30T12:23:43.057Z","level":"error","message":"Error fetching logs: getLogs is not a function","data":{}}
+{"timestamp":"2024-11-30T12:23:44.942Z","level":"error","message":"Error fetching trades: Cannot read properties of undefined (reading 'all')","data":{}}
+{"timestamp":"2024-11-30T12:28:01.169Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xE502680EF7e33F77B024eBF251160534C34D7320","pairAddress":"0x968806007E7560289Ae3d7a9bcE884317ae2ffbb"}}
+{"timestamp":"2024-11-30T12:28:01.170Z","level":"error","message":"Error handling PairCreated event for 0x968806007E7560289Ae3d7a9bcE884317ae2ffbb: settings is not defined","data":{}}
+{"timestamp":"2024-11-30T12:36:49.831Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x8D3bD10E4fb7b781E545142Cd20EBB9C2e069C4e","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x5dF2F85e730Bc2Aa53f39Cb7b5634aB83133842f"}}
+{"timestamp":"2024-11-30T12:36:49.831Z","level":"error","message":"Error handling PairCreated event for 0x5dF2F85e730Bc2Aa53f39Cb7b5634aB83133842f: settings is not defined","data":{}}
+{"timestamp":"2024-11-30T12:38:51.277Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x69Db1DA20aa2A4D98E316de127AdAE698613117E","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xb189493099FdfF49076a19FeC854a08A61dd8F15"}}
+{"timestamp":"2024-11-30T12:38:51.277Z","level":"error","message":"Error handling PairCreated event for 0xb189493099FdfF49076a19FeC854a08A61dd8F15: settings is not defined","data":{}}
+{"timestamp":"2024-11-30T12:45:02.692Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x9B171486EE23E1cda6105FB4D21609f61EED595D","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6Ff8D4d9b1a09D74802d8D0AC6c7788E39dFB091"}}
+{"timestamp":"2024-11-30T12:45:02.693Z","level":"error","message":"Error handling PairCreated event for 0x6Ff8D4d9b1a09D74802d8D0AC6c7788E39dFB091: settings is not defined","data":{}}
+{"timestamp":"2024-11-30T12:46:02.461Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x7e56601aE65BeF5F735a6505Ed026467a17599d9","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xe4d5158a528e1E6C4d6191c60b9879107A3Da29b"}}
+{"timestamp":"2024-11-30T12:46:02.462Z","level":"error","message":"Error handling PairCreated event for 0xe4d5158a528e1E6C4d6191c60b9879107A3Da29b: settings is not defined","data":{}}
+{"timestamp":"2024-11-30T12:49:01.259Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x6aa96D15Ff610ED3946B2E38835E7695Ac87F367","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x72860e5782Dfa6BDC0929cA0A0FE84DEd1eC8383"}}
+{"timestamp":"2024-11-30T12:49:01.259Z","level":"error","message":"Error handling PairCreated event for 0x72860e5782Dfa6BDC0929cA0A0FE84DEd1eC8383: settings is not defined","data":{}}
+{"timestamp":"2024-11-30T15:04:35.707Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T15:05:00.593Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T15:05:00.707Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:00.883Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T15:05:01.287Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:05:01.381Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:01.389Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:01.493Z","level":"info","message":"Connected to the blockchain. Current block number: 21301271","data":{}}
+{"timestamp":"2024-11-30T15:05:01.494Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:01.494Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T15:05:01.496Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T15:05:19.615Z","level":"info","message":"Bot stopped.","data":{}}
+{"timestamp":"2024-11-30T15:05:46.690Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T15:05:46.693Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:46.698Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T15:05:47.066Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:05:47.164Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:47.166Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:47.267Z","level":"info","message":"Connected to the blockchain. Current block number: 21301275","data":{}}
+{"timestamp":"2024-11-30T15:05:47.268Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T15:05:47.268Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T15:05:47.268Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T15:06:24.758Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-30T15:06:24.760Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-30T15:06:37.584Z","level":"info","message":"Database connection already initialized.","data":{}}
+{"timestamp":"2024-11-30T15:06:38.519Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x2031B0580d988e1D53f7D054a0132C47a32D5D7c","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xc691438F13ed6B06bad67432eC53054d51F59939"}}
+{"timestamp":"2024-11-30T15:06:38.520Z","level":"info","message":"Evaluating pair 0xc691438F13ed6B06bad67432eC53054d51F59939 for viability.","data":{}}
+{"timestamp":"2024-11-30T15:06:38.519Z","level":"info","message":"New Token Address: 0x2031B0580d988e1D53f7D054a0132C47a32D5D7c","data":{}}
+{"timestamp":"2024-11-30T15:06:38.929Z","level":"info","message":"Pair token0: 0x2031B0580d988e1D53f7D054a0132C47a32D5D7c, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T15:06:39.034Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T15:06:39.035Z","level":"error","message":"Error evaluating pair 0xc691438F13ed6B06bad67432eC53054d51F59939: value must be a string (argument=\"value\", value=undefined, code=INVALID_ARGUMENT, version=units/5.7.0)","data":{}}
+{"timestamp":"2024-11-30T15:06:39.037Z","level":"info","message":"Pair 0xc691438F13ed6B06bad67432eC53054d51F59939 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T15:06:52.784Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T15:06:56.997Z","level":"info","message":"Database connection already initialized.","data":{}}
+{"timestamp":"2024-11-30T15:10:19.718Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:10:19.719Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:10:24.722Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:10:25.069Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:12:05.272Z","level":"info","message":"Bot stopped.","data":{}}
+{"timestamp":"2024-11-30T15:12:05.273Z","level":"info","message":"Database connection closed.","data":{}}
+{"timestamp":"2024-11-30T15:12:07.512Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T15:12:07.514Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:12:07.536Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T15:12:07.922Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:12:08.026Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:12:08.029Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T15:12:08.138Z","level":"info","message":"Connected to the blockchain. Current block number: 21301307","data":{}}
+{"timestamp":"2024-11-30T15:12:08.139Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T15:12:08.139Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T15:12:08.140Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T15:13:26.774Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x7DE452297B211E12F9cbD43A398393f16080451b","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xC05ea3F94B3591D6ba2f92B49847BB6a9006c0c8"}}
+{"timestamp":"2024-11-30T15:13:26.774Z","level":"info","message":"New Token Address: 0x7DE452297B211E12F9cbD43A398393f16080451b","data":{}}
+{"timestamp":"2024-11-30T15:13:26.774Z","level":"info","message":"Evaluating pair 0xC05ea3F94B3591D6ba2f92B49847BB6a9006c0c8 for viability.","data":{}}
+{"timestamp":"2024-11-30T15:13:27.202Z","level":"info","message":"Pair token0: 0x7DE452297B211E12F9cbD43A398393f16080451b, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T15:13:27.307Z","level":"info","message":"Pair Reserves: reserve0 = 745534000000000000, reserve1 = 1026907130381209811","data":{}}
+{"timestamp":"2024-11-30T15:13:27.307Z","level":"error","message":"Error evaluating pair 0xC05ea3F94B3591D6ba2f92B49847BB6a9006c0c8: value must be a string (argument=\"value\", value=undefined, code=INVALID_ARGUMENT, version=units/5.7.0)","data":{}}
+{"timestamp":"2024-11-30T15:13:27.308Z","level":"info","message":"Pair 0xC05ea3F94B3591D6ba2f92B49847BB6a9006c0c8 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T15:15:25.172Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:15:25.172Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:15:30.174Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:15:30.534Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:17:06.538Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:17:06.538Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:17:11.542Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:17:11.914Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:20:30.635Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:20:30.635Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:20:35.638Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:20:35.990Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:22:12.018Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:22:12.019Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:22:17.021Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:22:17.382Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:25:36.091Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:25:36.091Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:25:41.093Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:25:41.487Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:27:17.490Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:27:17.490Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:27:22.493Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:27:22.857Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:29:13.559Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T15:29:47.243Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T15:29:47.311Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:29:47.449Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T15:29:47.813Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:29:47.909Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:29:47.921Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T15:29:48.026Z","level":"info","message":"Connected to the blockchain. Current block number: 21301394","data":{}}
+{"timestamp":"2024-11-30T15:29:48.027Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T15:29:48.028Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T15:29:48.030Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T15:32:40.127Z","level":"info","message":"Bot stopped.","data":{}}
+{"timestamp":"2024-11-30T15:32:45.547Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T15:32:45.550Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:32:45.556Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T15:32:45.927Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:32:46.019Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:32:46.021Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T15:32:46.118Z","level":"info","message":"Connected to the blockchain. Current block number: 21301409","data":{}}
+{"timestamp":"2024-11-30T15:32:46.118Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T15:32:46.119Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T15:32:46.119Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T15:33:02.284Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-30T15:33:02.286Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-30T15:33:14.445Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T15:37:27.300Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xE7d92eb5F78AC0190B1Cef2542b41884708C0300","pairAddress":"0x13589B0D3363D66b16a1355c5c2A519b524C804c"}}
+{"timestamp":"2024-11-30T15:37:27.300Z","level":"info","message":"New Token Address: 0xE7d92eb5F78AC0190B1Cef2542b41884708C0300","data":{}}
+{"timestamp":"2024-11-30T15:37:27.301Z","level":"info","message":"Evaluating pair 0x13589B0D3363D66b16a1355c5c2A519b524C804c for viability.","data":{}}
+{"timestamp":"2024-11-30T15:37:27.848Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xE7d92eb5F78AC0190B1Cef2542b41884708C0300","data":{}}
+{"timestamp":"2024-11-30T15:37:27.950Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T15:37:27.951Z","level":"error","message":"Error evaluating pair 0x13589B0D3363D66b16a1355c5c2A519b524C804c: value must be a string (argument=\"value\", value=undefined, code=INVALID_ARGUMENT, version=units/5.7.0)","data":{}}
+{"timestamp":"2024-11-30T15:37:27.954Z","level":"info","message":"Pair 0x13589B0D3363D66b16a1355c5c2A519b524C804c did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T15:37:40.231Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:37:40.232Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:37:45.235Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:37:45.605Z","level":"info","message":"WebSocket connection established.","data":{}}

@@ -6,62 +6,53 @@ import { Link } from 'react-router-dom';
 import './LogsViewer.css'; // Ensure you have the corresponding CSS
 
 const LogsViewer = () => {
-  const [trades, setTrades] = useState([]);
+  const [logs, setLogs] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  const fetchTrades = async () => {
+  const fetchLogs = async () => {
     try {
-      const response = await axios.get('/api/trades');
-      setTrades(response.data);
+      const response = await axios.get('/api/logs');
+      setLogs(response.data);
       setIsLoading(false);
     } catch (error) {
-      console.error('Error fetching trades:', error);
+      console.error('Error fetching logs:', error);
       setIsLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchTrades();
-    const interval = setInterval(fetchTrades, 5000);
+    fetchLogs();
+    const interval = setInterval(fetchLogs, 5000);
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="trades-viewer">
+    <div className="logs-viewer">
       <div className="navbar">
         <Link to="/">Dashboard</Link>
         <Link to="/trades">Trades</Link>
         <Link to="/settings">Settings</Link>
+        <Link to="/logs">Logs</Link>
       </div>
-      <h2>Successful Trades</h2>
+      <h2>General Logs</h2>
       {isLoading ? (
-        <p>Loading trades...</p>
+        <p>Loading logs...</p>
       ) : (
-        trades.length > 0 ? (
-          <div className="trades">
+        logs.length > 0 ? (
+          <div className="logs">
             <ul>
-              {trades.map((trade, index) => (
+              {logs.map((log, index) => (
                 <li key={index}>
                   <span className="timestamp">
-                    {new Date(trade.timestamp).toLocaleString()}:
+                    {new Date(log.timestamp).toLocaleString()}:
                   </span>{' '}
-                  <span className="message">
-                    Bought {trade.amountIn} ETH worth of token{' '}
-                    <a
-                      href={`https://etherscan.io/address/${trade.tokenAddress}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {trade.tokenAddress.substring(0, 10)}...
-                    </a>{' '}
-                    (Tx: <a href={`https://etherscan.io/tx/${trade.txHash}`} target="_blank" rel="noopener noreferrer">{trade.txHash.substring(0, 10)}...</a>)
-                  </span>
+                  <span className="message">{log.message}</span>
                 </li>
               ))}
             </ul>
           </div>
         ) : (
-          <p>No trades executed yet.</p>
+          <p>No logs available yet.</p>
         )
       )}
     </div>

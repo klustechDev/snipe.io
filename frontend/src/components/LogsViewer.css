@@ -1,0 +1,59 @@
+/* frontend/src/components/LogsViewer.css */
+
+.logs-viewer {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #333;
+}
+
+.logs {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.logs ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.logs li {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logs li:last-child {
+  border-bottom: none;
+}
+
+.timestamp {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #555;
+}
+
+.message {
+  color: #000;
+}

@@ -20,7 +20,7 @@ const Settings = () => {
 
   const fetchSettings = async () => {
     try {
-      const response = await axios.get('/api/settings');
+      const response = await axios.get('http://localhost:3001/api/settings');
       const fetchedSettings = response.data;
       setSettings({
         ETH_AMOUNT_TO_SWAP: fetchedSettings.ETH_AMOUNT_TO_SWAP,
@@ -56,7 +56,7 @@ const Settings = () => {
           : [],
       };
 
-      await axios.post('/api/settings', updatedSettings);
+      await axios.post('http://localhost:3001/api/settings', updatedSettings);
       alert('Settings updated successfully!');
     } catch (error) {
       console.error('Error updating settings:', error);

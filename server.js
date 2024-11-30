@@ -1,21 +1,25 @@
 // server.js
 
-const { startBot } = require('./scripts/eventListener');
+/**
+ * server.js
+ * 
+ * Sets up the Express server and defines API endpoints.
+ */
 
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const {
-  startBot,
-  stopBot,
-  getStatus,
-  getLogs,
-  getDetectedPairs,
-  getSuccessfulTrades,
-  getInitializationLogs,
-  getSettings,
-  updateSettings,
+    startBot,
+    stopBot,
+    getStatus,
+    getDetectedPairs,
+    getSuccessfulTrades,
+    getInitializationLogs,
+    getGeneralLogs,
 } = require('./scripts/eventListener');
-const { logMessage } = require('./scripts/logging'); // Ensure logMessage is correctly exported
+const { logMessage, getLogs } = require('./scripts/logging');
+const { updateSettings, getSettings } = require('./scripts/settings');
 
 const app = express();
 const PORT = 3001;
@@ -25,64 +29,101 @@ app.use(express.json());
 
 // API Endpoints
 
-// Get Bot Status
+/**
+ * Get Bot Status
+ */
 app.get('/api/status', (req, res) => {
-  res.json({ status: getStatus() });
+    res.json({ status: getStatus() });
 });
 
-// Get All Logs (Initialization Logs)
-app.get('/api/init-logs', (req, res) => {
-  res.json(getInitializationLogs());
-});
-
-// Get Detected Pairs
+/**
+ * Get Detected Pairs
+ */
 app.get('/api/detected-pairs', (req, res) => {
-  res.json(getDetectedPairs());
+    res.json(getDetectedPairs());
 });
 
-// Get Successful Trades
-app.get('/api/trades', (req, res) => {
-  res.json(getSuccessfulTrades());
+/**
+ * Get Successful Trades
+ */
+app.get('/api/trades', async (req, res) => {
+    try {
+        const trades = await getSuccessfulTrades();
+        res.json(trades);
+    } catch (error) {
+        logMessage(`Error fetching trades: ${error.message}`, {}, 'error');
+        res.status(500).json({ error: error.message });
+    }
 });
 
-// Get All Logs (General Logs)
-app.get('/api/logs', (req, res) => {
-  res.json(getLogs());
+/**
+ * Get Logs
+ */
+app.get('/api/logs', async (req, res) => {
+    try {
+        const logs = await getLogs(100); // Fetch the last 100 logs
+        res.json(logs);
+    } catch (error) {
+        logMessage(`Error fetching logs: ${error.message}`, {}, 'error');
+        res.status(500).json({ error: error.message });
+    }
 });
 
-// Get Current Settings
+/**
+ * Get Current Settings
+ */
 app.get('/api/settings', (req, res) => {
-  res.json(getSettings());
+    try {
+        const currentSettings = getSettings();
+        res.json(currentSettings);
+    } catch (error) {
+        logMessage(`Error fetching settings: ${error.message}`, {}, 'error');
+        res.status(500).json({ error: error.message });
+    }
 });
 
-// Update Settings
+/**
+ * Update Settings
+ */
 app.post('/api/settings', (req, res) => {
-  const newSettings = req.body;
-  updateSettings(newSettings);
-  res.json({ status: 'Settings updated successfully.' });
+    try {
+        const newSettings = req.body;
+        updateSettings(newSettings);
+        logMessage('Settings updated successfully.', {}, 'info');
+        res.json({ status: 'Settings updated successfully.' });
+    } catch (error) {
+        logMessage(`Error updating settings: ${error.message}`, {}, 'error');
+        res.status(500).json({ error: error.message });
+    }
 });
 
-// Start Bot
+/**
+ * Start Bot
+ */
 app.post('/api/start', async (req, res) => {
-  try {
-    await startBot();
-    res.json({ status: 'Bot started successfully.' });
-  } catch (error) {
-    logMessage(`Error starting bot: ${error.message}`, {}, 'error');
-    res.status(500).json({ status: 'Failed to start bot.', error: error.message });
-  }
+    try {
+        await startBot();
+        res.json({ status: 'Bot started successfully.' });
+    } catch (error) {
+        logMessage(`Error starting bot: ${error.message}`, {}, 'error');
+        res.status(500).json({ error: error.message });
+    }
 });
 
-// Stop Bot
+/**
+ * Stop Bot
+ */
 app.post('/api/stop', (req, res) => {
-  try {
-    stopBot();
-    res.json({ status: 'Bot stopped successfully.' });
-  } catch (error) {
-    logMessage(`Error stopping bot: ${error.message}`, {}, 'error');
-    res.status(500).json({ status: 'Failed to stop bot.', error: error.message });
-  }
+    try {
+        stopBot();
+        res.json({ status: 'Bot stopped successfully.' });
+    } catch (error) {
+        logMessage(`Error stopping bot: ${error.message}`, {}, 'error');
+        res.status(500).json({ error: error.message });
+    }
 });
 
-// Start Server
-app.listen(PORT, () => logMessage(`Backend server is running on port ${PORT}`));
+/**
+ * Start Server
+ */
+app.listen(PORT, () => logMessage(`Backend server is running on port ${PORT}`, {}, 'info'));

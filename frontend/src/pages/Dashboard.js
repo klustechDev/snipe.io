@@ -1,4 +1,4 @@
-// src/pages/Dashboard.js
+// frontend/src/pages/Dashboard.js
 
 import React from 'react';
 import { Container } from '@mui/material';
@@ -13,4 +13,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
