@@ -6,7 +6,6 @@
  * Manages the bot's lifecycle, handles blockchain events, and interacts with the database.
  */
 
-const { ethers } = require('ethers');
 const {
     initContracts,
     getFactoryContract,
@@ -16,7 +15,7 @@ const {
 } = require('./contracts');
 const { logMessage, getLogs } = require('./logging');
 const { monitorTokenPrice, evaluatePair } = require('./utils');
-const { isHoneypot } = require('./tokenAnalysis');
+const { isHoneypot } = require('./tokenAnalysis'); // Ensure this module exists
 const { insertTrade, getAllTrades, closeDatabase } = require('./database');
 const { getSettings, updateSettings } = require('./settings');
 
@@ -180,17 +179,12 @@ async function executePurchase(tokenAddress, pairAddress) {
 
         const settings = getSettings();
         const ethAmountToSwap = settings.ETH_AMOUNT_TO_SWAP;
-        const amountIn = ethers.utils.parseEther(ethAmountToSwap);
+        const amountIn = ethers.utils.parseEther(ethAmountToSwap.toString());
         const path = [settings.BASE_TOKEN_ADDRESS, tokenAddress];
         const deadline = Math.floor(Date.now() / 1000) + settings.MONITOR_DURATION;
 
-        // Estimate Gas
-        const gasPrices = await provider.getFeeData();
-        const txOptions = {
-            gasLimit: 200000,
-            maxFeePerGas: gasPrices.maxFeePerGas.mul(settings.GAS_PRICE_MULTIPLIER).div(100),
-            maxPriorityFeePerGas: gasPrices.maxPriorityFeePerGas.mul(settings.GAS_PRICE_MULTIPLIER).div(100),
-        };
+        // Get Adjusted Gas Prices
+        const { maxFeePerGas, maxPriorityFeePerGas } = await require('./utils').getAdjustedGasPrice();
 
         // Execute Swap
         const tx = await routerContract.swapExactETHForTokens(
@@ -198,7 +192,12 @@ async function executePurchase(tokenAddress, pairAddress) {
             path,
             wallet.address,
             deadline,
-            { ...txOptions, value: amountIn }
+            {
+                gasLimit: 200000,
+                maxFeePerGas,
+                maxPriorityFeePerGas,
+                value: amountIn
+            }
         );
 
         logMessage(`Purchase transaction submitted. Tx Hash: ${tx.hash}`, {}, 'info');
@@ -212,7 +211,7 @@ async function executePurchase(tokenAddress, pairAddress) {
             timestamp: new Date().toISOString(),
             tokenAddress,
             pairAddress,
-            amountIn: ethAmountToSwap,
+            amountIn: ethAmountToSwap.toString(),
             txHash: tx.hash,
             type: 'buy',
         };
@@ -223,84 +222,6 @@ async function executePurchase(tokenAddress, pairAddress) {
         monitorTokenPrice(tokenAddress);
     } catch (error) {
         logMessage(`Error executing purchase for token ${tokenAddress}: ${error.message}`, {}, 'error');
-    }
-}
-
-/**
- * Executes a sell operation for the specified token.
- * @param {string} tokenAddress - Address of the token to sell
- */
-async function executeSell(tokenAddress) {
-    try {
-        const routerContract = getRouterContract();
-        const wallet = getWallet();
-        const provider = getProvider();
-
-        // Get Token Balance
-        const tokenABI = [
-            'function balanceOf(address owner) view returns (uint)',
-            'function approve(address spender, uint256 amount) external returns (bool)',
-        ];
-        const tokenContract = new ethers.Contract(tokenAddress, tokenABI, wallet);
-        const balance = await tokenContract.balanceOf(wallet.address);
-
-        if (balance.isZero()) {
-            logMessage(`No balance of token ${tokenAddress} to sell.`, {}, 'info');
-            return;
-        }
-
-        // Approve Router if necessary
-        const allowance = await tokenContract.allowance(wallet.address, routerContract.address);
-        if (allowance.lt(balance)) {
-            const approveTx = await tokenContract.approve(routerContract.address, ethers.constants.MaxUint256, {
-                gasLimit: 100000,
-            });
-            await approveTx.wait();
-            logMessage(`Router approved to spend token ${tokenAddress}.`, {}, 'info');
-        }
-
-        const settings = getSettings();
-        const path = [tokenAddress, settings.BASE_TOKEN_ADDRESS];
-        const amountIn = balance;
-        const deadline = Math.floor(Date.now() / 1000) + settings.MONITOR_DURATION;
-
-        // Estimate Gas
-        const gasPrices = await provider.getFeeData();
-        const txOptions = {
-            gasLimit: 200000,
-            maxFeePerGas: gasPrices.maxFeePerGas.mul(settings.GAS_PRICE_MULTIPLIER).div(100),
-            maxPriorityFeePerGas: gasPrices.maxPriorityFeePerGas.mul(settings.GAS_PRICE_MULTIPLIER).div(100),
-        };
-
-        // Execute Swap
-        const tx = await routerContract.swapExactTokensForETHSupportingFeeOnTransferTokens(
-            amountIn,
-            0,
-            path,
-            wallet.address,
-            deadline,
-            txOptions
-        );
-
-        logMessage(`Sell transaction submitted. Tx Hash: ${tx.hash}`, {}, 'info');
-
-        const receipt = await tx.wait();
-
-        logMessage(`Sell executed for token ${tokenAddress}. Tx Hash: ${tx.hash}`, {}, 'info');
-
-        // Record Trade
-        const trade = {
-            timestamp: new Date().toISOString(),
-            tokenAddress,
-            pairAddress: '', // Include pairAddress if available
-            amountIn: ethers.utils.formatUnits(amountIn, 18),
-            txHash: tx.hash,
-            type: 'sell',
-        };
-
-        await insertTrade(trade);
-    } catch (error) {
-        logMessage(`Error executing sell for token ${tokenAddress}: ${error.message}`, {}, 'error');
     }
 }
 

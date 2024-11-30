@@ -6,7 +6,6 @@
  * Sets up the Express server and defines API endpoints.
  */
 
-require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const {
@@ -17,9 +16,11 @@ const {
     getSuccessfulTrades,
     getInitializationLogs,
     getGeneralLogs,
+    getSettings,
+    updateSettings,
 } = require('./scripts/eventListener');
-const { logMessage, getLogs } = require('./scripts/logging');
-const { updateSettings, getSettings } = require('./scripts/settings');
+const { logMessage } = require('./scripts/logging');
+const { getLogs } = require('./scripts/logging');
 
 const app = express();
 const PORT = 3001;

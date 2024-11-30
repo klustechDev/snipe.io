@@ -23,6 +23,7 @@
     "hardhat": "^2.22.16",
     "sentiment": "^5.0.2",
     "sqlite3": "^5.1.7",
-    "twitter-api-v2": "^1.18.2"
+    "twitter-api-v2": "^1.18.2",
+    "ws": "^8.18.0"
   }
 }

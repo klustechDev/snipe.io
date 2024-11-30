@@ -1287,3 +1287,120 @@
 {"timestamp":"2024-11-30T15:37:40.232Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
 {"timestamp":"2024-11-30T15:37:45.235Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
 {"timestamp":"2024-11-30T15:37:45.605Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:42:45.716Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:42:45.716Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:42:50.719Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:42:51.100Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:47:51.206Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:47:51.207Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:47:56.209Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:47:56.605Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:48:03.021Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x98E72C67e1d0B694049A03eceFCca2A31BDab99c","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xb5FA7Edfd5e3c27480763a066c2FA6b12fcE24e8"}}
+{"timestamp":"2024-11-30T15:48:03.022Z","level":"info","message":"Evaluating pair 0xb5FA7Edfd5e3c27480763a066c2FA6b12fcE24e8 for viability.","data":{}}
+{"timestamp":"2024-11-30T15:48:03.022Z","level":"info","message":"New Token Address: 0x98E72C67e1d0B694049A03eceFCca2A31BDab99c","data":{}}
+{"timestamp":"2024-11-30T15:48:04.614Z","level":"info","message":"Pair token0: 0x98E72C67e1d0B694049A03eceFCca2A31BDab99c, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T15:48:04.718Z","level":"info","message":"Pair Reserves: reserve0 = 106938939925300560867, reserve1 = 2811419555500672227","data":{}}
+{"timestamp":"2024-11-30T15:48:04.719Z","level":"error","message":"Error evaluating pair 0xb5FA7Edfd5e3c27480763a066c2FA6b12fcE24e8: value must be a string (argument=\"value\", value=undefined, code=INVALID_ARGUMENT, version=units/5.7.0)","data":{}}
+{"timestamp":"2024-11-30T15:48:04.720Z","level":"info","message":"Pair 0xb5FA7Edfd5e3c27480763a066c2FA6b12fcE24e8 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T15:53:03.496Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:53:03.496Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:53:08.498Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:53:08.871Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T15:58:10.209Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T15:58:10.209Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T15:58:15.212Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T15:58:15.592Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:03:15.704Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:03:15.704Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:03:20.705Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:03:21.169Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:08:21.274Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:08:21.274Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:08:26.276Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:08:26.698Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:13:25.531Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:13:25.532Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:13:30.535Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:13:30.912Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:18:32.287Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:18:32.287Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:18:37.290Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:18:37.661Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:20:15.688Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xf75E36867744A49b2a41965E6Bb784C7f8E1D94c","pairAddress":"0xc150e0Ada20C4cc83E5D6D3421101545ACEAD75C"}}
+{"timestamp":"2024-11-30T16:20:15.689Z","level":"info","message":"Evaluating pair 0xc150e0Ada20C4cc83E5D6D3421101545ACEAD75C for viability.","data":{}}
+{"timestamp":"2024-11-30T16:20:15.689Z","level":"info","message":"New Token Address: 0xf75E36867744A49b2a41965E6Bb784C7f8E1D94c","data":{}}
+{"timestamp":"2024-11-30T16:20:16.091Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xf75E36867744A49b2a41965E6Bb784C7f8E1D94c","data":{}}
+{"timestamp":"2024-11-30T16:20:16.187Z","level":"info","message":"Pair Reserves: reserve0 = 1000000000000000000, reserve1 = 819000000000000000000000000","data":{}}
+{"timestamp":"2024-11-30T16:20:16.187Z","level":"error","message":"Error evaluating pair 0xc150e0Ada20C4cc83E5D6D3421101545ACEAD75C: value must be a string (argument=\"value\", value=undefined, code=INVALID_ARGUMENT, version=units/5.7.0)","data":{}}
+{"timestamp":"2024-11-30T16:20:16.188Z","level":"info","message":"Pair 0xc150e0Ada20C4cc83E5D6D3421101545ACEAD75C did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T16:25:16.195Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:25:16.196Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:25:21.199Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:25:21.593Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:30:21.712Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:30:21.713Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:30:26.716Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:30:27.144Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:35:25.953Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:35:25.954Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:35:30.956Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:35:31.335Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:40:32.735Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T16:40:32.735Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T16:40:37.737Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:40:38.133Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:53:45.466Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T16:54:16.973Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T16:54:17.023Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:54:17.094Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T16:54:17.473Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T16:54:17.570Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T16:54:17.579Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T16:54:17.691Z","level":"info","message":"Connected to the blockchain. Current block number: 21301815","data":{}}
+{"timestamp":"2024-11-30T16:54:17.691Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T16:54:17.692Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T16:54:17.696Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T16:54:46.543Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T18:46:04.750Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T18:46:15.754Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T18:46:15.798Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T18:46:15.878Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T18:46:16.308Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T18:46:16.417Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T18:46:16.429Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T18:46:16.543Z","level":"info","message":"Connected to the blockchain. Current block number: 21302371","data":{}}
+{"timestamp":"2024-11-30T18:46:16.544Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T18:46:16.544Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T18:46:16.548Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T18:47:47.890Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T18:47:57.769Z","level":"error","message":"Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T18:47:57.770Z","level":"error","message":"Error fetching trades: Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T18:48:00.698Z","level":"info","message":"Bot is already running.","data":{}}
+{"timestamp":"2024-11-30T18:48:11.768Z","level":"error","message":"Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T18:48:11.768Z","level":"error","message":"Error fetching trades: Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T18:49:50.833Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T18:50:50.148Z","level":"info","message":"Bot is already running.","data":{}}
+{"timestamp":"2024-11-30T18:50:53.679Z","level":"info","message":"Database connection is already closed.","data":{}}
+{"timestamp":"2024-11-30T18:50:53.679Z","level":"info","message":"Bot stopped.","data":{}}
+{"timestamp":"2024-11-30T18:50:55.721Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T18:50:55.724Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T18:50:55.735Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T18:50:56.120Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T18:50:56.217Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T18:50:56.220Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T18:50:56.324Z","level":"info","message":"Connected to the blockchain. Current block number: 21302394","data":{}}
+{"timestamp":"2024-11-30T18:50:56.324Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T18:50:56.325Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T18:50:56.325Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T18:51:08.971Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T18:55:53.789Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T18:55:53.790Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T18:55:58.793Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T18:55:59.179Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T19:09:01.427Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x662F58Ad92C03d42516859cfBec5DaF70bcA59a3","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x80777279644b44cBA3F5EC23B4AACDf76b106793"}}
+{"timestamp":"2024-11-30T19:09:01.428Z","level":"info","message":"New Token Address: 0x662F58Ad92C03d42516859cfBec5DaF70bcA59a3","data":{}}
+{"timestamp":"2024-11-30T19:09:01.428Z","level":"info","message":"Evaluating pair 0x80777279644b44cBA3F5EC23B4AACDf76b106793 for viability.","data":{}}
+{"timestamp":"2024-11-30T19:09:01.842Z","level":"info","message":"Pair token0: 0x662F58Ad92C03d42516859cfBec5DaF70bcA59a3, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T19:09:01.940Z","level":"info","message":"Pair Reserves: reserve0 = 399000000000000000, reserve1 = 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T19:09:01.942Z","level":"error","message":"Pair reserves too low. reserve0: 399000000000000000, reserve1: 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T19:09:01.942Z","level":"info","message":"Pair 0x80777279644b44cBA3F5EC23B4AACDf76b106793 did not pass evaluation. Ignoring.","data":{}}

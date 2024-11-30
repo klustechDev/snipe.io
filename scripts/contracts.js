@@ -1,15 +1,10 @@
 // scripts/contracts.js
 
-/**
- * contracts.js
- * 
- * Initializes blockchain contracts and related providers.
- */
-
 const { ethers } = require('ethers');
 const { FlashbotsBundleProvider } = require('@flashbots/ethers-provider-bundle');
 const { logMessage } = require('./logging');
 const { getSettings } = require('./settings');
+const WebSocket = require('ws'); // Import the WebSocket library
 
 let provider, wallet, factoryContract, routerContract, flashbotsProvider;
 
@@ -28,8 +23,7 @@ async function initContracts() {
         }
         if (!/^0x[a-fA-F0-9]{64}$/.test(privateKey)) {
             if (/^[a-fA-F0-9]{64}$/.test(privateKey)) {
-                // Add '0x' prefix if missing
-                privateKey = '0x' + privateKey;
+                privateKey = '0x' + privateKey; // Add '0x' prefix if missing
             } else {
                 throw new Error('Invalid PRIVATE_KEY format in .env file.');
             }
@@ -59,6 +53,15 @@ async function initContracts() {
 
                 provider._websocket.on('open', () => {
                     logMessage('WebSocket connection established.', {}, 'info');
+
+                    // Heartbeat to prevent disconnection
+                    const heartbeat = setInterval(() => {
+                        if (provider._websocket.readyState === WebSocket.OPEN) {
+                            provider._websocket.ping();
+                        } else {
+                            clearInterval(heartbeat);
+                        }
+                    }, 30000); // Ping every 30 seconds
                 });
 
                 logMessage('WebSocketProvider initialized.', {}, 'info');

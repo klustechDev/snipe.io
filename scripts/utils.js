@@ -1,8 +1,14 @@
 // scripts/utils.js
 
+/**
+ * utils.js
+ * 
+ * Contains utility functions for the bot.
+ */
+
 const { ethers } = require('ethers');
 const { logMessage } = require('./logging');
-const settings = require('./settings'); // Import settings directly
+const { getSettings } = require('./settings'); // Import settings directly
 const { getProvider, getRouterContract } = require('./contracts'); // Import getter functions
 
 /**
@@ -27,7 +33,7 @@ function validateProvider() {
  */
 async function evaluatePair(pairAddress, token0, token1) {
     try {
-        logMessage(`Evaluating pair ${pairAddress} for viability.`, {});
+        logMessage(`Evaluating pair ${pairAddress} for viability.`, {}, 'info');
 
         // Validate provider initialization
         const provider = validateProvider();
@@ -51,7 +57,7 @@ async function evaluatePair(pairAddress, token0, token1) {
         const pairToken0 = await pairContract.token0();
         const pairToken1 = await pairContract.token1();
 
-        logMessage(`Pair token0: ${pairToken0}, token1: ${pairToken1}`, {});
+        logMessage(`Pair token0: ${pairToken0}, token1: ${pairToken1}`, {}, 'info');
 
         if (
             pairToken0.toLowerCase() !== token0.toLowerCase() ||
@@ -66,20 +72,34 @@ async function evaluatePair(pairAddress, token0, token1) {
         }
 
         // Get reserves
-        const [reserve0, reserve1] = await pairContract.getReserves();
+        const reserves = await pairContract.getReserves();
 
-        logMessage(`Pair Reserves: reserve0 = ${reserve0.toString()}, reserve1 = ${reserve1.toString()}`, {});
+        if (!reserves) {
+            logMessage(`Failed to fetch reserves for pair ${pairAddress}`, {}, 'error');
+            return false;
+        }
+
+        const reserve0 = reserves.reserve0.toString(); // Ensure string format
+        const reserve1 = reserves.reserve1.toString();
+
+        logMessage(`Pair Reserves: reserve0 = ${reserve0}, reserve1 = ${reserve1}`, {}, 'info');
 
         // Ensure reserves meet minimum threshold
-        const minReserve = ethers.utils.parseUnits(settings.MIN_RESERVE_AMOUNT, 18);
-        if (reserve0.lt(minReserve) || reserve1.lt(minReserve)) {
-            logMessage(`Pair reserves too low. reserve0: ${reserve0.toString()}, reserve1: ${reserve1.toString()}`, {}, 'error');
+        if (!reserve0 || !reserve1) {
+            logMessage(`Invalid reserve values for pair ${pairAddress}`, {}, 'error');
+            return false;
+        }
+
+        const minReserve = ethers.utils.parseUnits(getSettings().MIN_RESERVE_AMOUNT.toString(), 18);
+
+        if (ethers.BigNumber.from(reserve0).lt(minReserve) || ethers.BigNumber.from(reserve1).lt(minReserve)) {
+            logMessage(`Pair reserves too low. reserve0: ${reserve0}, reserve1: ${reserve1}`, {}, 'error');
             return false;
         }
 
         // Additional criteria can be added here (e.g., slippage, token properties)
 
-        logMessage(`Pair ${pairAddress} passed evaluation.`, {});
+        logMessage(`Pair ${pairAddress} passed evaluation.`, {}, 'info');
 
         return true;
     } catch (error) {
@@ -101,12 +121,12 @@ async function getAdjustedGasPrice() {
         let maxFeePerGas = gasPriceData.maxFeePerGas;
         let maxPriorityFeePerGas = gasPriceData.maxPriorityFeePerGas;
 
-        if (settings.GAS_PRICE_MULTIPLIER) {
-            maxFeePerGas = maxFeePerGas.mul(settings.GAS_PRICE_MULTIPLIER).div(100);
-            maxPriorityFeePerGas = maxPriorityFeePerGas.mul(settings.GAS_PRICE_MULTIPLIER).div(100);
+        if (getSettings().GAS_PRICE_MULTIPLIER) {
+            maxFeePerGas = maxFeePerGas.mul(getSettings().GAS_PRICE_MULTIPLIER).div(100);
+            maxPriorityFeePerGas = maxPriorityFeePerGas.mul(getSettings().GAS_PRICE_MULTIPLIER).div(100);
         }
 
-        logMessage(`Adjusted Gas Prices: maxFeePerGas = ${ethers.utils.formatUnits(maxFeePerGas, 'gwei')} gwei, maxPriorityFeePerGas = ${ethers.utils.formatUnits(maxPriorityFeePerGas, 'gwei')} gwei`, {});
+        logMessage(`Adjusted Gas Prices: maxFeePerGas = ${ethers.utils.formatUnits(maxFeePerGas, 'gwei')} gwei, maxPriorityFeePerGas = ${ethers.utils.formatUnits(maxPriorityFeePerGas, 'gwei')} gwei`, {}, 'info');
 
         return {
             maxFeePerGas,
@@ -128,17 +148,17 @@ async function getAdjustedGasPrice() {
  */
 async function monitorTokenPrice(tokenAddress) {
     try {
-        logMessage(`Starting price monitoring for token ${tokenAddress}.`, {});
+        logMessage(`Starting price monitoring for token ${tokenAddress}.`, {}, 'info');
 
-        const targetProfitPercentage = settings.PROFIT_THRESHOLD; // e.g., 5 for 5%
-        const checkPriceInterval = settings.CHECK_INTERVAL * 1000; // in milliseconds
+        const targetProfitPercentage = getSettings().PROFIT_THRESHOLD; // e.g., 5 for 5%
+        const checkPriceInterval = getSettings().CHECK_INTERVAL * 1000; // in milliseconds
 
         const initialPrice = await getTokenPrice(tokenAddress);
         if (initialPrice === 0) {
             logMessage(`Initial price of token ${tokenAddress} could not be fetched. Skipping monitoring.`, {}, 'error');
             return;
         }
-        logMessage(`Initial price of token ${tokenAddress}: ${initialPrice} ETH`, {});
+        logMessage(`Initial price of token ${tokenAddress}: ${initialPrice} ETH`, {}, 'info');
 
         const interval = setInterval(async () => {
             try {
@@ -147,15 +167,15 @@ async function monitorTokenPrice(tokenAddress) {
                     logMessage(`Current price of token ${tokenAddress} could not be fetched. Continuing monitoring.`, {}, 'error');
                     return;
                 }
-                logMessage(`Current price of token ${tokenAddress}: ${currentPrice} ETH`, {});
+                logMessage(`Current price of token ${tokenAddress}: ${currentPrice} ETH`, {}, 'info');
 
                 const priceChange = ((currentPrice - initialPrice) / initialPrice) * 100;
-                logMessage(`Price change: ${priceChange.toFixed(2)}%`, {});
+                logMessage(`Price change: ${priceChange.toFixed(2)}%`, {}, 'info');
 
                 if (priceChange >= targetProfitPercentage) {
-                    logMessage(`Target profit of ${targetProfitPercentage}% reached. Initiating sell.`, {});
+                    logMessage(`Target profit of ${targetProfitPercentage}% reached. Initiating sell.`, {}, 'info');
                     clearInterval(interval);
-                    const { executeSell } = require('./tradingOperations');
+                    const { executeSell } = require('./tradingOperations'); // Ensure this module exists
                     await executeSell(tokenAddress);
                 }
             } catch (error) {
@@ -176,6 +196,7 @@ async function monitorTokenPrice(tokenAddress) {
 async function getTokenPrice(tokenAddress) {
     try {
         const routerContract = getRouterContract(); // Use getter to get routerContract
+        const settings = getSettings();
         const path = [settings.BASE_TOKEN_ADDRESS, tokenAddress];
         const amountIn = ethers.utils.parseEther('1'); // 1 WETH
 

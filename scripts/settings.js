@@ -6,6 +6,8 @@
  * Centralizes the loading and management of environment variables.
  */
 
+require('dotenv').config(); // Ensure environment variables are loaded
+
 const settings = {
     // Ethereum Addresses
     BASE_TOKEN_ADDRESS: process.env.BASE_TOKEN_ADDRESS,
@@ -22,7 +24,7 @@ const settings = {
     // Trading Settings
     ETH_AMOUNT_TO_SWAP: process.env.ETH_AMOUNT_TO_SWAP || '0.1',
     GAS_PRICE_MULTIPLIER: parseInt(process.env.GAS_PRICE_MULTIPLIER, 10) || 120,
-    MIN_RESERVE_AMOUNT: parseInt(process.env.MIN_RESERVE_AMOUNT, 10) || 1000,
+    MIN_RESERVE_AMOUNT: process.env.MIN_RESERVE_AMOUNT || '1000', // Keep as string for parseUnits
     MONITOR_DURATION: parseInt(process.env.MONITOR_DURATION, 10) || 300,
     PROFIT_THRESHOLD: parseFloat(process.env.PROFIT_THRESHOLD) || 5,
     CHECK_INTERVAL: parseInt(process.env.CHECK_INTERVAL, 10) || 60,
