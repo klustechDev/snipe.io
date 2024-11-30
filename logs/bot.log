@@ -1404,3 +1404,110 @@
 {"timestamp":"2024-11-30T19:09:01.940Z","level":"info","message":"Pair Reserves: reserve0 = 399000000000000000, reserve1 = 1000000000000000000","data":{}}
 {"timestamp":"2024-11-30T19:09:01.942Z","level":"error","message":"Pair reserves too low. reserve0: 399000000000000000, reserve1: 1000000000000000000","data":{}}
 {"timestamp":"2024-11-30T19:09:01.942Z","level":"info","message":"Pair 0x80777279644b44cBA3F5EC23B4AACDf76b106793 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T19:11:49.694Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x958391F25b8e73acB237cB27dbA425DEe6b91cFF","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xed64594Ec895442D0e637F641Fd5e2AcB996013D"}}
+{"timestamp":"2024-11-30T19:11:49.694Z","level":"info","message":"New Token Address: 0x958391F25b8e73acB237cB27dbA425DEe6b91cFF","data":{}}
+{"timestamp":"2024-11-30T19:11:49.695Z","level":"info","message":"Evaluating pair 0xed64594Ec895442D0e637F641Fd5e2AcB996013D for viability.","data":{}}
+{"timestamp":"2024-11-30T19:11:50.070Z","level":"info","message":"Pair token0: 0x958391F25b8e73acB237cB27dbA425DEe6b91cFF, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T19:11:50.199Z","level":"info","message":"Pair Reserves: reserve0 = 26665156889980815, reserve1 = 3764851788499891378","data":{}}
+{"timestamp":"2024-11-30T19:11:50.199Z","level":"error","message":"Pair reserves too low. reserve0: 26665156889980815, reserve1: 3764851788499891378","data":{}}
+{"timestamp":"2024-11-30T19:11:50.200Z","level":"info","message":"Pair 0xed64594Ec895442D0e637F641Fd5e2AcB996013D did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T19:12:25.616Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x86bFA72dF89AC12A7831a8861d1555b585030c88","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x78aba267Caf1fA559795d89619a8481B68ec95c4"}}
+{"timestamp":"2024-11-30T19:12:25.616Z","level":"info","message":"New Token Address: 0x86bFA72dF89AC12A7831a8861d1555b585030c88","data":{}}
+{"timestamp":"2024-11-30T19:12:25.616Z","level":"info","message":"Evaluating pair 0x78aba267Caf1fA559795d89619a8481B68ec95c4 for viability.","data":{}}
+{"timestamp":"2024-11-30T19:12:25.942Z","level":"info","message":"Pair token0: 0x86bFA72dF89AC12A7831a8861d1555b585030c88, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T19:12:26.044Z","level":"info","message":"Pair Reserves: reserve0 = 30000000000000000, reserve1 = 3345199027531575091","data":{}}
+{"timestamp":"2024-11-30T19:12:26.045Z","level":"error","message":"Pair reserves too low. reserve0: 30000000000000000, reserve1: 3345199027531575091","data":{}}
+{"timestamp":"2024-11-30T19:12:26.045Z","level":"info","message":"Pair 0x78aba267Caf1fA559795d89619a8481B68ec95c4 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T20:05:50.730Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x29A16a07B346baB125e6786223fAE40faD08c76a","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x53aA1e045a0eF3f652aDf1BBFc6eBf7a38174568"}}
+{"timestamp":"2024-11-30T20:05:50.731Z","level":"info","message":"Evaluating pair 0x53aA1e045a0eF3f652aDf1BBFc6eBf7a38174568 for viability.","data":{}}
+{"timestamp":"2024-11-30T20:05:50.730Z","level":"info","message":"New Token Address: 0x29A16a07B346baB125e6786223fAE40faD08c76a","data":{}}
+{"timestamp":"2024-11-30T20:05:51.086Z","level":"info","message":"Pair token0: 0x29A16a07B346baB125e6786223fAE40faD08c76a, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T20:05:51.188Z","level":"info","message":"Pair Reserves: reserve0 = 336579600000000000000, reserve1 = 850000000000000000","data":{}}
+{"timestamp":"2024-11-30T20:05:51.189Z","level":"error","message":"Pair reserves too low. reserve0: 336579600000000000000, reserve1: 850000000000000000","data":{}}
+{"timestamp":"2024-11-30T20:05:51.189Z","level":"info","message":"Pair 0x53aA1e045a0eF3f652aDf1BBFc6eBf7a38174568 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T20:59:25.687Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xa2359C5c693d42Af4C71b92136EB0Cfbb78F3BAa","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xd98d929EBc79856BBaEB783561294999c424211B"}}
+{"timestamp":"2024-11-30T20:59:25.687Z","level":"info","message":"New Token Address: 0xa2359C5c693d42Af4C71b92136EB0Cfbb78F3BAa","data":{}}
+{"timestamp":"2024-11-30T20:59:25.687Z","level":"info","message":"Evaluating pair 0xd98d929EBc79856BBaEB783561294999c424211B for viability.","data":{}}
+{"timestamp":"2024-11-30T20:59:26.006Z","level":"info","message":"Pair token0: 0xa2359C5c693d42Af4C71b92136EB0Cfbb78F3BAa, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T20:59:26.105Z","level":"info","message":"Pair Reserves: reserve0 = 680218216000000000, reserve1 = 51458493640010994","data":{}}
+{"timestamp":"2024-11-30T20:59:26.106Z","level":"error","message":"Pair reserves too low. reserve0: 680218216000000000, reserve1: 51458493640010994","data":{}}
+{"timestamp":"2024-11-30T20:59:26.107Z","level":"info","message":"Pair 0xd98d929EBc79856BBaEB783561294999c424211B did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T21:10:42.679Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xe3a9640f959c5aa92DBFaC0073180903c30aF29c","pairAddress":"0xce90c4fdc8EebEdb445C11d9515A49E9B6F378ca"}}
+{"timestamp":"2024-11-30T21:10:42.679Z","level":"info","message":"New Token Address: 0xe3a9640f959c5aa92DBFaC0073180903c30aF29c","data":{}}
+{"timestamp":"2024-11-30T21:10:42.679Z","level":"info","message":"Evaluating pair 0xce90c4fdc8EebEdb445C11d9515A49E9B6F378ca for viability.","data":{}}
+{"timestamp":"2024-11-30T21:10:43.167Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xe3a9640f959c5aa92DBFaC0073180903c30aF29c","data":{}}
+{"timestamp":"2024-11-30T21:10:43.278Z","level":"info","message":"Pair Reserves: reserve0 = 3000000000000000000, reserve1 = 3000000000000000000000","data":{}}
+{"timestamp":"2024-11-30T21:10:43.279Z","level":"error","message":"Pair reserves too low. reserve0: 3000000000000000000, reserve1: 3000000000000000000000","data":{}}
+{"timestamp":"2024-11-30T21:10:43.280Z","level":"info","message":"Pair 0xce90c4fdc8EebEdb445C11d9515A49E9B6F378ca did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T21:12:11.230Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T21:12:42.564Z","level":"error","message":"Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T21:12:42.565Z","level":"error","message":"Error fetching trades: Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T21:12:45.676Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T21:12:45.721Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T21:12:45.803Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T21:12:46.165Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T21:12:46.261Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T21:12:46.277Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T21:12:46.378Z","level":"info","message":"Connected to the blockchain. Current block number: 21303098","data":{}}
+{"timestamp":"2024-11-30T21:12:46.378Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T21:12:46.379Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T21:12:46.381Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T21:13:02.059Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T21:13:07.501Z","level":"error","message":"Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T21:13:07.502Z","level":"error","message":"Error fetching trades: Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T21:14:50.110Z","level":"info","message":"Database connection is already closed.","data":{}}
+{"timestamp":"2024-11-30T21:14:50.111Z","level":"info","message":"Bot stopped.","data":{}}
+{"timestamp":"2024-11-30T21:14:55.302Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T21:14:55.305Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T21:14:55.311Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T21:14:55.691Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T21:14:55.786Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T21:14:55.788Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T21:14:55.890Z","level":"info","message":"Connected to the blockchain. Current block number: 21303109","data":{}}
+{"timestamp":"2024-11-30T21:14:55.890Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T21:14:55.890Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T21:14:55.891Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T21:15:06.386Z","level":"error","message":"Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T21:15:06.386Z","level":"error","message":"Error fetching trades: Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T21:15:20.311Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T21:19:50.213Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-30T21:19:50.213Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-30T21:19:55.216Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T21:19:55.594Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T21:26:13.300Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x8961D585436393Abc4a7B65FfBD22e7d3E6653C9","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xeA23c5Eb8911b69545Cbf8208cDcD2dC25776CDe"}}
+{"timestamp":"2024-11-30T21:26:13.301Z","level":"info","message":"Evaluating pair 0xeA23c5Eb8911b69545Cbf8208cDcD2dC25776CDe for viability.","data":{}}
+{"timestamp":"2024-11-30T21:26:13.301Z","level":"info","message":"New Token Address: 0x8961D585436393Abc4a7B65FfBD22e7d3E6653C9","data":{}}
+{"timestamp":"2024-11-30T21:26:13.715Z","level":"info","message":"Pair token0: 0x8961D585436393Abc4a7B65FfBD22e7d3E6653C9, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T21:26:13.809Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T21:26:13.811Z","level":"error","message":"Pair reserves too low. reserve0: 0, reserve1: 0","data":{}}
+{"timestamp":"2024-11-30T21:26:13.811Z","level":"info","message":"Pair 0xeA23c5Eb8911b69545Cbf8208cDcD2dC25776CDe did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T21:29:43.043Z","level":"info","message":"Settings updated successfully.","data":{}}
+{"timestamp":"2024-11-30T21:35:49.762Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x6C03DF915277Bf90fAfdC134060bE02ECbEa42bC","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xf67e70B5FDB94badb4B0a0f2Da3Fc5E8707F7406"}}
+{"timestamp":"2024-11-30T21:35:49.763Z","level":"info","message":"Evaluating pair 0xf67e70B5FDB94badb4B0a0f2Da3Fc5E8707F7406 for viability.","data":{}}
+{"timestamp":"2024-11-30T21:35:49.763Z","level":"info","message":"New Token Address: 0x6C03DF915277Bf90fAfdC134060bE02ECbEa42bC","data":{}}
+{"timestamp":"2024-11-30T21:35:50.084Z","level":"info","message":"Pair token0: 0x6C03DF915277Bf90fAfdC134060bE02ECbEa42bC, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T21:35:50.181Z","level":"info","message":"Pair Reserves: reserve0 = 10000000000000000000000000000, reserve1 = 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T21:35:50.182Z","level":"error","message":"Pair reserves too low. reserve0: 10000000000000000000000000000, reserve1: 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T21:35:50.182Z","level":"info","message":"Pair 0xf67e70B5FDB94badb4B0a0f2Da3Fc5E8707F7406 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T21:41:50.204Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xD3e534F683BD3685f4080f62119bBC8e04e8Fa2A","pairAddress":"0x6E7FE3428816cbD1CB1788aa84d04C4a08248b02"}}
+{"timestamp":"2024-11-30T21:41:50.204Z","level":"info","message":"New Token Address: 0xD3e534F683BD3685f4080f62119bBC8e04e8Fa2A","data":{}}
+{"timestamp":"2024-11-30T21:41:50.204Z","level":"info","message":"Evaluating pair 0x6E7FE3428816cbD1CB1788aa84d04C4a08248b02 for viability.","data":{}}
+{"timestamp":"2024-11-30T21:41:50.517Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xD3e534F683BD3685f4080f62119bBC8e04e8Fa2A","data":{}}
+{"timestamp":"2024-11-30T21:41:50.612Z","level":"info","message":"Pair Reserves: reserve0 = 50468564003274601, reserve1 = 693520384000000000","data":{}}
+{"timestamp":"2024-11-30T21:41:50.613Z","level":"info","message":"Pair 0x6E7FE3428816cbD1CB1788aa84d04C4a08248b02 did not pass evaluation. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T21:41:50.613Z","level":"error","message":"Pair reserves too low. reserve0: 50468564003274601, reserve1: 693520384000000000","data":{}}
+{"timestamp":"2024-11-30T22:14:26.420Z","level":"info","message":"Backend server is running on port 3001","data":{}}
+{"timestamp":"2024-11-30T22:14:52.471Z","level":"error","message":"Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T22:14:52.472Z","level":"error","message":"Error fetching trades: Database is not initialized.","data":{}}
+{"timestamp":"2024-11-30T22:15:17.464Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T22:15:17.557Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T22:15:17.809Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T22:15:18.224Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T22:15:18.321Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T22:15:18.337Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T22:15:18.439Z","level":"info","message":"Connected to the blockchain. Current block number: 21303410","data":{}}
+{"timestamp":"2024-11-30T22:15:18.440Z","level":"info","message":"Database initialized.","data":{}}
+{"timestamp":"2024-11-30T22:15:18.440Z","level":"info","message":"Bot started.","data":{}}
+{"timestamp":"2024-11-30T22:15:18.443Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T22:15:28.544Z","level":"info","message":"Received settings update: {\"ETH_AMOUNT_TO_SWAP\":\"0.1\",\"SLIPPAGE_TOLERANCE\":5,\"GAS_PRICE_MULTIPLIER\":120,\"PROFIT_THRESHOLD\":5,\"DEADLINE_BUFFER\":60,\"MINIMUM_LOCKED_ETH\":\"1\",\"MAX_GAS_PRICE\":\"200\",\"TOKEN_WHITELIST\":[],\"TOKEN_BLACKLIST\":[]}","data":{}}
+{"timestamp":"2024-11-30T22:15:28.545Z","level":"info","message":"Settings updated successfully.","data":{}}

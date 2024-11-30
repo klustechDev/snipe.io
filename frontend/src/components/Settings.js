@@ -18,34 +18,53 @@ const Settings = () => {
     TOKEN_BLACKLIST: '',
   });
 
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  /**
+   * Fetches current settings from the backend.
+   */
   const fetchSettings = async () => {
+    setLoading(true);
+    setError(null);
     try {
       const response = await axios.get('http://localhost:3001/api/settings');
       const fetchedSettings = response.data;
       setSettings({
-        ETH_AMOUNT_TO_SWAP: fetchedSettings.ETH_AMOUNT_TO_SWAP,
-        SLIPPAGE_TOLERANCE: fetchedSettings.SLIPPAGE_TOLERANCE,
-        GAS_PRICE_MULTIPLIER: fetchedSettings.GAS_PRICE_MULTIPLIER,
-        PROFIT_THRESHOLD: fetchedSettings.PROFIT_THRESHOLD,
-        DEADLINE_BUFFER: fetchedSettings.DEADLINE_BUFFER,
-        MINIMUM_LOCKED_ETH: fetchedSettings.MINIMUM_LOCKED_ETH,
-        MAX_GAS_PRICE: fetchedSettings.MAX_GAS_PRICE,
-        TOKEN_WHITELIST: fetchedSettings.TOKEN_WHITELIST.join(', '),
-        TOKEN_BLACKLIST: fetchedSettings.TOKEN_BLACKLIST.join(', '),
+        ETH_AMOUNT_TO_SWAP: fetchedSettings.ETH_AMOUNT_TO_SWAP || '0.05',
+        SLIPPAGE_TOLERANCE: fetchedSettings.SLIPPAGE_TOLERANCE || 5,
+        GAS_PRICE_MULTIPLIER: fetchedSettings.GAS_PRICE_MULTIPLIER || 1.2,
+        PROFIT_THRESHOLD: fetchedSettings.PROFIT_THRESHOLD || 10,
+        DEADLINE_BUFFER: fetchedSettings.DEADLINE_BUFFER || 60,
+        MINIMUM_LOCKED_ETH: fetchedSettings.MINIMUM_LOCKED_ETH || '0.5',
+        MAX_GAS_PRICE: fetchedSettings.MAX_GAS_PRICE || '200',
+        TOKEN_WHITELIST: Array.isArray(fetchedSettings.TOKEN_WHITELIST)
+          ? fetchedSettings.TOKEN_WHITELIST.join(', ')
+          : '',
+        TOKEN_BLACKLIST: Array.isArray(fetchedSettings.TOKEN_BLACKLIST)
+          ? fetchedSettings.TOKEN_BLACKLIST.join(', ')
+          : '',
       });
     } catch (error) {
       console.error('Error fetching settings:', error);
+      setError('Failed to fetch settings.');
     }
+    setLoading(false);
   };
 
+  /**
+   * Sends updated settings to the backend.
+   */
   const updateSettingsHandler = async () => {
+    setLoading(true);
+    setError(null);
     try {
       const updatedSettings = {
         ETH_AMOUNT_TO_SWAP: settings.ETH_AMOUNT_TO_SWAP,
         SLIPPAGE_TOLERANCE: parseFloat(settings.SLIPPAGE_TOLERANCE),
         GAS_PRICE_MULTIPLIER: parseFloat(settings.GAS_PRICE_MULTIPLIER),
         PROFIT_THRESHOLD: parseFloat(settings.PROFIT_THRESHOLD),
-        DEADLINE_BUFFER: parseInt(settings.DEADLINE_BUFFER),
+        DEADLINE_BUFFER: parseInt(settings.DEADLINE_BUFFER, 10),
         MINIMUM_LOCKED_ETH: settings.MINIMUM_LOCKED_ETH,
         MAX_GAS_PRICE: settings.MAX_GAS_PRICE,
         TOKEN_WHITELIST: settings.TOKEN_WHITELIST
@@ -58,10 +77,13 @@ const Settings = () => {
 
       await axios.post('http://localhost:3001/api/settings', updatedSettings);
       alert('Settings updated successfully!');
+      fetchSettings(); // Refresh settings after update
     } catch (error) {
       console.error('Error updating settings:', error);
+      setError('Failed to update settings.');
       alert('Failed to update settings.');
     }
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -76,6 +98,8 @@ const Settings = () => {
         <Link to="/settings">Settings</Link>
       </div>
       <h2>Settings</h2>
+      {loading && <p>Loading...</p>}
+      {error && <p className="error">{error}</p>}
       <form className="settings-form" onSubmit={e => e.preventDefault()}>
         <label className="label">
           ETH Amount to Swap:
@@ -161,8 +185,8 @@ const Settings = () => {
             className="input"
           />
         </label>
-        <button className="button" onClick={updateSettingsHandler}>
-          Update Settings
+        <button className="button" onClick={updateSettingsHandler} disabled={loading}>
+          {loading ? 'Updating...' : 'Update Settings'}
         </button>
       </form>
     </div>

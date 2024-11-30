@@ -2,7 +2,7 @@
 
 /**
  * server.js
- * 
+ *
  * Sets up the Express server and defines API endpoints.
  */
 
@@ -89,6 +89,7 @@ app.get('/api/settings', (req, res) => {
 app.post('/api/settings', (req, res) => {
     try {
         const newSettings = req.body;
+        logMessage(`Received settings update: ${JSON.stringify(newSettings)}`, {}, 'info');
         updateSettings(newSettings);
         logMessage('Settings updated successfully.', {}, 'info');
         res.json({ status: 'Settings updated successfully.' });
