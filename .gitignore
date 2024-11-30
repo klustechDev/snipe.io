@@ -29,3 +29,5 @@ MOCK_TOKEN_ADDRESS=0x021DBfF4A864Aa25c51F0ad2Cd73266Fde66199d
 RPC_URL=https://mainnet.infura.io/v3/e731a404e7e542038fb8cd0d5d83f763
 .env
 .env
+.env
+.env

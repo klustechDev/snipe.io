@@ -1,0 +1,987 @@
+{"timestamp":"2024-11-29T12:32:22.383Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T12:32:22.389Z","level":"error","message":"Error starting the bot: Cannot read properties of undefined (reading 'on')","data":{}}
+{"timestamp":"2024-11-29T12:32:22.395Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T12:32:22.414Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T12:36:23.936Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T12:36:23.942Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T12:36:23.943Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T12:36:23.948Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T12:39:12.629Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T12:39:12.630Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T12:39:12.636Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T12:39:12.641Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T12:44:31.977Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T12:44:31.983Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T12:44:31.984Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T12:44:31.986Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:00:17.746Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:00:17.747Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T13:00:17.756Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:00:17.761Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:01:20.377Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:01:20.378Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T13:01:20.379Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:01:20.382Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:09:03.543Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:09:03.544Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T13:09:03.549Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:09:03.553Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:09:40.344Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:09:40.345Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T13:09:40.346Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:09:40.348Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:14:13.130Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:14:13.131Z","level":"error","message":"Error initializing contracts: Invalid PRIVATE_KEY in .env file.","data":{}}
+{"timestamp":"2024-11-29T13:14:13.132Z","level":"error","message":"Error starting the bot: Invalid PRIVATE_KEY in .env file.","data":{}}
+{"timestamp":"2024-11-29T13:14:13.136Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:14:13.145Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:43:02.673Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:43:02.820Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:43:02.731Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T13:43:02.813Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T13:43:02.826Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:48:16.477Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:48:16.528Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T13:48:16.606Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T13:48:16.610Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:48:16.614Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:50:04.488Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:50:04.539Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T13:50:04.628Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T13:50:04.632Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:50:04.634Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:54:20.983Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T13:54:21.035Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T13:54:21.126Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T13:54:21.134Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T13:54:21.139Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T13:54:21.141Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T13:54:21.492Z","level":"error","message":"WebSocket error: Unexpected server response: 404","data":{}}
+{"timestamp":"2024-11-29T13:54:21.493Z","level":"error","message":"WebSocket closed: 1006 - ","data":{}}
+{"timestamp":"2024-11-29T14:01:44.016Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T14:01:44.071Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:01:44.151Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:01:44.159Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:01:44.163Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T14:01:44.167Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T14:01:44.514Z","level":"error","message":"WebSocket error: Unexpected server response: 404","data":{}}
+{"timestamp":"2024-11-29T14:01:44.515Z","level":"error","message":"WebSocket closed: 1006 - ","data":{}}
+{"timestamp":"2024-11-29T14:06:48.815Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T14:06:48.966Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T14:06:48.878Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:06:48.950Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:06:48.957Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:06:48.972Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T14:06:49.315Z","level":"error","message":"WebSocket error: Unexpected server response: 404","data":{}}
+{"timestamp":"2024-11-29T14:06:49.316Z","level":"error","message":"WebSocket closed: 1006 - ","data":{}}
+{"timestamp":"2024-11-29T14:14:56.053Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T14:14:56.145Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:14:56.299Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:14:56.312Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T14:14:56.322Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T14:14:56.686Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:14:56.781Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:14:56.789Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:14:56.886Z","level":"info","message":"Connected to the blockchain. Current block number: 21293876","data":{}}
+{"timestamp":"2024-11-29T14:14:56.886Z","level":"error","message":"Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T14:17:43.998Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T14:17:44.052Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:17:44.135Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:17:44.141Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T14:17:44.148Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T14:17:44.512Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:17:44.613Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:17:44.621Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:17:44.725Z","level":"error","message":"Error starting the bot: Provider initialization failed. Please check the WebSocket configuration.","data":{}}
+{"timestamp":"2024-11-29T14:17:44.724Z","level":"info","message":"Connected to the blockchain. Current block number: 21293890","data":{}}
+{"timestamp":"2024-11-29T14:19:44.513Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T14:19:44.562Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:19:44.645Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:19:44.652Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T14:19:44.654Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T14:19:45.028Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:19:45.126Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:19:45.135Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:19:45.245Z","level":"info","message":"Connected to the blockchain. Current block number: 21293900","data":{}}
+{"timestamp":"2024-11-29T14:19:45.246Z","level":"error","message":"Error starting the bot: Cannot read properties of undefined (reading 'getBlockNumber')","data":{}}
+{"timestamp":"2024-11-29T14:21:14.078Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T14:21:14.130Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:21:14.218Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:21:14.223Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T14:21:14.232Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T14:21:14.590Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:21:14.686Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:21:14.693Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:21:14.796Z","level":"error","message":"Error starting the bot: Provider initialization failed. Provider is undefined.","data":{}}
+{"timestamp":"2024-11-29T14:21:14.795Z","level":"info","message":"Connected to the blockchain. Current block number: 21293907","data":{}}
+{"timestamp":"2024-11-29T14:22:45.510Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T14:22:45.560Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:22:45.646Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:22:45.650Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T14:22:45.653Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T14:22:46.010Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:22:46.106Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:22:46.115Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:22:46.214Z","level":"error","message":"Error starting the bot: Provider initialization failed. Provider is undefined.","data":{}}
+{"timestamp":"2024-11-29T14:22:46.214Z","level":"info","message":"Connected to the blockchain. Current block number: 21293915","data":{}}
+{"timestamp":"2024-11-29T14:27:46.227Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-29T14:27:46.228Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-29T14:27:51.231Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:27:51.237Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:27:51.645Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:27:51.739Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:27:51.742Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:27:51.855Z","level":"info","message":"Connected to the blockchain. Current block number: 21293941","data":{}}
+{"timestamp":"2024-11-29T14:32:51.853Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-29T14:32:51.853Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-29T14:32:56.856Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:32:56.863Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:32:57.257Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:32:57.374Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:32:57.376Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:32:57.479Z","level":"info","message":"Connected to the blockchain. Current block number: 21293966","data":{}}
+{"timestamp":"2024-11-29T14:37:57.489Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-29T14:37:57.490Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-29T14:38:02.493Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:38:02.497Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:38:02.898Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:38:02.987Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:38:02.989Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:38:03.088Z","level":"info","message":"Connected to the blockchain. Current block number: 21293992","data":{}}
+{"timestamp":"2024-11-29T14:43:03.099Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-29T14:43:03.099Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-29T14:43:08.101Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:43:08.107Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:43:08.467Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:43:08.558Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:43:08.560Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:43:08.658Z","level":"info","message":"Connected to the blockchain. Current block number: 21294017","data":{}}
+{"timestamp":"2024-11-29T14:48:08.668Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-29T14:48:08.669Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-29T14:48:13.671Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:48:13.674Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:48:14.113Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:48:14.234Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:48:14.236Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:48:14.381Z","level":"info","message":"Connected to the blockchain. Current block number: 21294043","data":{}}
+{"timestamp":"2024-11-29T14:53:14.391Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-29T14:53:14.392Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-29T14:53:19.395Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:53:19.398Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:53:19.802Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:53:19.897Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:53:19.899Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:53:19.999Z","level":"info","message":"Connected to the blockchain. Current block number: 21294067","data":{}}
+{"timestamp":"2024-11-29T14:58:20.009Z","level":"info","message":"Attempting to reconnect in 5 seconds...","data":{}}
+{"timestamp":"2024-11-29T14:58:20.008Z","level":"error","message":"WebSocket closed: 1001 - terminating websocket connection because of inactivity","data":{}}
+{"timestamp":"2024-11-29T14:58:25.011Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:58:25.014Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T14:58:25.385Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T14:58:25.486Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T14:58:25.488Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T14:58:25.615Z","level":"info","message":"Connected to the blockchain. Current block number: 21294092","data":{}}
+{"timestamp":"2024-11-29T15:04:17.351Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T15:04:17.465Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T15:04:17.646Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T15:04:17.660Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T15:04:17.678Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T15:04:18.024Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T15:04:18.127Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T15:04:18.139Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T15:04:18.244Z","level":"info","message":"Connected to the blockchain. Current block number: 21294121","data":{}}
+{"timestamp":"2024-11-29T15:04:18.351Z","level":"info","message":"Provider validated. Current block number: 21294121","data":{}}
+{"timestamp":"2024-11-29T15:04:18.352Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T15:04:18.352Z","level":"info","message":"Setting up listener for PairCreated events...","data":{}}
+{"timestamp":"2024-11-29T15:04:18.354Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T15:04:18.354Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T15:04:18.354Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T15:28:02.274Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xC3C35C886736B9e7B87864479D8bA3F5C7ce108a","pairAddress":"0xFf4fE8Cae039024db963B2ebA22D76c121AF8e88"}}
+{"timestamp":"2024-11-29T15:28:02.275Z","level":"info","message":"Pair Address: 0xFf4fE8Cae039024db963B2ebA22D76c121AF8e88","data":{}}
+{"timestamp":"2024-11-29T15:28:02.275Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T15:28:02.275Z","level":"info","message":"New Pair Detected: 0xFf4fE8Cae039024db963B2ebA22D76c121AF8e88","data":{}}
+{"timestamp":"2024-11-29T15:28:02.275Z","level":"info","message":"Preparing to execute purchase for pair 0xFf4fE8Cae039024db963B2ebA22D76c121AF8e88.","data":{}}
+{"timestamp":"2024-11-29T15:28:02.276Z","level":"info","message":"Preparing to execute purchase for pair 0xFf4fE8Cae039024db963B2ebA22D76c121AF8e88.","data":{}}
+{"timestamp":"2024-11-29T15:28:02.276Z","level":"error","message":"Error executing purchase logic: settings is not defined","data":{}}
+{"timestamp":"2024-11-29T15:28:02.275Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T15:28:02.275Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T15:28:02.275Z","level":"info","message":"Token1: 0xC3C35C886736B9e7B87864479D8bA3F5C7ce108a","data":{}}
+{"timestamp":"2024-11-29T16:20:38.826Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T16:20:38.876Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T16:20:38.956Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T16:20:38.960Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T16:20:38.966Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T16:20:39.349Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T16:20:39.446Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T16:20:39.454Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T16:20:39.559Z","level":"info","message":"Connected to the blockchain. Current block number: 21294500","data":{}}
+{"timestamp":"2024-11-29T16:20:39.665Z","level":"info","message":"Provider validated. Current block number: 21294500","data":{}}
+{"timestamp":"2024-11-29T16:20:39.665Z","level":"info","message":"Setting up listener for PairCreated events...","data":{}}
+{"timestamp":"2024-11-29T16:20:39.668Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T16:20:39.668Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T16:20:39.669Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T16:20:39.665Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T16:25:49.887Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T16:25:49.886Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x3A0A3d92281f7f0d94193f9e66D90160237E46Bb","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x06A6745827C4BF1Ba8A63326Ef9E614596c40c2D"}}
+{"timestamp":"2024-11-29T16:25:49.891Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T16:25:49.891Z","level":"info","message":"New Pair Detected: 0x06A6745827C4BF1Ba8A63326Ef9E614596c40c2D","data":{}}
+{"timestamp":"2024-11-29T16:25:49.892Z","level":"info","message":"Preparing to execute purchase for pair 0x06A6745827C4BF1Ba8A63326Ef9E614596c40c2D.","data":{}}
+{"timestamp":"2024-11-29T16:25:49.892Z","level":"info","message":"Preparing to execute purchase for pair 0x06A6745827C4BF1Ba8A63326Ef9E614596c40c2D.","data":{}}
+{"timestamp":"2024-11-29T16:25:49.892Z","level":"info","message":"New Token Address: 0x3A0A3d92281f7f0d94193f9e66D90160237E46Bb","data":{}}
+{"timestamp":"2024-11-29T16:25:49.891Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T16:25:49.893Z","level":"info","message":"Evaluating pair 0x06A6745827C4BF1Ba8A63326Ef9E614596c40c2D for viability.","data":{}}
+{"timestamp":"2024-11-29T16:25:49.893Z","level":"error","message":"Error evaluating pair 0x06A6745827C4BF1Ba8A63326Ef9E614596c40c2D: Cannot read properties of undefined (reading 'getCode')","data":{}}
+{"timestamp":"2024-11-29T16:25:49.900Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T16:25:49.890Z","level":"info","message":"Token0: 0x3A0A3d92281f7f0d94193f9e66D90160237E46Bb","data":{}}
+{"timestamp":"2024-11-29T16:25:49.891Z","level":"info","message":"Pair Address: 0x06A6745827C4BF1Ba8A63326Ef9E614596c40c2D","data":{}}
+{"timestamp":"2024-11-29T16:32:12.963Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T16:32:13.016Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.092Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T16:32:13.097Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.104Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.508Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.603Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.609Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.728Z","level":"info","message":"Connected to the blockchain. Current block number: 21294558","data":{}}
+{"timestamp":"2024-11-29T16:32:13.822Z","level":"info","message":"Provider validated. Current block number: 21294558","data":{}}
+{"timestamp":"2024-11-29T16:32:13.823Z","level":"info","message":"Setting up listener for PairCreated events...","data":{}}
+{"timestamp":"2024-11-29T16:32:13.826Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.827Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.826Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T16:32:13.822Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T16:38:13.497Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xAD03d70d10B3A6d29161e9Dee8d49E13da4d8F8E","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xa765FD5932b132067231283c79f918C3DafF1809"}}
+{"timestamp":"2024-11-29T16:38:13.505Z","level":"info","message":"Pair Address: 0xa765FD5932b132067231283c79f918C3DafF1809","data":{}}
+{"timestamp":"2024-11-29T16:38:13.505Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T16:38:13.505Z","level":"info","message":"New Pair Detected: 0xa765FD5932b132067231283c79f918C3DafF1809","data":{}}
+{"timestamp":"2024-11-29T16:38:13.506Z","level":"info","message":"Preparing to execute purchase for pair 0xa765FD5932b132067231283c79f918C3DafF1809.","data":{}}
+{"timestamp":"2024-11-29T16:38:13.506Z","level":"info","message":"Preparing to execute purchase for pair 0xa765FD5932b132067231283c79f918C3DafF1809.","data":{}}
+{"timestamp":"2024-11-29T16:38:13.506Z","level":"info","message":"New Token Address: 0xAD03d70d10B3A6d29161e9Dee8d49E13da4d8F8E","data":{}}
+{"timestamp":"2024-11-29T16:38:13.507Z","level":"info","message":"Evaluating pair 0xa765FD5932b132067231283c79f918C3DafF1809 for viability.","data":{}}
+{"timestamp":"2024-11-29T16:38:13.507Z","level":"error","message":"Error evaluating pair 0xa765FD5932b132067231283c79f918C3DafF1809: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T16:38:13.509Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T16:38:13.498Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T16:38:13.498Z","level":"info","message":"Token0: 0xAD03d70d10B3A6d29161e9Dee8d49E13da4d8F8E","data":{}}
+{"timestamp":"2024-11-29T16:38:13.503Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T16:38:26.252Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xB67ADA2DaB399E061fF51D0e6Aaf1bbD936d87De","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x0319A1A58a9A3Cf0280BfEd6a0BAa0aC8c9819B5"}}
+{"timestamp":"2024-11-29T16:38:26.253Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T16:38:26.253Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T16:38:26.253Z","level":"info","message":"New Pair Detected: 0x0319A1A58a9A3Cf0280BfEd6a0BAa0aC8c9819B5","data":{}}
+{"timestamp":"2024-11-29T16:38:26.254Z","level":"info","message":"Preparing to execute purchase for pair 0x0319A1A58a9A3Cf0280BfEd6a0BAa0aC8c9819B5.","data":{}}
+{"timestamp":"2024-11-29T16:38:26.254Z","level":"info","message":"Preparing to execute purchase for pair 0x0319A1A58a9A3Cf0280BfEd6a0BAa0aC8c9819B5.","data":{}}
+{"timestamp":"2024-11-29T16:38:26.254Z","level":"info","message":"New Token Address: 0xB67ADA2DaB399E061fF51D0e6Aaf1bbD936d87De","data":{}}
+{"timestamp":"2024-11-29T16:38:26.254Z","level":"info","message":"Evaluating pair 0x0319A1A58a9A3Cf0280BfEd6a0BAa0aC8c9819B5 for viability.","data":{}}
+{"timestamp":"2024-11-29T16:38:26.254Z","level":"error","message":"Error evaluating pair 0x0319A1A58a9A3Cf0280BfEd6a0BAa0aC8c9819B5: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T16:38:26.255Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T16:38:26.253Z","level":"info","message":"Token0: 0xB67ADA2DaB399E061fF51D0e6Aaf1bbD936d87De","data":{}}
+{"timestamp":"2024-11-29T16:38:26.253Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T16:38:26.253Z","level":"info","message":"Pair Address: 0x0319A1A58a9A3Cf0280BfEd6a0BAa0aC8c9819B5","data":{}}
+{"timestamp":"2024-11-29T16:40:26.098Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x1f0946E58E5433A91d34974B30eb2D0E357622C4","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xC5dFcd57e32c2500239630D4B9257CF8b13B16D9"}}
+{"timestamp":"2024-11-29T16:40:26.098Z","level":"info","message":"Token0: 0x1f0946E58E5433A91d34974B30eb2D0E357622C4","data":{}}
+{"timestamp":"2024-11-29T16:40:26.098Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T16:40:26.099Z","level":"info","message":"Pair Address: 0xC5dFcd57e32c2500239630D4B9257CF8b13B16D9","data":{}}
+{"timestamp":"2024-11-29T16:40:26.098Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T16:40:26.099Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T16:40:26.099Z","level":"info","message":"New Pair Detected: 0xC5dFcd57e32c2500239630D4B9257CF8b13B16D9","data":{}}
+{"timestamp":"2024-11-29T16:40:26.099Z","level":"info","message":"Preparing to execute purchase for pair 0xC5dFcd57e32c2500239630D4B9257CF8b13B16D9.","data":{}}
+{"timestamp":"2024-11-29T16:40:26.099Z","level":"info","message":"Preparing to execute purchase for pair 0xC5dFcd57e32c2500239630D4B9257CF8b13B16D9.","data":{}}
+{"timestamp":"2024-11-29T16:40:26.099Z","level":"info","message":"New Token Address: 0x1f0946E58E5433A91d34974B30eb2D0E357622C4","data":{}}
+{"timestamp":"2024-11-29T16:40:26.099Z","level":"info","message":"Evaluating pair 0xC5dFcd57e32c2500239630D4B9257CF8b13B16D9 for viability.","data":{}}
+{"timestamp":"2024-11-29T16:40:26.100Z","level":"error","message":"Error evaluating pair 0xC5dFcd57e32c2500239630D4B9257CF8b13B16D9: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T16:40:26.100Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T16:44:01.551Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x972f84a913Ed835fe6A43bfC9E310a3812A6B55C","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x72f20AcCDf75E2821Ca7FC66ef08618942bEF838"}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"Pair Address: 0x72f20AcCDf75E2821Ca7FC66ef08618942bEF838","data":{}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"New Pair Detected: 0x72f20AcCDf75E2821Ca7FC66ef08618942bEF838","data":{}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"Preparing to execute purchase for pair 0x72f20AcCDf75E2821Ca7FC66ef08618942bEF838.","data":{}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"Preparing to execute purchase for pair 0x72f20AcCDf75E2821Ca7FC66ef08618942bEF838.","data":{}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"New Token Address: 0x972f84a913Ed835fe6A43bfC9E310a3812A6B55C","data":{}}
+{"timestamp":"2024-11-29T16:44:01.553Z","level":"info","message":"Evaluating pair 0x72f20AcCDf75E2821Ca7FC66ef08618942bEF838 for viability.","data":{}}
+{"timestamp":"2024-11-29T16:44:01.553Z","level":"error","message":"Error evaluating pair 0x72f20AcCDf75E2821Ca7FC66ef08618942bEF838: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T16:44:01.553Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T16:44:01.551Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"Token0: 0x972f84a913Ed835fe6A43bfC9E310a3812A6B55C","data":{}}
+{"timestamp":"2024-11-29T16:44:01.552Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:05:13.653Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xCbDd5E930201fBC5427E58f269aF7F6a7448Dc00","pairAddress":"0xEB119BdDccba60825c4b9741aa43114DFd2e9fF3"}}
+{"timestamp":"2024-11-29T17:05:13.653Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:05:13.654Z","level":"info","message":"Pair Address: 0xEB119BdDccba60825c4b9741aa43114DFd2e9fF3","data":{}}
+{"timestamp":"2024-11-29T17:05:13.654Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:05:13.654Z","level":"info","message":"New Pair Detected: 0xEB119BdDccba60825c4b9741aa43114DFd2e9fF3","data":{}}
+{"timestamp":"2024-11-29T17:05:13.654Z","level":"info","message":"Preparing to execute purchase for pair 0xEB119BdDccba60825c4b9741aa43114DFd2e9fF3.","data":{}}
+{"timestamp":"2024-11-29T17:05:13.654Z","level":"info","message":"Preparing to execute purchase for pair 0xEB119BdDccba60825c4b9741aa43114DFd2e9fF3.","data":{}}
+{"timestamp":"2024-11-29T17:05:13.654Z","level":"info","message":"New Token Address: 0xCbDd5E930201fBC5427E58f269aF7F6a7448Dc00","data":{}}
+{"timestamp":"2024-11-29T17:05:13.655Z","level":"info","message":"Evaluating pair 0xEB119BdDccba60825c4b9741aa43114DFd2e9fF3 for viability.","data":{}}
+{"timestamp":"2024-11-29T17:05:13.655Z","level":"error","message":"Error evaluating pair 0xEB119BdDccba60825c4b9741aa43114DFd2e9fF3: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:05:13.656Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:05:13.653Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:05:13.653Z","level":"info","message":"Token1: 0xCbDd5E930201fBC5427E58f269aF7F6a7448Dc00","data":{}}
+{"timestamp":"2024-11-29T17:09:02.991Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xABa38DC21BEf10fA2f9e08972D46F026a27f87e1","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x905C60b4228CC6Aee5834238e9467bcdD5f115dF"}}
+{"timestamp":"2024-11-29T17:09:02.991Z","level":"info","message":"Token0: 0xABa38DC21BEf10fA2f9e08972D46F026a27f87e1","data":{}}
+{"timestamp":"2024-11-29T17:09:02.992Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:09:02.992Z","level":"info","message":"New Pair Detected: 0x905C60b4228CC6Aee5834238e9467bcdD5f115dF","data":{}}
+{"timestamp":"2024-11-29T17:09:02.992Z","level":"info","message":"Preparing to execute purchase for pair 0x905C60b4228CC6Aee5834238e9467bcdD5f115dF.","data":{}}
+{"timestamp":"2024-11-29T17:09:02.992Z","level":"info","message":"Preparing to execute purchase for pair 0x905C60b4228CC6Aee5834238e9467bcdD5f115dF.","data":{}}
+{"timestamp":"2024-11-29T17:09:02.993Z","level":"info","message":"New Token Address: 0xABa38DC21BEf10fA2f9e08972D46F026a27f87e1","data":{}}
+{"timestamp":"2024-11-29T17:09:02.991Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:09:02.993Z","level":"info","message":"Evaluating pair 0x905C60b4228CC6Aee5834238e9467bcdD5f115dF for viability.","data":{}}
+{"timestamp":"2024-11-29T17:09:02.993Z","level":"error","message":"Error evaluating pair 0x905C60b4228CC6Aee5834238e9467bcdD5f115dF: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:09:02.994Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:09:02.992Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:09:02.992Z","level":"info","message":"Pair Address: 0x905C60b4228CC6Aee5834238e9467bcdD5f115dF","data":{}}
+{"timestamp":"2024-11-29T17:13:29.627Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T17:13:29.681Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T17:13:29.764Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T17:13:29.771Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T17:13:29.775Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T17:13:30.132Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T17:13:30.232Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T17:13:30.240Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T17:13:30.343Z","level":"info","message":"Connected to the blockchain. Current block number: 21294760","data":{}}
+{"timestamp":"2024-11-29T17:13:30.442Z","level":"info","message":"Provider validated. Current block number: 21294760","data":{}}
+{"timestamp":"2024-11-29T17:13:30.443Z","level":"info","message":"Setting up listener for PairCreated events...","data":{}}
+{"timestamp":"2024-11-29T17:13:30.446Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T17:13:30.447Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T17:13:30.447Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T17:13:30.443Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T17:23:38.202Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xC8AFd7895e672BbeFCAf4478cFFD9ef657A38246","pairAddress":"0xBf8d462F8BE405137F2B45100eCB730c11a82320"}}
+{"timestamp":"2024-11-29T17:23:38.203Z","level":"info","message":"Pair Address: 0xBf8d462F8BE405137F2B45100eCB730c11a82320","data":{}}
+{"timestamp":"2024-11-29T17:23:38.203Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:23:38.203Z","level":"info","message":"New Pair Detected: 0xBf8d462F8BE405137F2B45100eCB730c11a82320","data":{}}
+{"timestamp":"2024-11-29T17:23:38.203Z","level":"info","message":"Preparing to execute purchase for pair 0xBf8d462F8BE405137F2B45100eCB730c11a82320.","data":{}}
+{"timestamp":"2024-11-29T17:23:38.204Z","level":"info","message":"Preparing to execute purchase for pair 0xBf8d462F8BE405137F2B45100eCB730c11a82320.","data":{}}
+{"timestamp":"2024-11-29T17:23:38.204Z","level":"info","message":"New Token Address: 0xC8AFd7895e672BbeFCAf4478cFFD9ef657A38246","data":{}}
+{"timestamp":"2024-11-29T17:23:38.206Z","level":"info","message":"Evaluating pair 0xBf8d462F8BE405137F2B45100eCB730c11a82320 for viability.","data":{}}
+{"timestamp":"2024-11-29T17:23:38.207Z","level":"error","message":"Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T17:23:38.208Z","level":"error","message":"Error evaluating pair 0xBf8d462F8BE405137F2B45100eCB730c11a82320: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:23:38.211Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:23:38.203Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:23:38.203Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:23:38.203Z","level":"info","message":"Token1: 0xC8AFd7895e672BbeFCAf4478cFFD9ef657A38246","data":{}}
+{"timestamp":"2024-11-29T17:30:49.709Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x5678dC0315C3C416ee8a768d7515F01ea9d97cf7","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x48Ce82c7fe3631e2C7De323c35480c8dC4157C47"}}
+{"timestamp":"2024-11-29T17:30:49.710Z","level":"info","message":"Pair Address: 0x48Ce82c7fe3631e2C7De323c35480c8dC4157C47","data":{}}
+{"timestamp":"2024-11-29T17:30:49.710Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:30:49.710Z","level":"info","message":"New Pair Detected: 0x48Ce82c7fe3631e2C7De323c35480c8dC4157C47","data":{}}
+{"timestamp":"2024-11-29T17:30:49.711Z","level":"info","message":"Preparing to execute purchase for pair 0x48Ce82c7fe3631e2C7De323c35480c8dC4157C47.","data":{}}
+{"timestamp":"2024-11-29T17:30:49.711Z","level":"info","message":"Preparing to execute purchase for pair 0x48Ce82c7fe3631e2C7De323c35480c8dC4157C47.","data":{}}
+{"timestamp":"2024-11-29T17:30:49.711Z","level":"info","message":"New Token Address: 0x5678dC0315C3C416ee8a768d7515F01ea9d97cf7","data":{}}
+{"timestamp":"2024-11-29T17:30:49.711Z","level":"info","message":"Evaluating pair 0x48Ce82c7fe3631e2C7De323c35480c8dC4157C47 for viability.","data":{}}
+{"timestamp":"2024-11-29T17:30:49.711Z","level":"error","message":"Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T17:30:49.712Z","level":"error","message":"Error evaluating pair 0x48Ce82c7fe3631e2C7De323c35480c8dC4157C47: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:30:49.713Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:30:49.710Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:30:49.710Z","level":"info","message":"Token0: 0x5678dC0315C3C416ee8a768d7515F01ea9d97cf7","data":{}}
+{"timestamp":"2024-11-29T17:30:49.710Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:32:13.817Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xe11f12F038c231d662e318CF7b2fc6B92eC5543D","pairAddress":"0x95e8Bd8F023e6d6ae648C14F65c2FBBaeB870389"}}
+{"timestamp":"2024-11-29T17:32:13.817Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:32:13.817Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:32:13.817Z","level":"info","message":"Token1: 0xe11f12F038c231d662e318CF7b2fc6B92eC5543D","data":{}}
+{"timestamp":"2024-11-29T17:32:13.817Z","level":"info","message":"Pair Address: 0x95e8Bd8F023e6d6ae648C14F65c2FBBaeB870389","data":{}}
+{"timestamp":"2024-11-29T17:32:13.817Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:32:13.817Z","level":"info","message":"New Pair Detected: 0x95e8Bd8F023e6d6ae648C14F65c2FBBaeB870389","data":{}}
+{"timestamp":"2024-11-29T17:32:13.818Z","level":"info","message":"Preparing to execute purchase for pair 0x95e8Bd8F023e6d6ae648C14F65c2FBBaeB870389.","data":{}}
+{"timestamp":"2024-11-29T17:32:13.818Z","level":"info","message":"Preparing to execute purchase for pair 0x95e8Bd8F023e6d6ae648C14F65c2FBBaeB870389.","data":{}}
+{"timestamp":"2024-11-29T17:32:13.818Z","level":"info","message":"New Token Address: 0xe11f12F038c231d662e318CF7b2fc6B92eC5543D","data":{}}
+{"timestamp":"2024-11-29T17:32:13.818Z","level":"info","message":"Evaluating pair 0x95e8Bd8F023e6d6ae648C14F65c2FBBaeB870389 for viability.","data":{}}
+{"timestamp":"2024-11-29T17:32:13.818Z","level":"error","message":"Error evaluating pair 0x95e8Bd8F023e6d6ae648C14F65c2FBBaeB870389: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:32:13.818Z","level":"error","message":"Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T17:32:13.819Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:33:01.640Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xAF308E5d3D6f734C11Fd76eEDC0374A81f3Fe3D8","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xcfE4F477879BCfb246AD1A85c5F4e4a5029F6eBd"}}
+{"timestamp":"2024-11-29T17:33:01.640Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:33:01.640Z","level":"info","message":"Token0: 0xAF308E5d3D6f734C11Fd76eEDC0374A81f3Fe3D8","data":{}}
+{"timestamp":"2024-11-29T17:33:01.640Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:33:01.640Z","level":"info","message":"Pair Address: 0xcfE4F477879BCfb246AD1A85c5F4e4a5029F6eBd","data":{}}
+{"timestamp":"2024-11-29T17:33:01.640Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:33:01.641Z","level":"info","message":"New Pair Detected: 0xcfE4F477879BCfb246AD1A85c5F4e4a5029F6eBd","data":{}}
+{"timestamp":"2024-11-29T17:33:01.641Z","level":"info","message":"Preparing to execute purchase for pair 0xcfE4F477879BCfb246AD1A85c5F4e4a5029F6eBd.","data":{}}
+{"timestamp":"2024-11-29T17:33:01.641Z","level":"info","message":"Preparing to execute purchase for pair 0xcfE4F477879BCfb246AD1A85c5F4e4a5029F6eBd.","data":{}}
+{"timestamp":"2024-11-29T17:33:01.641Z","level":"info","message":"New Token Address: 0xAF308E5d3D6f734C11Fd76eEDC0374A81f3Fe3D8","data":{}}
+{"timestamp":"2024-11-29T17:33:01.641Z","level":"info","message":"Evaluating pair 0xcfE4F477879BCfb246AD1A85c5F4e4a5029F6eBd for viability.","data":{}}
+{"timestamp":"2024-11-29T17:33:01.641Z","level":"error","message":"Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T17:33:01.641Z","level":"error","message":"Error evaluating pair 0xcfE4F477879BCfb246AD1A85c5F4e4a5029F6eBd: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:33:01.642Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:33:26.142Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xf96D507cbFf31d1B664f01938a46dB27745C2A79","pairAddress":"0xa35589D4EEAA6ea6f3Fb30405f014f8729714bB8"}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"Token1: 0xf96D507cbFf31d1B664f01938a46dB27745C2A79","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"Pair Address: 0xa35589D4EEAA6ea6f3Fb30405f014f8729714bB8","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"New Pair Detected: 0xa35589D4EEAA6ea6f3Fb30405f014f8729714bB8","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"Preparing to execute purchase for pair 0xa35589D4EEAA6ea6f3Fb30405f014f8729714bB8.","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"Preparing to execute purchase for pair 0xa35589D4EEAA6ea6f3Fb30405f014f8729714bB8.","data":{}}
+{"timestamp":"2024-11-29T17:33:26.143Z","level":"info","message":"New Token Address: 0xf96D507cbFf31d1B664f01938a46dB27745C2A79","data":{}}
+{"timestamp":"2024-11-29T17:33:26.144Z","level":"info","message":"Evaluating pair 0xa35589D4EEAA6ea6f3Fb30405f014f8729714bB8 for viability.","data":{}}
+{"timestamp":"2024-11-29T17:33:26.144Z","level":"error","message":"Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T17:33:26.144Z","level":"error","message":"Error evaluating pair 0xa35589D4EEAA6ea6f3Fb30405f014f8729714bB8: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:33:26.145Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x123Ea4757B765Ac878c3767fD0E01E5575f3680e","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x15E9CE69E5A4B5b7d30d0BA0fabD044eFA7E5947"}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"Pair Address: 0x15E9CE69E5A4B5b7d30d0BA0fabD044eFA7E5947","data":{}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"New Pair Detected: 0x15E9CE69E5A4B5b7d30d0BA0fabD044eFA7E5947","data":{}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"Preparing to execute purchase for pair 0x15E9CE69E5A4B5b7d30d0BA0fabD044eFA7E5947.","data":{}}
+{"timestamp":"2024-11-29T17:37:26.039Z","level":"info","message":"Preparing to execute purchase for pair 0x15E9CE69E5A4B5b7d30d0BA0fabD044eFA7E5947.","data":{}}
+{"timestamp":"2024-11-29T17:37:26.039Z","level":"info","message":"New Token Address: 0x123Ea4757B765Ac878c3767fD0E01E5575f3680e","data":{}}
+{"timestamp":"2024-11-29T17:37:26.039Z","level":"info","message":"Evaluating pair 0x15E9CE69E5A4B5b7d30d0BA0fabD044eFA7E5947 for viability.","data":{}}
+{"timestamp":"2024-11-29T17:37:26.039Z","level":"error","message":"Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T17:37:26.039Z","level":"error","message":"Error evaluating pair 0x15E9CE69E5A4B5b7d30d0BA0fabD044eFA7E5947: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:37:26.040Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"Token0: 0x123Ea4757B765Ac878c3767fD0E01E5575f3680e","data":{}}
+{"timestamp":"2024-11-29T17:37:26.038Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:38:51.118Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x939071e1c89051fd1DF13e096fd3f496F529101E","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x1bf0D5Cdb7514fdfE483DDaD88C518f21358104c"}}
+{"timestamp":"2024-11-29T17:38:51.118Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T17:38:51.118Z","level":"info","message":"Token0: 0x939071e1c89051fd1DF13e096fd3f496F529101E","data":{}}
+{"timestamp":"2024-11-29T17:38:51.118Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"info","message":"New Pair Detected: 0x1bf0D5Cdb7514fdfE483DDaD88C518f21358104c","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"info","message":"Preparing to execute purchase for pair 0x1bf0D5Cdb7514fdfE483DDaD88C518f21358104c.","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"info","message":"Preparing to execute purchase for pair 0x1bf0D5Cdb7514fdfE483DDaD88C518f21358104c.","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"info","message":"New Token Address: 0x939071e1c89051fd1DF13e096fd3f496F529101E","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"info","message":"Evaluating pair 0x1bf0D5Cdb7514fdfE483DDaD88C518f21358104c for viability.","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"error","message":"Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T17:38:51.119Z","level":"error","message":"Error evaluating pair 0x1bf0D5Cdb7514fdfE483DDaD88C518f21358104c: Provider is not initialized. Check RPC configuration.","data":{}}
+{"timestamp":"2024-11-29T17:38:51.121Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T17:38:51.118Z","level":"info","message":"Pair Address: 0x1bf0D5Cdb7514fdfE483DDaD88C518f21358104c","data":{}}
+{"timestamp":"2024-11-29T18:10:28.168Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T18:10:28.220Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.293Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T18:10:28.297Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.301Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.669Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.765Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.773Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.881Z","level":"info","message":"Connected to the blockchain. Current block number: 21295044","data":{}}
+{"timestamp":"2024-11-29T18:10:28.982Z","level":"info","message":"Provider validated. Current block number: 21295044","data":{}}
+{"timestamp":"2024-11-29T18:10:28.983Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T18:10:28.983Z","level":"info","message":"Setting up listener for PairCreated events...","data":{}}
+{"timestamp":"2024-11-29T18:10:28.986Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.986Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T18:10:28.987Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T18:12:12.649Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x51946A5f7f2c34B12b5bF9f04Dabf4bA18345E0D","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x3Da7D96F422fEC3bb1e40ADe858c25DF325BB9d2"}}
+{"timestamp":"2024-11-29T18:12:12.649Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T18:12:12.650Z","level":"info","message":"Token0: 0x51946A5f7f2c34B12b5bF9f04Dabf4bA18345E0D","data":{}}
+{"timestamp":"2024-11-29T18:12:12.650Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T18:12:12.650Z","level":"info","message":"Pair Address: 0x3Da7D96F422fEC3bb1e40ADe858c25DF325BB9d2","data":{}}
+{"timestamp":"2024-11-29T18:12:12.650Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T18:12:12.650Z","level":"info","message":"New Pair Detected: 0x3Da7D96F422fEC3bb1e40ADe858c25DF325BB9d2","data":{}}
+{"timestamp":"2024-11-29T18:12:12.650Z","level":"info","message":"Preparing to execute purchase for pair 0x3Da7D96F422fEC3bb1e40ADe858c25DF325BB9d2.","data":{}}
+{"timestamp":"2024-11-29T18:12:12.650Z","level":"info","message":"Preparing to execute purchase for pair 0x3Da7D96F422fEC3bb1e40ADe858c25DF325BB9d2.","data":{}}
+{"timestamp":"2024-11-29T18:12:12.651Z","level":"error","message":"Error executing purchase logic: Cannot read properties of undefined (reading 'BASE_TOKEN_ADDRESS')","data":{}}
+{"timestamp":"2024-11-29T18:17:01.435Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xC32813c4e664593E6A543b678893E5D32CC44407","pairAddress":"0x291E70D673D47A1cCC940C256475E3Ebc95E96C0"}}
+{"timestamp":"2024-11-29T18:17:01.436Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T18:17:01.436Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T18:17:01.436Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T18:17:01.437Z","level":"info","message":"New Pair Detected: 0x291E70D673D47A1cCC940C256475E3Ebc95E96C0","data":{}}
+{"timestamp":"2024-11-29T18:17:01.437Z","level":"info","message":"Preparing to execute purchase for pair 0x291E70D673D47A1cCC940C256475E3Ebc95E96C0.","data":{}}
+{"timestamp":"2024-11-29T18:17:01.437Z","level":"info","message":"Preparing to execute purchase for pair 0x291E70D673D47A1cCC940C256475E3Ebc95E96C0.","data":{}}
+{"timestamp":"2024-11-29T18:17:01.437Z","level":"error","message":"Error executing purchase logic: Cannot read properties of undefined (reading 'BASE_TOKEN_ADDRESS')","data":{}}
+{"timestamp":"2024-11-29T18:17:01.436Z","level":"info","message":"Token1: 0xC32813c4e664593E6A543b678893E5D32CC44407","data":{}}
+{"timestamp":"2024-11-29T18:17:01.436Z","level":"info","message":"Pair Address: 0x291E70D673D47A1cCC940C256475E3Ebc95E96C0","data":{}}
+{"timestamp":"2024-11-29T18:20:21.120Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T18:20:21.181Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.258Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T18:20:21.265Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.274Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.622Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.716Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.725Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.832Z","level":"info","message":"Connected to the blockchain. Current block number: 21295093","data":{}}
+{"timestamp":"2024-11-29T18:20:21.933Z","level":"info","message":"Provider validated. Current block number: 21295093","data":{}}
+{"timestamp":"2024-11-29T18:20:21.933Z","level":"info","message":"Setting up listener for PairCreated events...","data":{}}
+{"timestamp":"2024-11-29T18:20:21.936Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.937Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.937Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T18:20:21.933Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T18:25:33.249Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T18:25:33.301Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T18:25:33.377Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T18:25:33.384Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T18:25:33.386Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T18:25:33.742Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T18:25:33.841Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T18:25:33.849Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T18:25:33.954Z","level":"info","message":"Connected to the blockchain. Current block number: 21295119","data":{}}
+{"timestamp":"2024-11-29T18:25:34.055Z","level":"info","message":"Provider validated. Current block number: 21295119","data":{}}
+{"timestamp":"2024-11-29T18:25:34.055Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T18:25:34.055Z","level":"info","message":"Setting up listener for PairCreated events...","data":{}}
+{"timestamp":"2024-11-29T18:25:34.058Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T18:25:34.059Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T18:25:34.059Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T18:32:13.546Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x0De94B3E3B0C931B751f521110FACdE6CE705C16","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x5DccFc759a65Dfc124c9bef317e9F121Ca0fD84e"}}
+{"timestamp":"2024-11-29T18:32:13.548Z","level":"info","message":"Pair Address: 0x5DccFc759a65Dfc124c9bef317e9F121Ca0fD84e","data":{}}
+{"timestamp":"2024-11-29T18:32:13.548Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T18:32:13.548Z","level":"info","message":"New Pair Detected: 0x5DccFc759a65Dfc124c9bef317e9F121Ca0fD84e","data":{}}
+{"timestamp":"2024-11-29T18:32:13.548Z","level":"info","message":"Preparing to execute purchase for pair 0x5DccFc759a65Dfc124c9bef317e9F121Ca0fD84e.","data":{}}
+{"timestamp":"2024-11-29T18:32:13.548Z","level":"info","message":"Preparing to execute purchase for pair 0x5DccFc759a65Dfc124c9bef317e9F121Ca0fD84e.","data":{}}
+{"timestamp":"2024-11-29T18:32:13.549Z","level":"info","message":"New Token Address: 0x0De94B3E3B0C931B751f521110FACdE6CE705C16","data":{}}
+{"timestamp":"2024-11-29T18:32:13.549Z","level":"info","message":"Evaluating pair 0x5DccFc759a65Dfc124c9bef317e9F121Ca0fD84e for viability.","data":{}}
+{"timestamp":"2024-11-29T18:32:13.549Z","level":"error","message":"Error evaluating pair 0x5DccFc759a65Dfc124c9bef317e9F121Ca0fD84e: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T18:32:13.552Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T18:32:13.547Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T18:32:13.547Z","level":"info","message":"Token0: 0x0De94B3E3B0C931B751f521110FACdE6CE705C16","data":{}}
+{"timestamp":"2024-11-29T18:32:13.548Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T18:48:49.757Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x1e4EC900dD162EBaf6CF76cFE8A546f34D7a483d","token1":"0xdAC17F958D2ee523a2206206994597C13D831ec7","pairAddress":"0x7B05514deee767bD07b65461d9381062a20fA33D"}}
+{"timestamp":"2024-11-29T18:48:49.758Z","level":"info","message":"Pair Address: 0x7B05514deee767bD07b65461d9381062a20fA33D","data":{}}
+{"timestamp":"2024-11-29T18:48:49.758Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T18:48:49.758Z","level":"info","message":"New Pair Detected: 0x7B05514deee767bD07b65461d9381062a20fA33D","data":{}}
+{"timestamp":"2024-11-29T18:48:49.758Z","level":"info","message":"Preparing to execute purchase for pair 0x7B05514deee767bD07b65461d9381062a20fA33D.","data":{}}
+{"timestamp":"2024-11-29T18:48:49.758Z","level":"info","message":"Preparing to execute purchase for pair 0x7B05514deee767bD07b65461d9381062a20fA33D.","data":{}}
+{"timestamp":"2024-11-29T18:48:49.758Z","level":"info","message":"Pair does not include base token. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T18:48:49.757Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T18:48:49.757Z","level":"info","message":"Token0: 0x1e4EC900dD162EBaf6CF76cFE8A546f34D7a483d","data":{}}
+{"timestamp":"2024-11-29T18:48:49.758Z","level":"info","message":"Token1: 0xdAC17F958D2ee523a2206206994597C13D831ec7","data":{}}
+{"timestamp":"2024-11-29T19:01:50.249Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xe5723EFD9c1b6DCB24b8F1C0b235238d845B777d","pairAddress":"0x44D489c91316B081fBdf86D8a7d8BC5473Efe18b"}}
+{"timestamp":"2024-11-29T19:01:50.249Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:01:50.249Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:01:50.249Z","level":"info","message":"Token1: 0xe5723EFD9c1b6DCB24b8F1C0b235238d845B777d","data":{}}
+{"timestamp":"2024-11-29T19:01:50.249Z","level":"info","message":"Pair Address: 0x44D489c91316B081fBdf86D8a7d8BC5473Efe18b","data":{}}
+{"timestamp":"2024-11-29T19:01:50.250Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:01:50.250Z","level":"info","message":"New Pair Detected: 0x44D489c91316B081fBdf86D8a7d8BC5473Efe18b","data":{}}
+{"timestamp":"2024-11-29T19:01:50.251Z","level":"info","message":"Preparing to execute purchase for pair 0x44D489c91316B081fBdf86D8a7d8BC5473Efe18b.","data":{}}
+{"timestamp":"2024-11-29T19:01:50.252Z","level":"info","message":"Preparing to execute purchase for pair 0x44D489c91316B081fBdf86D8a7d8BC5473Efe18b.","data":{}}
+{"timestamp":"2024-11-29T19:01:50.253Z","level":"info","message":"New Token Address: 0xe5723EFD9c1b6DCB24b8F1C0b235238d845B777d","data":{}}
+{"timestamp":"2024-11-29T19:01:50.254Z","level":"error","message":"Error evaluating pair 0x44D489c91316B081fBdf86D8a7d8BC5473Efe18b: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:01:50.256Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:01:50.253Z","level":"info","message":"Evaluating pair 0x44D489c91316B081fBdf86D8a7d8BC5473Efe18b for viability.","data":{}}
+{"timestamp":"2024-11-29T19:04:26.879Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xF0E837615C695B84E1B1acE214D0bf0ae10078A2","pairAddress":"0xf27B98F18aA0B2f54799fd10A7FC2d7D3178AE93"}}
+{"timestamp":"2024-11-29T19:04:26.879Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:04:26.879Z","level":"info","message":"Token1: 0xF0E837615C695B84E1B1acE214D0bf0ae10078A2","data":{}}
+{"timestamp":"2024-11-29T19:04:26.879Z","level":"info","message":"Pair Address: 0xf27B98F18aA0B2f54799fd10A7FC2d7D3178AE93","data":{}}
+{"timestamp":"2024-11-29T19:04:26.879Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:04:26.879Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:04:26.879Z","level":"info","message":"New Pair Detected: 0xf27B98F18aA0B2f54799fd10A7FC2d7D3178AE93","data":{}}
+{"timestamp":"2024-11-29T19:04:26.880Z","level":"info","message":"Preparing to execute purchase for pair 0xf27B98F18aA0B2f54799fd10A7FC2d7D3178AE93.","data":{}}
+{"timestamp":"2024-11-29T19:04:26.880Z","level":"info","message":"Preparing to execute purchase for pair 0xf27B98F18aA0B2f54799fd10A7FC2d7D3178AE93.","data":{}}
+{"timestamp":"2024-11-29T19:04:26.880Z","level":"info","message":"New Token Address: 0xF0E837615C695B84E1B1acE214D0bf0ae10078A2","data":{}}
+{"timestamp":"2024-11-29T19:04:26.880Z","level":"info","message":"Evaluating pair 0xf27B98F18aA0B2f54799fd10A7FC2d7D3178AE93 for viability.","data":{}}
+{"timestamp":"2024-11-29T19:04:26.880Z","level":"error","message":"Error evaluating pair 0xf27B98F18aA0B2f54799fd10A7FC2d7D3178AE93: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:04:26.881Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:08:27.119Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x1bC9cCCCF92839894D615Fe292AE45E30fF7ecae","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x9c572DcD9E1F328b05bd8eFe9F2891B5fD7C2E2f"}}
+{"timestamp":"2024-11-29T19:08:27.119Z","level":"info","message":"Token0: 0x1bC9cCCCF92839894D615Fe292AE45E30fF7ecae","data":{}}
+{"timestamp":"2024-11-29T19:08:27.120Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:08:27.120Z","level":"info","message":"New Pair Detected: 0x9c572DcD9E1F328b05bd8eFe9F2891B5fD7C2E2f","data":{}}
+{"timestamp":"2024-11-29T19:08:27.119Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:08:27.120Z","level":"info","message":"Preparing to execute purchase for pair 0x9c572DcD9E1F328b05bd8eFe9F2891B5fD7C2E2f.","data":{}}
+{"timestamp":"2024-11-29T19:08:27.120Z","level":"info","message":"Preparing to execute purchase for pair 0x9c572DcD9E1F328b05bd8eFe9F2891B5fD7C2E2f.","data":{}}
+{"timestamp":"2024-11-29T19:08:27.120Z","level":"info","message":"New Token Address: 0x1bC9cCCCF92839894D615Fe292AE45E30fF7ecae","data":{}}
+{"timestamp":"2024-11-29T19:08:27.120Z","level":"info","message":"Evaluating pair 0x9c572DcD9E1F328b05bd8eFe9F2891B5fD7C2E2f for viability.","data":{}}
+{"timestamp":"2024-11-29T19:08:27.120Z","level":"error","message":"Error evaluating pair 0x9c572DcD9E1F328b05bd8eFe9F2891B5fD7C2E2f: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:08:27.121Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:08:27.119Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:08:27.119Z","level":"info","message":"Pair Address: 0x9c572DcD9E1F328b05bd8eFe9F2891B5fD7C2E2f","data":{}}
+{"timestamp":"2024-11-29T19:11:14.400Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xC80E1aFcE5e0A32056bf0052A80405D869a9a08F","pairAddress":"0xCf212f63F3E66D5B96edCE08c21bFF5EF21e8659"}}
+{"timestamp":"2024-11-29T19:11:14.400Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:11:14.400Z","level":"info","message":"Token1: 0xC80E1aFcE5e0A32056bf0052A80405D869a9a08F","data":{}}
+{"timestamp":"2024-11-29T19:11:14.400Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:11:14.401Z","level":"info","message":"Pair Address: 0xCf212f63F3E66D5B96edCE08c21bFF5EF21e8659","data":{}}
+{"timestamp":"2024-11-29T19:11:14.401Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:11:14.401Z","level":"info","message":"New Pair Detected: 0xCf212f63F3E66D5B96edCE08c21bFF5EF21e8659","data":{}}
+{"timestamp":"2024-11-29T19:11:14.401Z","level":"info","message":"Preparing to execute purchase for pair 0xCf212f63F3E66D5B96edCE08c21bFF5EF21e8659.","data":{}}
+{"timestamp":"2024-11-29T19:11:14.401Z","level":"info","message":"Preparing to execute purchase for pair 0xCf212f63F3E66D5B96edCE08c21bFF5EF21e8659.","data":{}}
+{"timestamp":"2024-11-29T19:11:14.401Z","level":"info","message":"New Token Address: 0xC80E1aFcE5e0A32056bf0052A80405D869a9a08F","data":{}}
+{"timestamp":"2024-11-29T19:11:14.402Z","level":"info","message":"Evaluating pair 0xCf212f63F3E66D5B96edCE08c21bFF5EF21e8659 for viability.","data":{}}
+{"timestamp":"2024-11-29T19:11:14.402Z","level":"error","message":"Error evaluating pair 0xCf212f63F3E66D5B96edCE08c21bFF5EF21e8659: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:11:14.403Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:29:25.444Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x848605dc96D51ee9a8309Ad8d61506cf8FCacdaC","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6EF34a09Ced02cF53B78CB76e01935417769C819"}}
+{"timestamp":"2024-11-29T19:29:25.444Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"Pair Address: 0x6EF34a09Ced02cF53B78CB76e01935417769C819","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"Preparing to execute purchase for pair 0x6EF34a09Ced02cF53B78CB76e01935417769C819.","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"New Pair Detected: 0x6EF34a09Ced02cF53B78CB76e01935417769C819","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"Preparing to execute purchase for pair 0x6EF34a09Ced02cF53B78CB76e01935417769C819.","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"New Token Address: 0x848605dc96D51ee9a8309Ad8d61506cf8FCacdaC","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"Evaluating pair 0x6EF34a09Ced02cF53B78CB76e01935417769C819 for viability.","data":{}}
+{"timestamp":"2024-11-29T19:29:25.446Z","level":"error","message":"Error evaluating pair 0x6EF34a09Ced02cF53B78CB76e01935417769C819: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:29:25.446Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:29:25.444Z","level":"info","message":"Token0: 0x848605dc96D51ee9a8309Ad8d61506cf8FCacdaC","data":{}}
+{"timestamp":"2024-11-29T19:29:25.445Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:30:14.522Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x04dc7C37186aE8eA0e223fD74D2bBA95ca003827","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x83Ee334eb01e9A8281b6b7197b6b2d1e5f658C5C"}}
+{"timestamp":"2024-11-29T19:30:14.522Z","level":"info","message":"Token0: 0x04dc7C37186aE8eA0e223fD74D2bBA95ca003827","data":{}}
+{"timestamp":"2024-11-29T19:30:14.522Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:30:14.522Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:30:14.523Z","level":"info","message":"Pair Address: 0x83Ee334eb01e9A8281b6b7197b6b2d1e5f658C5C","data":{}}
+{"timestamp":"2024-11-29T19:30:14.523Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:30:14.523Z","level":"info","message":"New Pair Detected: 0x83Ee334eb01e9A8281b6b7197b6b2d1e5f658C5C","data":{}}
+{"timestamp":"2024-11-29T19:30:14.523Z","level":"info","message":"Preparing to execute purchase for pair 0x83Ee334eb01e9A8281b6b7197b6b2d1e5f658C5C.","data":{}}
+{"timestamp":"2024-11-29T19:30:14.523Z","level":"info","message":"Preparing to execute purchase for pair 0x83Ee334eb01e9A8281b6b7197b6b2d1e5f658C5C.","data":{}}
+{"timestamp":"2024-11-29T19:30:14.523Z","level":"info","message":"New Token Address: 0x04dc7C37186aE8eA0e223fD74D2bBA95ca003827","data":{}}
+{"timestamp":"2024-11-29T19:30:14.523Z","level":"info","message":"Evaluating pair 0x83Ee334eb01e9A8281b6b7197b6b2d1e5f658C5C for viability.","data":{}}
+{"timestamp":"2024-11-29T19:30:14.524Z","level":"error","message":"Error evaluating pair 0x83Ee334eb01e9A8281b6b7197b6b2d1e5f658C5C: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:30:14.524Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:32:38.187Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x36f766530758D7b886978E654eB472161b8A95C5","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6247ABb7367FC11316486Adf55975697D44059DC"}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"Token0: 0x36f766530758D7b886978E654eB472161b8A95C5","data":{}}
+{"timestamp":"2024-11-29T19:32:38.187Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"Pair Address: 0x6247ABb7367FC11316486Adf55975697D44059DC","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"New Pair Detected: 0x6247ABb7367FC11316486Adf55975697D44059DC","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"Preparing to execute purchase for pair 0x6247ABb7367FC11316486Adf55975697D44059DC.","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"Preparing to execute purchase for pair 0x6247ABb7367FC11316486Adf55975697D44059DC.","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"New Token Address: 0x36f766530758D7b886978E654eB472161b8A95C5","data":{}}
+{"timestamp":"2024-11-29T19:32:38.188Z","level":"info","message":"Evaluating pair 0x6247ABb7367FC11316486Adf55975697D44059DC for viability.","data":{}}
+{"timestamp":"2024-11-29T19:32:38.189Z","level":"error","message":"Error evaluating pair 0x6247ABb7367FC11316486Adf55975697D44059DC: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:32:38.189Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:39:02.774Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xaB62918E49a87ACcACf2Fb04ad8Ab33347d7D121","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x9F2c6974c5cE071B1F94797E3E9cfa385f53f5Bc"}}
+{"timestamp":"2024-11-29T19:39:02.774Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:39:02.774Z","level":"info","message":"Token0: 0xaB62918E49a87ACcACf2Fb04ad8Ab33347d7D121","data":{}}
+{"timestamp":"2024-11-29T19:39:02.774Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T19:39:02.774Z","level":"info","message":"Pair Address: 0x9F2c6974c5cE071B1F94797E3E9cfa385f53f5Bc","data":{}}
+{"timestamp":"2024-11-29T19:39:02.775Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:39:02.775Z","level":"info","message":"New Pair Detected: 0x9F2c6974c5cE071B1F94797E3E9cfa385f53f5Bc","data":{}}
+{"timestamp":"2024-11-29T19:39:02.775Z","level":"info","message":"Preparing to execute purchase for pair 0x9F2c6974c5cE071B1F94797E3E9cfa385f53f5Bc.","data":{}}
+{"timestamp":"2024-11-29T19:39:02.775Z","level":"info","message":"Preparing to execute purchase for pair 0x9F2c6974c5cE071B1F94797E3E9cfa385f53f5Bc.","data":{}}
+{"timestamp":"2024-11-29T19:39:02.775Z","level":"info","message":"New Token Address: 0xaB62918E49a87ACcACf2Fb04ad8Ab33347d7D121","data":{}}
+{"timestamp":"2024-11-29T19:39:02.775Z","level":"info","message":"Evaluating pair 0x9F2c6974c5cE071B1F94797E3E9cfa385f53f5Bc for viability.","data":{}}
+{"timestamp":"2024-11-29T19:39:02.775Z","level":"error","message":"Error evaluating pair 0x9F2c6974c5cE071B1F94797E3E9cfa385f53f5Bc: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:39:02.776Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:46:02.196Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x9Cd47cb60b523Bdeeb219b6728A4BA04687b3b7c","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x3d58E045131DeFb75D1719905C5a7628DcD9f3A7"}}
+{"timestamp":"2024-11-29T19:46:02.196Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T19:46:02.196Z","level":"info","message":"Pair Address: 0x3d58E045131DeFb75D1719905C5a7628DcD9f3A7","data":{}}
+{"timestamp":"2024-11-29T19:46:02.196Z","level":"info","message":"Event Raw Data: undefined","data":{}}
+{"timestamp":"2024-11-29T19:46:02.196Z","level":"info","message":"New Pair Detected: 0x3d58E045131DeFb75D1719905C5a7628DcD9f3A7","data":{}}
+{"timestamp":"2024-11-29T19:46:02.197Z","level":"info","message":"Preparing to execute purchase for pair 0x3d58E045131DeFb75D1719905C5a7628DcD9f3A7.","data":{}}
+{"timestamp":"2024-11-29T19:46:02.197Z","level":"info","message":"Preparing to execute purchase for pair 0x3d58E045131DeFb75D1719905C5a7628DcD9f3A7.","data":{}}
+{"timestamp":"2024-11-29T19:46:02.197Z","level":"info","message":"New Token Address: 0x9Cd47cb60b523Bdeeb219b6728A4BA04687b3b7c","data":{}}
+{"timestamp":"2024-11-29T19:46:02.197Z","level":"info","message":"Evaluating pair 0x3d58E045131DeFb75D1719905C5a7628DcD9f3A7 for viability.","data":{}}
+{"timestamp":"2024-11-29T19:46:02.198Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T19:46:02.197Z","level":"error","message":"Error evaluating pair 0x3d58E045131DeFb75D1719905C5a7628DcD9f3A7: Provider is not initialized. Ensure RPC configuration is correct.","data":{}}
+{"timestamp":"2024-11-29T19:46:02.196Z","level":"info","message":"Token0: 0x9Cd47cb60b523Bdeeb219b6728A4BA04687b3b7c","data":{}}
+{"timestamp":"2024-11-29T19:46:02.196Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T20:04:08.395Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T20:04:08.482Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T20:04:08.487Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T20:04:08.496Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T20:04:08.861Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T20:04:08.954Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T20:04:08.962Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T20:04:09.060Z","level":"info","message":"Connected to the blockchain. Current block number: 21295611","data":{}}
+{"timestamp":"2024-11-29T20:04:09.063Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T20:04:09.063Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T20:10:37.565Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x85D8DaD074C4d3F5FB3319Cee0AbCebff3Ac5824","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x601EdF603586c0F050B312B97cb1c10a3b630b3A"}}
+{"timestamp":"2024-11-29T20:10:37.567Z","level":"info","message":"Pair Address: 0x601EdF603586c0F050B312B97cb1c10a3b630b3A","data":{}}
+{"timestamp":"2024-11-29T20:10:37.567Z","level":"info","message":"Event Raw Data: {\"type\":\"BigNumber\",\"hex\":\"0x05f9ab\"}","data":{}}
+{"timestamp":"2024-11-29T20:10:37.567Z","level":"info","message":"New Pair Detected: 0x601EdF603586c0F050B312B97cb1c10a3b630b3A","data":{}}
+{"timestamp":"2024-11-29T20:10:37.567Z","level":"info","message":"Preparing to execute purchase for pair 0x601EdF603586c0F050B312B97cb1c10a3b630b3A.","data":{}}
+{"timestamp":"2024-11-29T20:10:37.569Z","level":"error","message":"Error executing purchase logic: executePurchaseLogic is not a function","data":{}}
+{"timestamp":"2024-11-29T20:10:37.566Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T20:10:37.566Z","level":"info","message":"Token0: 0x85D8DaD074C4d3F5FB3319Cee0AbCebff3Ac5824","data":{}}
+{"timestamp":"2024-11-29T20:10:37.566Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T20:19:13.234Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T20:19:13.287Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.374Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T20:19:13.381Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.383Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.747Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.845Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.856Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.959Z","level":"info","message":"Connected to the blockchain. Current block number: 21295686","data":{}}
+{"timestamp":"2024-11-29T20:19:13.960Z","level":"info","message":"Factory contract obtained.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.963Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.963Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T20:19:13.963Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T20:45:21.916Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T20:45:22.255Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T20:45:21.917Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T20:45:22.048Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T20:45:22.240Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T20:45:22.258Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T20:45:22.627Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T20:45:22.722Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T20:45:22.731Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T20:45:22.838Z","level":"info","message":"Connected to the blockchain. Current block number: 21295815","data":{}}
+{"timestamp":"2024-11-29T20:45:22.839Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T20:45:22.843Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T20:45:22.843Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T20:45:22.843Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T20:53:14.180Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x3e78778FF272fbFBF39d03f4f0de855700b2eD4E","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xc197FF256576C5f37E30E2439426B604eD5F28c8"}}
+{"timestamp":"2024-11-29T20:53:14.181Z","level":"info","message":"Pair Address: 0xc197FF256576C5f37E30E2439426B604eD5F28c8","data":{}}
+{"timestamp":"2024-11-29T20:53:14.181Z","level":"info","message":"Event Raw Data: {\"type\":\"BigNumber\",\"hex\":\"0x05f9ad\"}","data":{}}
+{"timestamp":"2024-11-29T20:53:14.181Z","level":"info","message":"New Pair Detected: 0xc197FF256576C5f37E30E2439426B604eD5F28c8","data":{}}
+{"timestamp":"2024-11-29T20:53:14.181Z","level":"info","message":"Preparing to execute purchase for pair 0xc197FF256576C5f37E30E2439426B604eD5F28c8.","data":{}}
+{"timestamp":"2024-11-29T20:53:14.181Z","level":"error","message":"Error executing purchase logic: executePurchaseLogic is not a function","data":{}}
+{"timestamp":"2024-11-29T20:53:14.180Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T20:53:14.181Z","level":"info","message":"Token0: 0x3e78778FF272fbFBF39d03f4f0de855700b2eD4E","data":{}}
+{"timestamp":"2024-11-29T20:53:14.181Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:14:38.178Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T21:14:38.334Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.179Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-29T21:14:38.237Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.325Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-29T21:14:38.344Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.728Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.825Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.833Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.941Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-29T21:14:38.944Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.944Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.944Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-29T21:14:38.940Z","level":"info","message":"Connected to the blockchain. Current block number: 21295959","data":{}}
+{"timestamp":"2024-11-29T21:16:13.624Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x791E87248219d9fe24Db58CA081736Be7F6Fe674","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x14bbaAbA057D7a3291E1dAEac23C66077Df48602"}}
+{"timestamp":"2024-11-29T21:16:13.626Z","level":"info","message":"Pair Address: 0x14bbaAbA057D7a3291E1dAEac23C66077Df48602","data":{}}
+{"timestamp":"2024-11-29T21:16:13.626Z","level":"info","message":"Event Raw Data: {\"type\":\"BigNumber\",\"hex\":\"0x05f9ae\"}","data":{}}
+{"timestamp":"2024-11-29T21:16:13.627Z","level":"info","message":"New Pair Detected: 0x14bbaAbA057D7a3291E1dAEac23C66077Df48602","data":{}}
+{"timestamp":"2024-11-29T21:16:13.627Z","level":"info","message":"Preparing to execute purchase for pair 0x14bbaAbA057D7a3291E1dAEac23C66077Df48602.","data":{}}
+{"timestamp":"2024-11-29T21:16:13.627Z","level":"info","message":"Preparing to execute purchase for pair 0x14bbaAbA057D7a3291E1dAEac23C66077Df48602.","data":{}}
+{"timestamp":"2024-11-29T21:16:13.627Z","level":"info","message":"New Token Address: 0x791E87248219d9fe24Db58CA081736Be7F6Fe674","data":{}}
+{"timestamp":"2024-11-29T21:16:13.628Z","level":"info","message":"Evaluating pair 0x14bbaAbA057D7a3291E1dAEac23C66077Df48602 for viability.","data":{}}
+{"timestamp":"2024-11-29T21:16:13.625Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T21:16:13.626Z","level":"info","message":"Token0: 0x791E87248219d9fe24Db58CA081736Be7F6Fe674","data":{}}
+{"timestamp":"2024-11-29T21:16:13.626Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:16:14.054Z","level":"info","message":"Pair token0: 0x791E87248219d9fe24Db58CA081736Be7F6Fe674, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:16:14.165Z","level":"info","message":"Pair Reserves: reserve0 = 625000000000000000, reserve1 = 1264881882995335071","data":{}}
+{"timestamp":"2024-11-29T21:16:14.166Z","level":"error","message":"Pair reserves too low. reserve0: 625000000000000000, reserve1: 1264881882995335071","data":{}}
+{"timestamp":"2024-11-29T21:16:14.167Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T21:19:14.472Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x6739d7BC0343b85218ab99B988De87D4a08fF541","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6f79f2b53B6048981078B30fAA9a6bd167c53d40"}}
+{"timestamp":"2024-11-29T21:19:14.473Z","level":"info","message":"Event Raw Data: {\"type\":\"BigNumber\",\"hex\":\"0x05f9af\"}","data":{}}
+{"timestamp":"2024-11-29T21:19:14.473Z","level":"info","message":"New Pair Detected: 0x6f79f2b53B6048981078B30fAA9a6bd167c53d40","data":{}}
+{"timestamp":"2024-11-29T21:19:14.472Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T21:19:14.473Z","level":"info","message":"Preparing to execute purchase for pair 0x6f79f2b53B6048981078B30fAA9a6bd167c53d40.","data":{}}
+{"timestamp":"2024-11-29T21:19:14.473Z","level":"info","message":"Preparing to execute purchase for pair 0x6f79f2b53B6048981078B30fAA9a6bd167c53d40.","data":{}}
+{"timestamp":"2024-11-29T21:19:14.473Z","level":"info","message":"Evaluating pair 0x6f79f2b53B6048981078B30fAA9a6bd167c53d40 for viability.","data":{}}
+{"timestamp":"2024-11-29T21:19:14.473Z","level":"info","message":"New Token Address: 0x6739d7BC0343b85218ab99B988De87D4a08fF541","data":{}}
+{"timestamp":"2024-11-29T21:19:14.472Z","level":"info","message":"Token0: 0x6739d7BC0343b85218ab99B988De87D4a08fF541","data":{}}
+{"timestamp":"2024-11-29T21:19:14.472Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:19:14.473Z","level":"info","message":"Pair Address: 0x6f79f2b53B6048981078B30fAA9a6bd167c53d40","data":{}}
+{"timestamp":"2024-11-29T21:19:14.821Z","level":"info","message":"Pair token0: 0x6739d7BC0343b85218ab99B988De87D4a08fF541, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:19:14.932Z","level":"info","message":"Pair Reserves: reserve0 = 264795162214999, reserve1 = 2128979994605992642","data":{}}
+{"timestamp":"2024-11-29T21:19:14.933Z","level":"error","message":"Pair reserves too low. reserve0: 264795162214999, reserve1: 2128979994605992642","data":{}}
+{"timestamp":"2024-11-29T21:19:14.933Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T21:22:50.299Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x36c224Af80207ECABa3Ee9052faAbA56d1f50C18","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6043B07645Ae894876fC36885e49112d46AbCA97"}}
+{"timestamp":"2024-11-29T21:22:50.299Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T21:22:50.299Z","level":"info","message":"Token0: 0x36c224Af80207ECABa3Ee9052faAbA56d1f50C18","data":{}}
+{"timestamp":"2024-11-29T21:22:50.300Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:22:50.300Z","level":"info","message":"Pair Address: 0x6043B07645Ae894876fC36885e49112d46AbCA97","data":{}}
+{"timestamp":"2024-11-29T21:22:50.300Z","level":"info","message":"Event Raw Data: {\"type\":\"BigNumber\",\"hex\":\"0x05f9b0\"}","data":{}}
+{"timestamp":"2024-11-29T21:22:50.300Z","level":"info","message":"New Pair Detected: 0x6043B07645Ae894876fC36885e49112d46AbCA97","data":{}}
+{"timestamp":"2024-11-29T21:22:50.300Z","level":"info","message":"Preparing to execute purchase for pair 0x6043B07645Ae894876fC36885e49112d46AbCA97.","data":{}}
+{"timestamp":"2024-11-29T21:22:50.300Z","level":"info","message":"Preparing to execute purchase for pair 0x6043B07645Ae894876fC36885e49112d46AbCA97.","data":{}}
+{"timestamp":"2024-11-29T21:22:50.300Z","level":"info","message":"New Token Address: 0x36c224Af80207ECABa3Ee9052faAbA56d1f50C18","data":{}}
+{"timestamp":"2024-11-29T21:22:50.301Z","level":"info","message":"Evaluating pair 0x6043B07645Ae894876fC36885e49112d46AbCA97 for viability.","data":{}}
+{"timestamp":"2024-11-29T21:22:50.611Z","level":"info","message":"Pair token0: 0x36c224Af80207ECABa3Ee9052faAbA56d1f50C18, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:22:50.714Z","level":"info","message":"Pair Reserves: reserve0 = 231702869637442825065, reserve1 = 6049504950495049500","data":{}}
+{"timestamp":"2024-11-29T21:22:50.715Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T21:22:50.715Z","level":"error","message":"Pair reserves too low. reserve0: 231702869637442825065, reserve1: 6049504950495049500","data":{}}
+{"timestamp":"2024-11-29T21:38:01.924Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xf20E1683D20156a518Ee71b997ec45056e3416dC","pairAddress":"0xBC82F82d5A73adD9C833faB35ceecF5D9cEf783a"}}
+{"timestamp":"2024-11-29T21:38:01.925Z","level":"info","message":"Token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:38:01.925Z","level":"info","message":"Token1: 0xf20E1683D20156a518Ee71b997ec45056e3416dC","data":{}}
+{"timestamp":"2024-11-29T21:38:01.925Z","level":"info","message":"Pair Address: 0xBC82F82d5A73adD9C833faB35ceecF5D9cEf783a","data":{}}
+{"timestamp":"2024-11-29T21:38:01.925Z","level":"info","message":"Event Raw Data: {\"type\":\"BigNumber\",\"hex\":\"0x05f9b1\"}","data":{}}
+{"timestamp":"2024-11-29T21:38:01.925Z","level":"info","message":"New Pair Detected: 0xBC82F82d5A73adD9C833faB35ceecF5D9cEf783a","data":{}}
+{"timestamp":"2024-11-29T21:38:01.926Z","level":"info","message":"Preparing to execute purchase for pair 0xBC82F82d5A73adD9C833faB35ceecF5D9cEf783a.","data":{}}
+{"timestamp":"2024-11-29T21:38:01.926Z","level":"info","message":"Preparing to execute purchase for pair 0xBC82F82d5A73adD9C833faB35ceecF5D9cEf783a.","data":{}}
+{"timestamp":"2024-11-29T21:38:01.926Z","level":"info","message":"New Token Address: 0xf20E1683D20156a518Ee71b997ec45056e3416dC","data":{}}
+{"timestamp":"2024-11-29T21:38:01.926Z","level":"info","message":"Evaluating pair 0xBC82F82d5A73adD9C833faB35ceecF5D9cEf783a for viability.","data":{}}
+{"timestamp":"2024-11-29T21:38:01.925Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T21:38:02.267Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xf20E1683D20156a518Ee71b997ec45056e3416dC","data":{}}
+{"timestamp":"2024-11-29T21:38:02.362Z","level":"info","message":"Pair Reserves: reserve0 = 10000000200601810, reserve1 = 99999998000000000","data":{}}
+{"timestamp":"2024-11-29T21:38:02.363Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T21:38:02.363Z","level":"error","message":"Pair reserves too low. reserve0: 10000000200601810, reserve1: 99999998000000000","data":{}}
+{"timestamp":"2024-11-29T21:39:13.804Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x848198081Dd53119e723fA5333374d43dC2Bd663","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x38508a908d1a860254D6aC4686249AdF79A2966c"}}
+{"timestamp":"2024-11-29T21:39:13.804Z","level":"info","message":"PairCreated Event Details:","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"Pair Address: 0x38508a908d1a860254D6aC4686249AdF79A2966c","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"Event Raw Data: {\"type\":\"BigNumber\",\"hex\":\"0x05f9b2\"}","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"Preparing to execute purchase for pair 0x38508a908d1a860254D6aC4686249AdF79A2966c.","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"New Pair Detected: 0x38508a908d1a860254D6aC4686249AdF79A2966c","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"Preparing to execute purchase for pair 0x38508a908d1a860254D6aC4686249AdF79A2966c.","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"New Token Address: 0x848198081Dd53119e723fA5333374d43dC2Bd663","data":{}}
+{"timestamp":"2024-11-29T21:39:13.806Z","level":"info","message":"Evaluating pair 0x38508a908d1a860254D6aC4686249AdF79A2966c for viability.","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"Token0: 0x848198081Dd53119e723fA5333374d43dC2Bd663","data":{}}
+{"timestamp":"2024-11-29T21:39:13.805Z","level":"info","message":"Token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:39:14.133Z","level":"info","message":"Pair token0: 0x848198081Dd53119e723fA5333374d43dC2Bd663, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-29T21:39:14.233Z","level":"info","message":"Pair Reserves: reserve0 = 99999999000000000, reserve1 = 10000000100300904","data":{}}
+{"timestamp":"2024-11-29T21:39:14.234Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-29T21:39:14.234Z","level":"error","message":"Pair reserves too low. reserve0: 99999999000000000, reserve1: 10000000100300904","data":{}}
+{"timestamp":"2024-11-30T01:21:43.109Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-30T01:21:43.111Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T01:21:43.174Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T01:21:43.255Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T01:21:43.652Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T01:21:43.748Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T01:21:43.757Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T01:21:43.859Z","level":"info","message":"Connected to the blockchain. Current block number: 21297181","data":{}}
+{"timestamp":"2024-11-30T01:21:43.860Z","level":"info","message":"Setting up event listeners...","data":{}}
+{"timestamp":"2024-11-30T01:21:43.863Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T01:21:43.863Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-30T01:21:43.863Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-30T01:29:02.246Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xd0e7CDFa7E2B82fC187Ca00384Ba0c0034f4f643","pairAddress":"0x869EB1f38dA4FeFd1b428413C5f4843837FD032E","event":{"type":"BigNumber","hex":"0x05f9cb"}}}
+{"timestamp":"2024-11-30T01:29:02.247Z","level":"info","message":"Preparing to execute purchase for pair 0x869EB1f38dA4FeFd1b428413C5f4843837FD032E.","data":{}}
+{"timestamp":"2024-11-30T01:29:02.248Z","level":"info","message":"New Token Address: 0xd0e7CDFa7E2B82fC187Ca00384Ba0c0034f4f643","data":{}}
+{"timestamp":"2024-11-30T01:29:02.248Z","level":"info","message":"Evaluating pair 0x869EB1f38dA4FeFd1b428413C5f4843837FD032E for viability.","data":{}}
+{"timestamp":"2024-11-30T01:29:02.695Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xd0e7CDFa7E2B82fC187Ca00384Ba0c0034f4f643","data":{}}
+{"timestamp":"2024-11-30T01:29:02.797Z","level":"info","message":"Pair Reserves: reserve0 = 5550000000000000000, reserve1 = 1000000000000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:29:02.799Z","level":"error","message":"Pair reserves too low. reserve0: 5550000000000000000, reserve1: 1000000000000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:29:02.800Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T01:31:00.435Z","level":"info","message":"Starting bot...","data":{}}
+{"timestamp":"2024-11-30T01:31:00.436Z","level":"info","message":"Initializing contracts...","data":{}}
+{"timestamp":"2024-11-30T01:31:00.489Z","level":"info","message":"WebSocketProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T01:31:00.578Z","level":"info","message":"Wallet initialized: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d","data":{}}
+{"timestamp":"2024-11-30T01:31:00.586Z","level":"info","message":"Connected to the trades database.","data":{}}
+{"timestamp":"2024-11-30T01:31:00.591Z","level":"info","message":"Trades table is ready.","data":{}}
+{"timestamp":"2024-11-30T01:31:00.951Z","level":"info","message":"WebSocket connection established.","data":{}}
+{"timestamp":"2024-11-30T01:31:01.056Z","level":"info","message":"FlashbotsBundleProvider initialized.","data":{}}
+{"timestamp":"2024-11-30T01:31:01.065Z","level":"info","message":"Factory and Router contracts initialized.","data":{}}
+{"timestamp":"2024-11-30T01:31:01.172Z","level":"info","message":"Connected to the blockchain. Current block number: 21297226","data":{}}
+{"timestamp":"2024-11-30T01:31:01.172Z","level":"info","message":"Setting up event listeners...","data":{}}
+{"timestamp":"2024-11-30T01:31:01.175Z","level":"info","message":"Listener for PairCreated events has been set up successfully.","data":{}}
+{"timestamp":"2024-11-30T01:31:01.176Z","level":"info","message":"Bot started successfully.","data":{}}
+{"timestamp":"2024-11-30T01:31:01.176Z","level":"info","message":"Sniping Bot is Ready.","data":{}}
+{"timestamp":"2024-11-30T01:36:02.175Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x2Fad0728995F5a80B45F0024c18ecf21Cd757204","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xEd8BA31FF03Ff51E377b4B7772a5B1F858956E52","event":{"type":"BigNumber","hex":"0x05f9cc"}}}
+{"timestamp":"2024-11-30T01:36:02.179Z","level":"info","message":"Preparing to execute purchase for pair 0xEd8BA31FF03Ff51E377b4B7772a5B1F858956E52.","data":{}}
+{"timestamp":"2024-11-30T01:36:02.179Z","level":"info","message":"New Token Address: 0x2Fad0728995F5a80B45F0024c18ecf21Cd757204","data":{}}
+{"timestamp":"2024-11-30T01:36:02.180Z","level":"info","message":"Evaluating pair 0xEd8BA31FF03Ff51E377b4B7772a5B1F858956E52 for viability.","data":{}}
+{"timestamp":"2024-11-30T01:36:02.591Z","level":"info","message":"Pair token0: 0x2Fad0728995F5a80B45F0024c18ecf21Cd757204, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T01:36:02.697Z","level":"info","message":"Pair Reserves: reserve0 = 420690000000000000000, reserve1 = 600000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:36:02.698Z","level":"error","message":"Pair reserves too low. reserve0: 420690000000000000000, reserve1: 600000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:36:02.699Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T01:43:50.149Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x0b40eA5e43F236b467F72Bd7359bbf639C7f15a8","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x0a72a1310ad2172528CE3c437343a9e8e32Ca355","event":{"type":"BigNumber","hex":"0x05f9cd"}}}
+{"timestamp":"2024-11-30T01:43:50.150Z","level":"info","message":"Preparing to execute purchase for pair 0x0a72a1310ad2172528CE3c437343a9e8e32Ca355.","data":{}}
+{"timestamp":"2024-11-30T01:43:50.150Z","level":"info","message":"New Token Address: 0x0b40eA5e43F236b467F72Bd7359bbf639C7f15a8","data":{}}
+{"timestamp":"2024-11-30T01:43:50.150Z","level":"info","message":"Evaluating pair 0x0a72a1310ad2172528CE3c437343a9e8e32Ca355 for viability.","data":{}}
+{"timestamp":"2024-11-30T01:43:50.472Z","level":"info","message":"Pair token0: 0x0b40eA5e43F236b467F72Bd7359bbf639C7f15a8, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T01:43:50.575Z","level":"info","message":"Pair Reserves: reserve0 = 10000000000000000000000000000, reserve1 = 15000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:43:50.576Z","level":"error","message":"Pair reserves too low. reserve0: 10000000000000000000000000000, reserve1: 15000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:43:50.576Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T01:48:02.393Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xA99651e784351646e8ba8E58a01BFD54BA00Dc78","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x60F8764D7CdC1a30cB1E86b9D2d25f61088565F3","event":{"type":"BigNumber","hex":"0x05f9ce"}}}
+{"timestamp":"2024-11-30T01:48:02.394Z","level":"info","message":"New Token Address: 0xA99651e784351646e8ba8E58a01BFD54BA00Dc78","data":{}}
+{"timestamp":"2024-11-30T01:48:02.394Z","level":"info","message":"Preparing to execute purchase for pair 0x60F8764D7CdC1a30cB1E86b9D2d25f61088565F3.","data":{}}
+{"timestamp":"2024-11-30T01:48:02.394Z","level":"info","message":"Evaluating pair 0x60F8764D7CdC1a30cB1E86b9D2d25f61088565F3 for viability.","data":{}}
+{"timestamp":"2024-11-30T01:48:02.716Z","level":"info","message":"Pair token0: 0xA99651e784351646e8ba8E58a01BFD54BA00Dc78, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T01:48:02.813Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T01:48:02.814Z","level":"error","message":"Pair reserves too low. reserve0: 0, reserve1: 0","data":{}}
+{"timestamp":"2024-11-30T01:48:02.814Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T01:55:02.690Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x3cE66f6344Dc2267f3DFF05e6D2c7501803Abf3D","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6e13C52C1a3e11d4EF3A5EA7Bc49E85E4fa3f55f","event":{"type":"BigNumber","hex":"0x05f9cf"}}}
+{"timestamp":"2024-11-30T01:55:02.690Z","level":"info","message":"Preparing to execute purchase for pair 0x6e13C52C1a3e11d4EF3A5EA7Bc49E85E4fa3f55f.","data":{}}
+{"timestamp":"2024-11-30T01:55:02.690Z","level":"info","message":"New Token Address: 0x3cE66f6344Dc2267f3DFF05e6D2c7501803Abf3D","data":{}}
+{"timestamp":"2024-11-30T01:55:02.691Z","level":"info","message":"Evaluating pair 0x6e13C52C1a3e11d4EF3A5EA7Bc49E85E4fa3f55f for viability.","data":{}}
+{"timestamp":"2024-11-30T01:55:02.998Z","level":"info","message":"Pair token0: 0x3cE66f6344Dc2267f3DFF05e6D2c7501803Abf3D, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T01:55:03.103Z","level":"info","message":"Pair Reserves: reserve0 = 24000000000000000000000000000, reserve1 = 5000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:55:03.104Z","level":"error","message":"Pair reserves too low. reserve0: 24000000000000000000000000000, reserve1: 5000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:55:03.104Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T01:56:27.524Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xb8d656fc7AEcaAede2955f5CbBE03251D0bB66F8","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x52996926E4fc906B96E3d996618c8066FC7d35d0","event":{"type":"BigNumber","hex":"0x05f9d0"}}}
+{"timestamp":"2024-11-30T01:56:27.524Z","level":"info","message":"Preparing to execute purchase for pair 0x52996926E4fc906B96E3d996618c8066FC7d35d0.","data":{}}
+{"timestamp":"2024-11-30T01:56:27.525Z","level":"info","message":"New Token Address: 0xb8d656fc7AEcaAede2955f5CbBE03251D0bB66F8","data":{}}
+{"timestamp":"2024-11-30T01:56:27.525Z","level":"info","message":"Evaluating pair 0x52996926E4fc906B96E3d996618c8066FC7d35d0 for viability.","data":{}}
+{"timestamp":"2024-11-30T01:56:27.876Z","level":"info","message":"Pair token0: 0xb8d656fc7AEcaAede2955f5CbBE03251D0bB66F8, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T01:56:27.973Z","level":"info","message":"Pair Reserves: reserve0 = 9987553012058721817934399255, reserve1 = 20025000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:56:27.974Z","level":"error","message":"Pair reserves too low. reserve0: 9987553012058721817934399255, reserve1: 20025000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:56:27.974Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T01:57:49.657Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x27Bf389E38a9448b86e912Fa9663a462Dc988eb5","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x6240F9B27C3a7b05FC5aFC0470458FFc213eDDDB","event":{"type":"BigNumber","hex":"0x05f9d1"}}}
+{"timestamp":"2024-11-30T01:57:49.658Z","level":"info","message":"New Token Address: 0x27Bf389E38a9448b86e912Fa9663a462Dc988eb5","data":{}}
+{"timestamp":"2024-11-30T01:57:49.658Z","level":"info","message":"Preparing to execute purchase for pair 0x6240F9B27C3a7b05FC5aFC0470458FFc213eDDDB.","data":{}}
+{"timestamp":"2024-11-30T01:57:49.658Z","level":"info","message":"Evaluating pair 0x6240F9B27C3a7b05FC5aFC0470458FFc213eDDDB for viability.","data":{}}
+{"timestamp":"2024-11-30T01:57:49.982Z","level":"info","message":"Pair token0: 0x27Bf389E38a9448b86e912Fa9663a462Dc988eb5, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T01:57:50.089Z","level":"info","message":"Pair Reserves: reserve0 = 1000000000000000000000000000, reserve1 = 20000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:57:50.089Z","level":"error","message":"Pair reserves too low. reserve0: 1000000000000000000000000000, reserve1: 20000000000000000000","data":{}}
+{"timestamp":"2024-11-30T01:57:50.089Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T01:59:14.577Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x76893Bfa893786A2dE252660296818C820c3e21E","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x06BcA7B0BeCfB2331739b9006308af9889eaab58","event":{"type":"BigNumber","hex":"0x05f9d2"}}}
+{"timestamp":"2024-11-30T01:59:14.578Z","level":"info","message":"Preparing to execute purchase for pair 0x06BcA7B0BeCfB2331739b9006308af9889eaab58.","data":{}}
+{"timestamp":"2024-11-30T01:59:14.578Z","level":"info","message":"New Token Address: 0x76893Bfa893786A2dE252660296818C820c3e21E","data":{}}
+{"timestamp":"2024-11-30T01:59:14.578Z","level":"info","message":"Evaluating pair 0x06BcA7B0BeCfB2331739b9006308af9889eaab58 for viability.","data":{}}
+{"timestamp":"2024-11-30T01:59:14.899Z","level":"info","message":"Pair token0: 0x76893Bfa893786A2dE252660296818C820c3e21E, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T01:59:15.003Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T01:59:15.004Z","level":"error","message":"Pair reserves too low. reserve0: 0, reserve1: 0","data":{}}
+{"timestamp":"2024-11-30T01:59:15.004Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:04:03.114Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x960d8814776470c7150cDa1E5281F63733FE47b2","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xB7aE67c2d673A46B0c512F0B2E59eb84e1CE76B0","event":{"type":"BigNumber","hex":"0x05f9d3"}}}
+{"timestamp":"2024-11-30T02:04:03.114Z","level":"info","message":"Preparing to execute purchase for pair 0xB7aE67c2d673A46B0c512F0B2E59eb84e1CE76B0.","data":{}}
+{"timestamp":"2024-11-30T02:04:03.115Z","level":"info","message":"New Token Address: 0x960d8814776470c7150cDa1E5281F63733FE47b2","data":{}}
+{"timestamp":"2024-11-30T02:04:03.115Z","level":"info","message":"Evaluating pair 0xB7aE67c2d673A46B0c512F0B2E59eb84e1CE76B0 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:04:03.433Z","level":"info","message":"Pair token0: 0x960d8814776470c7150cDa1E5281F63733FE47b2, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T02:04:03.536Z","level":"info","message":"Pair Reserves: reserve0 = 1000000000000000000000000000, reserve1 = 40000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:04:03.537Z","level":"error","message":"Pair reserves too low. reserve0: 1000000000000000000000000000, reserve1: 40000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:04:03.537Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:07:40.104Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x16257D093837c11B343cE64C02f9d92e90FcfADD","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x5151C613c539c3c921763703a0ee07F4fEeBe957","event":{"type":"BigNumber","hex":"0x05f9d4"}}}
+{"timestamp":"2024-11-30T02:07:40.105Z","level":"info","message":"New Token Address: 0x16257D093837c11B343cE64C02f9d92e90FcfADD","data":{}}
+{"timestamp":"2024-11-30T02:07:40.104Z","level":"info","message":"Preparing to execute purchase for pair 0x5151C613c539c3c921763703a0ee07F4fEeBe957.","data":{}}
+{"timestamp":"2024-11-30T02:07:40.105Z","level":"info","message":"Evaluating pair 0x5151C613c539c3c921763703a0ee07F4fEeBe957 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:07:40.106Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xbEFeb8feBd7CFA031DaC9af3DaCB5942635ce33D","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xB2677D7D83cf30bdB0394A6661e3322BbD32D835","event":{"type":"BigNumber","hex":"0x05f9d5"}}}
+{"timestamp":"2024-11-30T02:07:40.107Z","level":"info","message":"Preparing to execute purchase for pair 0xB2677D7D83cf30bdB0394A6661e3322BbD32D835.","data":{}}
+{"timestamp":"2024-11-30T02:07:40.107Z","level":"info","message":"New Token Address: 0xbEFeb8feBd7CFA031DaC9af3DaCB5942635ce33D","data":{}}
+{"timestamp":"2024-11-30T02:07:40.107Z","level":"info","message":"Evaluating pair 0xB2677D7D83cf30bdB0394A6661e3322BbD32D835 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:07:40.430Z","level":"info","message":"Pair token0: 0x16257D093837c11B343cE64C02f9d92e90FcfADD, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T02:07:40.442Z","level":"info","message":"Pair token0: 0xbEFeb8feBd7CFA031DaC9af3DaCB5942635ce33D, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T02:07:40.537Z","level":"info","message":"Pair Reserves: reserve0 = 1500000000000000000000000, reserve1 = 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:07:40.537Z","level":"error","message":"Pair reserves too low. reserve0: 1500000000000000000000000, reserve1: 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:07:40.538Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:07:40.552Z","level":"info","message":"Pair Reserves: reserve0 = 1000000000000000000000000000, reserve1 = 6000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:07:40.553Z","level":"error","message":"Pair reserves too low. reserve0: 1000000000000000000000000000, reserve1: 6000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:07:40.553Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:16:14.684Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x8e7AAdCb5f7Cf7aE491c398D656Ff79efC70046E","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xa855065a41e7196CE84337845f7857b0f94D7272","event":{"type":"BigNumber","hex":"0x05f9d6"}}}
+{"timestamp":"2024-11-30T02:16:14.684Z","level":"info","message":"Preparing to execute purchase for pair 0xa855065a41e7196CE84337845f7857b0f94D7272.","data":{}}
+{"timestamp":"2024-11-30T02:16:14.684Z","level":"info","message":"New Token Address: 0x8e7AAdCb5f7Cf7aE491c398D656Ff79efC70046E","data":{}}
+{"timestamp":"2024-11-30T02:16:14.684Z","level":"info","message":"Evaluating pair 0xa855065a41e7196CE84337845f7857b0f94D7272 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:16:15.007Z","level":"info","message":"Pair token0: 0x8e7AAdCb5f7Cf7aE491c398D656Ff79efC70046E, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T02:16:15.114Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T02:16:15.115Z","level":"error","message":"Pair reserves too low. reserve0: 0, reserve1: 0","data":{}}
+{"timestamp":"2024-11-30T02:16:15.115Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:28:39.400Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x7ad31FF6243b7fBfD44B0F559338420D02d57ED6","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0xD2D3549b1B4E6Cd11acBb5098CfaBE2105CEFB20","event":{"type":"BigNumber","hex":"0x05f9d7"}}}
+{"timestamp":"2024-11-30T02:28:39.401Z","level":"info","message":"Preparing to execute purchase for pair 0xD2D3549b1B4E6Cd11acBb5098CfaBE2105CEFB20.","data":{}}
+{"timestamp":"2024-11-30T02:28:39.401Z","level":"info","message":"New Token Address: 0x7ad31FF6243b7fBfD44B0F559338420D02d57ED6","data":{}}
+{"timestamp":"2024-11-30T02:28:39.401Z","level":"info","message":"Evaluating pair 0xD2D3549b1B4E6Cd11acBb5098CfaBE2105CEFB20 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:28:39.722Z","level":"info","message":"Pair token0: 0x7ad31FF6243b7fBfD44B0F559338420D02d57ED6, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T02:28:39.828Z","level":"info","message":"Pair Reserves: reserve0 = 200000000000000000, reserve1 = 10000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:28:39.829Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:28:39.828Z","level":"error","message":"Pair reserves too low. reserve0: 200000000000000000, reserve1: 10000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:30:26.736Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x03d9F9674b44003CD8dF388738d562e9b00C21F9","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x8Ed769c7B6f6162fD12E66286EdFc21d38431Cc9","event":{"type":"BigNumber","hex":"0x05f9d8"}}}
+{"timestamp":"2024-11-30T02:30:26.736Z","level":"info","message":"Preparing to execute purchase for pair 0x8Ed769c7B6f6162fD12E66286EdFc21d38431Cc9.","data":{}}
+{"timestamp":"2024-11-30T02:30:26.736Z","level":"info","message":"New Token Address: 0x03d9F9674b44003CD8dF388738d562e9b00C21F9","data":{}}
+{"timestamp":"2024-11-30T02:30:26.737Z","level":"info","message":"Evaluating pair 0x8Ed769c7B6f6162fD12E66286EdFc21d38431Cc9 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:30:27.056Z","level":"info","message":"Pair token0: 0x03d9F9674b44003CD8dF388738d562e9b00C21F9, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T02:30:27.155Z","level":"info","message":"Pair Reserves: reserve0 = 294810000000000000000000000, reserve1 = 22000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:30:27.156Z","level":"error","message":"Pair reserves too low. reserve0: 294810000000000000000000000, reserve1: 22000000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:30:27.156Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:33:14.868Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0x191AB41015216F88493E3e415BC8c92de4e736B2","token1":"0xB369dACa21eE035312176Eb8Cf9d88ce97E0aA95","pairAddress":"0x017bb5b20cD3DAFb05a02f1B89fad9813c68E72E","event":{"type":"BigNumber","hex":"0x05f9d9"}}}
+{"timestamp":"2024-11-30T02:33:14.868Z","level":"info","message":"Preparing to execute purchase for pair 0x017bb5b20cD3DAFb05a02f1B89fad9813c68E72E.","data":{}}
+{"timestamp":"2024-11-30T02:33:14.868Z","level":"info","message":"Pair does not include base token. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:41:15.302Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xF38581b708269eeF48dcA746F3CcD4e94D747E79","pairAddress":"0x646EfcC8eBe63C33091982C1E90CCB514469BeEb","event":{"type":"BigNumber","hex":"0x05f9da"}}}
+{"timestamp":"2024-11-30T02:41:15.302Z","level":"info","message":"Preparing to execute purchase for pair 0x646EfcC8eBe63C33091982C1E90CCB514469BeEb.","data":{}}
+{"timestamp":"2024-11-30T02:41:15.303Z","level":"info","message":"New Token Address: 0xF38581b708269eeF48dcA746F3CcD4e94D747E79","data":{}}
+{"timestamp":"2024-11-30T02:41:15.303Z","level":"info","message":"Evaluating pair 0x646EfcC8eBe63C33091982C1E90CCB514469BeEb for viability.","data":{}}
+{"timestamp":"2024-11-30T02:41:15.670Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xF38581b708269eeF48dcA746F3CcD4e94D747E79","data":{}}
+{"timestamp":"2024-11-30T02:41:15.773Z","level":"info","message":"Pair Reserves: reserve0 = 1459629524557464169, reserve1 = 305396032128287633","data":{}}
+{"timestamp":"2024-11-30T02:41:15.773Z","level":"error","message":"Pair reserves too low. reserve0: 1459629524557464169, reserve1: 305396032128287633","data":{}}
+{"timestamp":"2024-11-30T02:41:15.773Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:57:50.288Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xa320664Df8B0d361f20Eeba284aE9001885d39c1","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x89E2B91Df0DB816641820C5914B4Ff23BABe4b38","event":{"type":"BigNumber","hex":"0x05f9db"}}}
+{"timestamp":"2024-11-30T02:57:50.289Z","level":"info","message":"Preparing to execute purchase for pair 0x89E2B91Df0DB816641820C5914B4Ff23BABe4b38.","data":{}}
+{"timestamp":"2024-11-30T02:57:50.289Z","level":"info","message":"New Token Address: 0xa320664Df8B0d361f20Eeba284aE9001885d39c1","data":{}}
+{"timestamp":"2024-11-30T02:57:50.290Z","level":"info","message":"Evaluating pair 0x89E2B91Df0DB816641820C5914B4Ff23BABe4b38 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:57:50.610Z","level":"info","message":"Pair token0: 0xa320664Df8B0d361f20Eeba284aE9001885d39c1, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T02:57:50.718Z","level":"info","message":"Pair Reserves: reserve0 = 1500000000000000000000000000000, reserve1 = 33660000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:57:50.719Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T02:57:50.719Z","level":"error","message":"Pair reserves too low. reserve0: 1500000000000000000000000000000, reserve1: 33660000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:58:50.668Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xC7e8c1Ff4AFdFc47ff9885627afe9a3FA2d7C65b","pairAddress":"0xc49d4B479eF7235e62359D1a6fE48C3F65954568","event":{"type":"BigNumber","hex":"0x05f9dc"}}}
+{"timestamp":"2024-11-30T02:58:50.669Z","level":"info","message":"Preparing to execute purchase for pair 0xc49d4B479eF7235e62359D1a6fE48C3F65954568.","data":{}}
+{"timestamp":"2024-11-30T02:58:50.669Z","level":"info","message":"New Token Address: 0xC7e8c1Ff4AFdFc47ff9885627afe9a3FA2d7C65b","data":{}}
+{"timestamp":"2024-11-30T02:58:50.669Z","level":"info","message":"Evaluating pair 0xc49d4B479eF7235e62359D1a6fE48C3F65954568 for viability.","data":{}}
+{"timestamp":"2024-11-30T02:58:51.185Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xC7e8c1Ff4AFdFc47ff9885627afe9a3FA2d7C65b","data":{}}
+{"timestamp":"2024-11-30T02:58:51.287Z","level":"info","message":"Pair Reserves: reserve0 = 50000000000000000, reserve1 = 100000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:58:51.287Z","level":"error","message":"Pair reserves too low. reserve0: 50000000000000000, reserve1: 100000000000000000","data":{}}
+{"timestamp":"2024-11-30T02:58:51.288Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T03:04:52.067Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xB4d2B8E78Cca7d74E47e553975FC03084112f678","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x435d3bE3d2DfAcD763dAFA4a0586b0403b6e72A3","event":{"type":"BigNumber","hex":"0x05f9dd"}}}
+{"timestamp":"2024-11-30T03:04:52.067Z","level":"info","message":"New Token Address: 0xB4d2B8E78Cca7d74E47e553975FC03084112f678","data":{}}
+{"timestamp":"2024-11-30T03:04:52.067Z","level":"info","message":"Preparing to execute purchase for pair 0x435d3bE3d2DfAcD763dAFA4a0586b0403b6e72A3.","data":{}}
+{"timestamp":"2024-11-30T03:04:52.067Z","level":"info","message":"Evaluating pair 0x435d3bE3d2DfAcD763dAFA4a0586b0403b6e72A3 for viability.","data":{}}
+{"timestamp":"2024-11-30T03:04:52.421Z","level":"info","message":"Pair token0: 0xB4d2B8E78Cca7d74E47e553975FC03084112f678, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T03:04:52.516Z","level":"info","message":"Pair Reserves: reserve0 = 26512893624306081, reserve1 = 3786540357298162208","data":{}}
+{"timestamp":"2024-11-30T03:04:52.516Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T03:04:52.516Z","level":"error","message":"Pair reserves too low. reserve0: 26512893624306081, reserve1: 3786540357298162208","data":{}}
+{"timestamp":"2024-11-30T03:14:51.994Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xf32aB7e8c297a51Be77A678fd9cA8D1da6F2bC12","pairAddress":"0x7854A4217585407543E63e2A0a6e6150814AC3cA","event":{"type":"BigNumber","hex":"0x05f9de"}}}
+{"timestamp":"2024-11-30T03:14:51.994Z","level":"info","message":"Preparing to execute purchase for pair 0x7854A4217585407543E63e2A0a6e6150814AC3cA.","data":{}}
+{"timestamp":"2024-11-30T03:14:51.995Z","level":"info","message":"New Token Address: 0xf32aB7e8c297a51Be77A678fd9cA8D1da6F2bC12","data":{}}
+{"timestamp":"2024-11-30T03:14:51.995Z","level":"info","message":"Evaluating pair 0x7854A4217585407543E63e2A0a6e6150814AC3cA for viability.","data":{}}
+{"timestamp":"2024-11-30T03:14:52.316Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xf32aB7e8c297a51Be77A678fd9cA8D1da6F2bC12","data":{}}
+{"timestamp":"2024-11-30T03:14:52.418Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T03:14:52.418Z","level":"error","message":"Pair reserves too low. reserve0: 0, reserve1: 0","data":{}}
+{"timestamp":"2024-11-30T03:14:52.419Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T03:24:51.726Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","token1":"0xf7E5FE0963FA3461877c1F0A4F956090a905c873","pairAddress":"0x470A961768D2E905Cf99429399F2b8f9a87A922f","event":{"type":"BigNumber","hex":"0x05f9df"}}}
+{"timestamp":"2024-11-30T03:24:51.726Z","level":"info","message":"Preparing to execute purchase for pair 0x470A961768D2E905Cf99429399F2b8f9a87A922f.","data":{}}
+{"timestamp":"2024-11-30T03:24:51.726Z","level":"info","message":"New Token Address: 0xf7E5FE0963FA3461877c1F0A4F956090a905c873","data":{}}
+{"timestamp":"2024-11-30T03:24:51.727Z","level":"info","message":"Evaluating pair 0x470A961768D2E905Cf99429399F2b8f9a87A922f for viability.","data":{}}
+{"timestamp":"2024-11-30T03:24:52.044Z","level":"info","message":"Pair token0: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2, token1: 0xf7E5FE0963FA3461877c1F0A4F956090a905c873","data":{}}
+{"timestamp":"2024-11-30T03:24:52.145Z","level":"info","message":"Pair Reserves: reserve0 = 0, reserve1 = 0","data":{}}
+{"timestamp":"2024-11-30T03:24:52.145Z","level":"error","message":"Pair reserves too low. reserve0: 0, reserve1: 0","data":{}}
+{"timestamp":"2024-11-30T03:24:52.146Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}
+{"timestamp":"2024-11-30T03:28:16.391Z","level":"info","message":"Detected PairCreated Event:","data":{"token0":"0xb979D8503D05c0a3831DCa80d4686304c08723DF","token1":"0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","pairAddress":"0x0F5bF7DFda51E8C5596A5a2c7540221F3035c878","event":{"type":"BigNumber","hex":"0x05f9e0"}}}
+{"timestamp":"2024-11-30T03:28:16.391Z","level":"info","message":"Preparing to execute purchase for pair 0x0F5bF7DFda51E8C5596A5a2c7540221F3035c878.","data":{}}
+{"timestamp":"2024-11-30T03:28:16.391Z","level":"info","message":"New Token Address: 0xb979D8503D05c0a3831DCa80d4686304c08723DF","data":{}}
+{"timestamp":"2024-11-30T03:28:16.391Z","level":"info","message":"Evaluating pair 0x0F5bF7DFda51E8C5596A5a2c7540221F3035c878 for viability.","data":{}}
+{"timestamp":"2024-11-30T03:28:16.735Z","level":"info","message":"Pair token0: 0xb979D8503D05c0a3831DCa80d4686304c08723DF, token1: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2","data":{}}
+{"timestamp":"2024-11-30T03:28:16.835Z","level":"info","message":"Pair Reserves: reserve0 = 420690000000000000000000000000, reserve1 = 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T03:28:16.836Z","level":"error","message":"Pair reserves too low. reserve0: 420690000000000000000000000000, reserve1: 1000000000000000000","data":{}}
+{"timestamp":"2024-11-30T03:28:16.836Z","level":"info","message":"Pair evaluation failed. Ignoring.","data":{}}

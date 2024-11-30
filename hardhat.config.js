@@ -5,24 +5,36 @@ require("@nomiclabs/hardhat-waffle"); // Correct for Waffle integration
 
 require("dotenv").config();
 
+const {
+  MAINNET_URL,
+  SEPOLIA_URL,
+  PRIVATE_KEY,
+} = process.env;
+
+// Validate essential environment variables
+if (!MAINNET_URL || !SEPOLIA_URL || !PRIVATE_KEY) {
+  throw new Error("Please ensure MAINNET_URL, SEPOLIA_URL, and PRIVATE_KEY are set in your .env file.");
+}
+
 module.exports = {
-  solidity: "0.8.20", // Updated Solidity version
+  solidity: "0.8.20", // Specify the Solidity compiler version
   networks: {
     hardhat: {
       forking: {
-        url: process.env.MAINNET_URL,
-        blockNumber: 17500000,
+        url: MAINNET_URL, // HTTP URL for mainnet forking
+        blockNumber: 17500000, // Optional: Pin block number for deterministic results
       },
-      chainId: 1337,
+      chainId: 1337, // Chain ID for Hardhat local network
     },
     sepolia: {
-      url: process.env.SEPOLIA_URL,
-      accounts: [`0x${process.env.PRIVATE_KEY}`],
+      url: SEPOLIA_URL, // Sepolia RPC URL
+      accounts: [`0x${PRIVATE_KEY}`], // Prepend '0x' since .env does not include it
+      chainId: 11155111, // Sepolia Chain ID
     },
-    mainnet: { // Ensure mainnet configuration exists as per previous steps
-      url: process.env.MAINNET_URL,
-      accounts: [`0x${process.env.PRIVATE_KEY}`],
-      chainId: 1,
+    mainnet: {
+      url: MAINNET_URL, // Mainnet RPC URL
+      accounts: [`0x${PRIVATE_KEY}`], // Prepend '0x' since .env does not include it
+      chainId: 1, // Ethereum mainnet Chain ID
     },
   },
 };

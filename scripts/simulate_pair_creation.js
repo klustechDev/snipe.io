@@ -13,7 +13,7 @@ require("dotenv").config();
 
     // Use WETH and MockToken addresses
     const tokenA = ethers.utils.getAddress("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"); // WETH
-    const tokenB = ethers.utils.getAddress("0x4ea0Be853219be8C9cE27200Bdeee36881612FF2"); // MockToken (replace with actual)
+    const tokenB = ethers.utils.getAddress("0xF62eEc897fa5ef36a957702AA4a45B58fE8Fe312"); // MockToken (replace with actual)
     const factoryAddress = ethers.utils.getAddress(process.env.FACTORY_ADDRESS); // Uniswap V2 Factory
 
     // ABI for Uniswap V2 Factory

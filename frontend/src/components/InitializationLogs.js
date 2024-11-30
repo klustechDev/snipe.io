@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './InitializationLogs.css'; // Ensure you have the corresponding CSS
 
 const InitializationLogs = () => {
   const [logs, setLogs] = useState([]);
@@ -9,7 +10,7 @@ const InitializationLogs = () => {
   useEffect(() => {
     const fetchLogs = async () => {
       try {
-        const response = await axios.get('http://localhost:3001/api/init-logs');
+        const response = await axios.get('/api/init-logs');
         setLogs(response.data);
       } catch (error) {
         console.error('Error fetching initialization logs:', error);
@@ -20,6 +21,7 @@ const InitializationLogs = () => {
 
   return (
     <div className="initialization-logs">
+      <h2>Initialization Logs</h2>
       <ul>
         {logs.map((log, index) => (
           <li key={index}>
