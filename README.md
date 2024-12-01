@@ -1,61 +1,59 @@
 Snipe.io Sniping Bot 🚀
-
-
+ 
 Welcome to the Snipe.io Sniping Bot, a sophisticated cryptocurrency trading bot engineered to detect and capitalize on profitable trading pairs on decentralized exchanges (DEXes) like Uniswap. This bot automates the identification of newly created liquidity pools and executes buy and sell orders based on predefined profitability criteria, ensuring you stay ahead in the dynamic crypto market.
-
+________________________________________
 📋 Table of Contents
-Features
-Live Demo
-Prerequisites
-Installation
-Configuration
-Usage
-Troubleshooting
-Contributing
-Security Notice
-License
-Acknowledgements
-Contact
+•	Features
+•	Live Demo
+•	Prerequisites
+•	Installation
+•	Configuration
+•	Usage
+•	Troubleshooting
+•	Contributing
+•	Security Notice
+•	License
+•	Acknowledgements
+•	Contact
+________________________________________
 🛠️ Features
-Real-Time Pair Detection: Instantly listens for PairCreated events to identify new trading pairs.
-Automated Trading: Executes buy orders for tokens that meet your profitability thresholds.
-Profit Monitoring: Continuously tracks token prices to execute sell orders once profit targets are achieved.
-User-Friendly Control Panel: Easily start, stop, and monitor the bot's status and activity logs through a responsive frontend dashboard.
-Secure Configuration: Manages sensitive credentials securely using environment variables.
-Persistent Logging: Maintains comprehensive logs to monitor bot activities and performance.
-Customizable Settings: Tailor trading parameters such as ETH amount, slippage tolerance, gas price multiplier, and profit thresholds to align with your trading strategy.
-Whitelist & Blacklist Management: Control which tokens the bot interacts with, enhancing security and strategy alignment.
+•	Real-Time Pair Detection: Instantly listens for PairCreated events to identify new trading pairs.
+•	Automated Trading: Executes buy orders for tokens that meet your profitability thresholds.
+•	Profit Monitoring: Continuously tracks token prices to execute sell orders once profit targets are achieved.
+•	User-Friendly Control Panel: Easily start, stop, and monitor the bot's status and activity logs through a responsive frontend dashboard.
+•	Secure Configuration: Manages sensitive credentials securely using environment variables.
+•	Persistent Logging: Maintains comprehensive logs to monitor bot activities and performance.
+•	Customizable Settings: Tailor trading parameters such as ETH amount, slippage tolerance, gas price multiplier, and profit thresholds to align with your trading strategy.
+•	Whitelist & Blacklist Management: Control which tokens the bot interacts with, enhancing security and strategy alignment.
+________________________________________
 📈 Live Demo
-
-
+ 
+________________________________________
 🔧 Prerequisites
 Before setting up the sniping bot, ensure you have the following installed on your system:
-
-Node.js (v14 or later)
-npm (comes with Node.js)
-Git (for version control)
+•	Node.js (v14 or later)
+•	npm (comes with Node.js)
+•	Git (for version control)
+________________________________________
 💻 Installation
-Clone the Repository
-
+1.	Clone the Repository
 bash
 Copy code
 git clone git@github.com:klustechDev/snipe.io.git
 cd snipe.io
-Install Backend Dependencies
-
+2.	Install Backend Dependencies
 bash
 Copy code
 npm install
-Navigate to Frontend Directory and Install Dependencies
-
+3.	Navigate to Frontend Directory and Install Dependencies
 bash
 Copy code
 cd frontend
 npm install
+________________________________________
 ⚙️ Configuration
 1. Setup Environment Variables
 Create a .env file in the root directory of your project (~/sniping-bot) and add the following variables:
-
 dotenv
 Copy code
 # .env
@@ -98,18 +96,17 @@ LOG_FILE=./logs/bot.log
 TOKEN_WHITELIST=0x1234567890abcdef,0xabcdef1234567890
 TOKEN_BLACKLIST=0xabcdef1234567890,0x1234567890abcdef
 ⚠️ Ensure that the .env file is not tracked by Git to prevent exposing sensitive information. The .gitignore is already configured to exclude .env.
-
 2. Secure .env File
 If not already done, ensure .env is added to .gitignore:
-
 bash
 Copy code
 echo ".env" >> .gitignore
 3. Verify Addresses and RPC URL
-RPC_URL_MAINNET: Obtain from providers like Infura, Alchemy, or QuickNode.
-ROUTER_ADDRESS & FACTORY_ADDRESS: Ensure they match the DEX you're targeting (default is Uniswap V2).
-BASE_TOKEN_ADDRESS: Typically WETH for ETH-based pools.
-PRIVATE_KEY: Keep this secure and never expose it publicly.
+•	RPC_URL_MAINNET: Obtain from providers like Infura, Alchemy, or QuickNode.
+•	ROUTER_ADDRESS & FACTORY_ADDRESS: Ensure they match the DEX you're targeting (default is Uniswap V2).
+•	BASE_TOKEN_ADDRESS: Typically WETH for ETH-based pools.
+•	PRIVATE_KEY: Keep this secure and never expose it publicly.
+________________________________________
 🚀 Usage
 1. Start the Backend Server
 bash
@@ -117,7 +114,6 @@ Copy code
 cd ~/sniping-bot
 npm start
 Expected Output:
-
 plaintext
 Copy code
 Ethers.js version: ethers/5.7.2
@@ -134,13 +130,11 @@ Backend server is running on port 3001
 [01/12/2024, 11:19:11 AM] Sniping Bot is Running...
 2. Start the Frontend Server
 Open a new terminal window/tab and run:
-
 bash
 Copy code
 cd ~/sniping-bot/frontend
 npm start
 Expected Output:
-
 plaintext
 Copy code
 You can now view frontend in the browser.
@@ -153,164 +147,134 @@ To create a production build, use npm run build.
 
 webpack compiled successfully
 3. Access the Control Panel
-Open your web browser and navigate to http://localhost:3002.
-Control Panel Features:
-Get Status: Retrieves the current status of the bot.
-Start Bot: Initiates the sniping bot.
-Stop Bot: Terminates the sniping bot.
-Activity Logs: Displays real-time logs of the bot's activities, including detected pairs, transactions, and errors.
+•	Open your web browser and navigate to http://localhost:3002.
+•	Control Panel Features:
+o	Get Status: Retrieves the current status of the bot.
+o	Start Bot: Initiates the sniping bot.
+o	Stop Bot: Terminates the sniping bot.
+•	Activity Logs: Displays real-time logs of the bot's activities, including detected pairs, transactions, and errors.
+________________________________________
 🛠️ Troubleshooting
 1. Proxy Errors
 Issue:
-
 plaintext
 Copy code
 Proxy error: Could not proxy request /api/logs from localhost:3002 to http://localhost:3001.
 See https://nodejs.org/api/errors.html#errors_common_system_errors for more information (ECONNREFUSED).
 Solution:
-
-Ensure Frontend Proxy Configuration Points to Backend Port (3001):
-Open frontend/package.json.
-
-Update the proxy field:
-
+•	Ensure Frontend Proxy Configuration Points to Backend Port (3001):
+1.	Open frontend/package.json.
+2.	Update the proxy field:
 json
 Copy code
 "proxy": "http://localhost:3001",
-Restart the frontend server:
-
+3.	Restart the frontend server:
 bash
 Copy code
 cd ~/sniping-bot/frontend
 npm start
 2. Port Conflicts (EADDRINUSE)
 Issue:
-
 plaintext
 Copy code
 Error: listen EADDRINUSE: address already in use :::3001
 Solution:
-
-Identify and Terminate Processes Using Port 3001:
-
-For Linux/Mac:
-
+•	Identify and Terminate Processes Using Port 3001:
+o	For Linux/Mac:
 bash
 Copy code
 lsof -i :3001
 kill -9 <PID>
-For Windows:
-
+o	For Windows:
 bash
 Copy code
 netstat -ano | findstr :3001
 taskkill /PID <PID> /F
-Restart Backend Server:
-
+•	Restart Backend Server:
 bash
 Copy code
 cd ~/sniping-bot
 npm start
 3. Event Listener Errors
 Issue:
-
 plaintext
 Copy code
 Error setting up event listeners: events require a provider or a signer with a provider (operation="once", code=UNSUPPORTED_OPERATION, version=contracts/5.7.0)
 Solution:
-
-Ensure Proper Contract Initialization:
-
-Factory Contract: Should be initialized with a provider.
-Router Contract: Should be initialized with a wallet (which includes the signer).
-Sample Initialization:
-
+•	Ensure Proper Contract Initialization:
+o	Factory Contract: Should be initialized with a provider.
+o	Router Contract: Should be initialized with a wallet (which includes the signer).
+•	Sample Initialization:
 javascript
 Copy code
 factoryContract = new ethers.Contract(FACTORY_ADDRESS, factoryABI, provider);
 routerContract = new ethers.Contract(ROUTER_ADDRESS, routerABI, wallet);
-Avoid Re-initializing Contracts Inside Functions: Use globally defined instances.
-
-Restart Backend Server After Changes:
-
+•	Avoid Re-initializing Contracts Inside Functions: Use globally defined instances.
+•	Restart Backend Server After Changes:
 bash
 Copy code
 cd ~/sniping-bot
 npm start
 4. Wallet Balance Issues
 Issue:
-
 plaintext
 Copy code
 Wallet Balance: 0.0 ETH
 Solution:
-
-Fund Your Wallet:
-Transfer ETH to your wallet address: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d.
-Use Etherscan to verify the balance.
+•	Fund Your Wallet:
+o	Transfer ETH to your wallet address: 0x3772316FD86F64C7aa672ef8f2D4a19A7394d53d.
+o	Use Etherscan to verify the balance.
+________________________________________
 🤝 Contributing
 Contributions to Snipe.io Sniping Bot are welcome! Follow these steps to contribute:
-
-Fork the Repository
-
+1.	Fork the Repository
 Click the "Fork" button at the top-right corner of the repository page on GitHub.
-
-Create a New Branch
-
+2.	Create a New Branch
 bash
 Copy code
 git checkout -b feature/YourFeatureName
-Make Your Changes
-
+3.	Make Your Changes
 Implement your feature or fix.
-
-Commit Your Changes
-
+4.	Commit Your Changes
 bash
 Copy code
 git commit -m "Add some feature"
-Push to the Branch
-
+5.	Push to the Branch
 bash
 Copy code
 git push origin feature/YourFeatureName
-Open a Pull Request
-
+6.	Open a Pull Request
 Navigate to the original repository on GitHub and click "Compare & pull request".
-
+________________________________________
 🔒 Security Notice
 ⚠️ Your private key is compromised. Follow the urgent security steps below to secure your assets.
-
 Important:
-
-Never expose your private keys. Ensure your .env file is secure and not tracked by Git.
-Regularly monitor your wallet for unauthorized activities.
-Use environment variables and secure storage solutions to manage sensitive information.
+•	Never expose your private keys. Ensure your .env file is secure and not tracked by Git.
+•	Regularly monitor your wallet for unauthorized activities.
+•	Use environment variables and secure storage solutions to manage sensitive information.
 URGENT SECURITY STEPS:
-Transfer All Funds:
-
-Move all assets from the compromised wallet to a new, secure wallet immediately.
-Revoke Permissions:
-
-Revoke any permissions or API keys associated with the compromised wallet.
-Secure .env File:
-
-Ensure your .env file is included in .gitignore to prevent accidental commits.
-Use secure methods to store and access environment variables.
-Enable Two-Factor Authentication (2FA):
-
-Protect your GitHub account and other related services with 2FA.
+1.	Transfer All Funds:
+o	Move all assets from the compromised wallet to a new, secure wallet immediately.
+2.	Revoke Permissions:
+o	Revoke any permissions or API keys associated with the compromised wallet.
+3.	Secure .env File:
+o	Ensure your .env file is included in .gitignore to prevent accidental commits.
+o	Use secure methods to store and access environment variables.
+4.	Enable Two-Factor Authentication (2FA):
+o	Protect your GitHub account and other related services with 2FA.
+________________________________________
 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
+________________________________________
 🙏 Acknowledgements
-Ethers.js
-Uniswap
-CoinGecko API
-Express.js
-React
-Winston Logging Library
-dotenv
+•	Ethers.js
+•	Uniswap
+•	CoinGecko API
+•	Express.js
+•	React
+•	Winston Logging Library
+•	dotenv
+________________________________________
 📬 Contact
 For any inquiries or support, please contact your.email@example.com.
 
