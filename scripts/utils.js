@@ -88,7 +88,7 @@ async function evaluatePair(pairAddress, token0, token1) {
             'info'
         );
 
-        // Ensure reserves meet minimum threshold
+        // Ensure reserves meet minimum threshold for the base token only
         const minReserveEth = getSettings().MINIMUM_LOCKED_ETH; // Corrected key
         if (!minReserveEth) {
             logMessage(`MINIMUM_LOCKED_ETH is not defined in settings.`, {}, 'error');
@@ -97,9 +97,20 @@ async function evaluatePair(pairAddress, token0, token1) {
 
         const minReserve = ethers.utils.parseEther(minReserveEth.toString());
 
-        if (reserve0.lt(minReserve) || reserve1.lt(minReserve)) {
+        // Determine which reserve corresponds to the base token
+        const baseTokenAddress = getSettings().BASE_TOKEN_ADDRESS.toLowerCase();
+        const isToken0Base = pairToken0.toLowerCase() === baseTokenAddress;
+        const baseTokenReserve = isToken0Base ? reserve0 : reserve1;
+
+        logMessage(
+            `Base Token (${isToken0Base ? 'token0' : 'token1'}) Reserve: ${ethers.utils.formatEther(baseTokenReserve)} ETH, Minimum Required: ${ethers.utils.formatEther(minReserve)} ETH`,
+            {},
+            'info'
+        );
+
+        if (baseTokenReserve.lt(minReserve)) {
             logMessage(
-                `Pair reserves too low. reserve0: ${ethers.utils.formatEther(reserve0)} ETH, reserve1: ${ethers.utils.formatEther(reserve1)} ETH, minimum required: ${ethers.utils.formatEther(minReserve)} ETH`,
+                `Base token reserve too low. reserve: ${ethers.utils.formatEther(baseTokenReserve)} ETH, minimum required: ${ethers.utils.formatEther(minReserve)} ETH`,
                 {},
                 'error'
             );
@@ -131,8 +142,10 @@ async function getAdjustedGasPrice() {
         let maxPriorityFeePerGas = gasPriceData.maxPriorityFeePerGas;
 
         if (getSettings().GAS_PRICE_MULTIPLIER) {
-            maxFeePerGas = maxFeePerGas.mul(getSettings().GAS_PRICE_MULTIPLIER).div(100);
-            maxPriorityFeePerGas = maxPriorityFeePerGas.mul(getSettings().GAS_PRICE_MULTIPLIER).div(100);
+            // GAS_PRICE_MULTIPLIER is expected to be a percentage (e.g., 120 for 120%)
+            const multiplier = ethers.BigNumber.from(Math.round(getSettings().GAS_PRICE_MULTIPLIER * 100)); // e.g., 120 * 100 = 12000
+            maxFeePerGas = maxFeePerGas.mul(multiplier).div(10000); // 12000 / 10000 = 1.2
+            maxPriorityFeePerGas = maxPriorityFeePerGas.mul(multiplier).div(10000);
         }
 
         logMessage(`Adjusted Gas Prices: maxFeePerGas = ${ethers.utils.formatUnits(maxFeePerGas, 'gwei')} gwei, maxPriorityFeePerGas = ${ethers.utils.formatUnits(maxPriorityFeePerGas, 'gwei')} gwei`, {}, 'info');
@@ -225,4 +238,3 @@ module.exports = {
     monitorTokenPrice,
     getTokenPrice,
 };
-

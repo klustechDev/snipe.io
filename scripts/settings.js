@@ -34,7 +34,6 @@ let settings = {
     MINIMUM_LOCKED_ETH: parseFloat(process.env.MINIMUM_LOCKED_ETH) || 0.5,
     MAX_GAS_PRICE: parseInt(process.env.MAX_GAS_PRICE, 10) || 200,
 
-    MIN_RESERVE_AMOUNT: process.env.MIN_RESERVE_AMOUNT || '1', // Keep as string for parseUnits
     MONITOR_DURATION: parseInt(process.env.MONITOR_DURATION, 10) || 300,
     CHECK_INTERVAL: parseInt(process.env.CHECK_INTERVAL, 10) || 60,
 
