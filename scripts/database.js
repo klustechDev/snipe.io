@@ -2,7 +2,7 @@
 
 /**
  * database.js
- * 
+ *
  * Manages the SQLite database connection and operations.
  */
 

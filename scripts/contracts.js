@@ -157,10 +157,34 @@ function getWalletInstance() {
     return wallet;
 }
 
+/**
+ * Format reserves to ETH.
+ * @param {BigNumber} reserve0 - The first reserve in wei.
+ * @param {BigNumber} reserve1 - The second reserve in wei.
+ * @returns {Object} Reserves in ETH.
+ */
+function formatReserves(reserve0, reserve1) {
+    return {
+        reserve0: ethers.utils.formatEther(reserve0),
+        reserve1: ethers.utils.formatEther(reserve1),
+    };
+}
+
+/**
+ * Log PairCreated event with reserves in ETH.
+ * @param {Object} pairData - Pair data including reserves.
+ */
+function logPairCreatedEvent(pairData) {
+    const formattedReserves = formatReserves(pairData.reserve0, pairData.reserve1);
+    logMessage('Pair Reserves (ETH):', formattedReserves, 'info');
+}
+
 module.exports = {
     initContracts,
     getFactoryContract: getFactoryContractInstance,
     getRouterContract: getRouterContractInstance,
     getProvider: getProviderInstance,
     getWallet: getWalletInstance,
+    formatReserves,
+    logPairCreatedEvent,
 };

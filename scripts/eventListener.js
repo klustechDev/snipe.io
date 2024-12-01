@@ -2,7 +2,7 @@
 
 /**
  * eventListener.js
- * 
+ *
  * Manages the bot's lifecycle, handles blockchain events, and interacts with the database.
  */
 
@@ -14,9 +14,9 @@ const {
     getWallet,
 } = require('./contracts');
 const { logMessage, getLogs } = require('./logging');
-const { monitorTokenPrice, evaluatePair } = require('./utils');
+const { monitorTokenPrice, evaluatePair, getAdjustedGasPrice } = require('./utils');
 const { isHoneypot } = require('./tokenAnalysis'); // Ensure this module exists
-const { insertTrade, getAllTrades, closeDatabase } = require('./database');
+const { initDatabase, insertTrade, getAllTrades, closeDatabase } = require('./database');
 const { getSettings, updateSettings } = require('./settings');
 
 let botRunning = false;
@@ -25,7 +25,13 @@ let botRunning = false;
  * Initializes the SQLite database.
  */
 function initializeDatabase() {
-    logMessage('Database initialized.', {}, 'info');
+    try {
+        initDatabase(); // Correctly initialize the database
+        logMessage('Database initialized.', {}, 'info');
+    } catch (error) {
+        logMessage(`Error initializing database: ${error.message}`, {}, 'error');
+        throw new Error('Failed to initialize database.');
+    }
 }
 
 /**
@@ -39,7 +45,7 @@ async function startBot() {
 
     try {
         await initContracts();
-        initializeDatabase();
+        initializeDatabase(); // Ensure the database is initialized before proceeding
         botRunning = true;
         logMessage('Bot started.', {}, 'info');
 
@@ -175,16 +181,15 @@ async function executePurchase(tokenAddress, pairAddress) {
     try {
         const routerContract = getRouterContract();
         const wallet = getWallet();
-        const provider = getProvider();
 
         const settings = getSettings();
         const ethAmountToSwap = settings.ETH_AMOUNT_TO_SWAP;
         const amountIn = ethers.utils.parseEther(ethAmountToSwap.toString());
         const path = [settings.BASE_TOKEN_ADDRESS, tokenAddress];
-        const deadline = Math.floor(Date.now() / 1000) + settings.MONITOR_DURATION;
+        const deadline = Math.floor(Date.now() / 1000) + settings.DEADLINE_BUFFER;
 
         // Get Adjusted Gas Prices
-        const { maxFeePerGas, maxPriorityFeePerGas } = await require('./utils').getAdjustedGasPrice();
+        const { maxFeePerGas, maxPriorityFeePerGas } = await getAdjustedGasPrice();
 
         // Execute Swap
         const tx = await routerContract.swapExactETHForTokens(
@@ -196,7 +201,7 @@ async function executePurchase(tokenAddress, pairAddress) {
                 gasLimit: 200000,
                 maxFeePerGas,
                 maxPriorityFeePerGas,
-                value: amountIn
+                value: amountIn,
             }
         );
 
@@ -236,3 +241,4 @@ module.exports = {
     getSettings,
     updateSettings,
 };
+

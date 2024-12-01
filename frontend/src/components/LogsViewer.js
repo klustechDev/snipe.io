@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import './LogsViewer.css'; // Ensure you have the corresponding CSS
+import './LogsViewer.css'; // Ensure this CSS file is in place
 
 const LogsViewer = () => {
   const [logs, setLogs] = useState([]);
@@ -22,7 +22,7 @@ const LogsViewer = () => {
 
   useEffect(() => {
     fetchLogs();
-    const interval = setInterval(fetchLogs, 5000);
+    const interval = setInterval(fetchLogs, 5000); // Refresh logs every 5 seconds
     return () => clearInterval(interval);
   }, []);
 
@@ -37,23 +37,29 @@ const LogsViewer = () => {
       <h2>General Logs</h2>
       {isLoading ? (
         <p>Loading logs...</p>
-      ) : (
-        logs.length > 0 ? (
-          <div className="logs">
-            <ul>
-              {logs.map((log, index) => (
-                <li key={index}>
-                  <span className="timestamp">
-                    {new Date(log.timestamp).toLocaleString()}:
-                  </span>{' '}
-                  <span className="message">{log.message}</span>
-                </li>
-              ))}
-            </ul>
+      ) : logs.length > 0 ? (
+        <div className="logs-table-container">
+          <div className="logs-table">
+            <div className="logs-table-header">
+              <div className="logs-header-cell">Timestamp</div>
+              <div className="logs-header-cell">Level</div>
+              <div className="logs-header-cell">Message</div>
+            </div>
+            {logs.map((log, index) => (
+              <div key={index} className={`logs-table-row logs-${log.level.toLowerCase()}`}>
+                <div className="logs-cell">{new Date(log.timestamp).toLocaleString()}</div>
+                <div className="logs-cell">{log.level.toUpperCase()}</div>
+                <div className="logs-cell">
+                  {log.message.includes('0x') || log.message.includes('ETH')
+                    ? <pre>{log.message}</pre> // Preserve formatting for long addresses and WETH amounts
+                    : log.message}
+                </div>
+              </div>
+            ))}
           </div>
-        ) : (
-          <p>No logs available yet.</p>
-        )
+        </div>
+      ) : (
+        <p>No logs available yet.</p>
       )}
     </div>
   );

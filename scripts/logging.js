@@ -2,7 +2,7 @@
 
 /**
  * logging.js
- * 
+ *
  * Handles logging to both the console and a log file.
  * Prevents circular dependencies by lazy-loading settings.
  */
@@ -11,6 +11,12 @@ const fs = require('fs');
 const path = require('path');
 
 let settings;
+const excludedMessages = [
+    'WebSocket ping sent',
+    'Attempting to reconnect',
+    'WebSocket connection established',
+    'WebSocketProvider initialized',
+]; // Define messages to exclude from logs
 
 /**
  * Logs a message to the console and appends it to a log file.
@@ -22,6 +28,11 @@ function logMessage(message, data = {}, level = 'info') {
     try {
         if (!settings) {
             settings = require('./settings').getSettings();
+        }
+
+        // Skip logging for excluded messages
+        if (excludedMessages.some((excluded) => message.includes(excluded))) {
+            return;
         }
 
         const timestamp = new Date().toISOString();
@@ -125,4 +136,16 @@ function clearLogs() {
     }
 }
 
-module.exports = { logMessage, getLogs, clearLogs };
+/**
+ * Configures the excluded messages for logs.
+ * @param {Array<string>} newExclusions - Array of strings to exclude from logging.
+ */
+function configureExclusions(newExclusions) {
+    if (Array.isArray(newExclusions)) {
+        excludedMessages.splice(0, excludedMessages.length, ...newExclusions);
+    } else {
+        console.warn('Invalid exclusions configuration. Expected an array.');
+    }
+}
+
+module.exports = { logMessage, getLogs, clearLogs, configureExclusions };

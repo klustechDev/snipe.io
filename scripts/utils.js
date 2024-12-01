@@ -2,7 +2,7 @@
 
 /**
  * utils.js
- * 
+ *
  * Contains utility functions for the bot.
  */
 
@@ -79,21 +79,30 @@ async function evaluatePair(pairAddress, token0, token1) {
             return false;
         }
 
-        const reserve0 = reserves.reserve0.toString(); // Ensure string format
-        const reserve1 = reserves.reserve1.toString();
+        const reserve0 = ethers.BigNumber.from(reserves.reserve0);
+        const reserve1 = ethers.BigNumber.from(reserves.reserve1);
 
-        logMessage(`Pair Reserves: reserve0 = ${reserve0}, reserve1 = ${reserve1}`, {}, 'info');
+        logMessage(
+            `Pair Reserves: reserve0 = ${ethers.utils.formatEther(reserve0)} ETH, reserve1 = ${ethers.utils.formatEther(reserve1)} ETH`,
+            {},
+            'info'
+        );
 
         // Ensure reserves meet minimum threshold
-        if (!reserve0 || !reserve1) {
-            logMessage(`Invalid reserve values for pair ${pairAddress}`, {}, 'error');
+        const minReserveEth = getSettings().MINIMUM_LOCKED_ETH; // Corrected key
+        if (!minReserveEth) {
+            logMessage(`MINIMUM_LOCKED_ETH is not defined in settings.`, {}, 'error');
             return false;
         }
 
-        const minReserve = ethers.utils.parseUnits(getSettings().MIN_RESERVE_AMOUNT.toString(), 18);
+        const minReserve = ethers.utils.parseEther(minReserveEth.toString());
 
-        if (ethers.BigNumber.from(reserve0).lt(minReserve) || ethers.BigNumber.from(reserve1).lt(minReserve)) {
-            logMessage(`Pair reserves too low. reserve0: ${reserve0}, reserve1: ${reserve1}`, {}, 'error');
+        if (reserve0.lt(minReserve) || reserve1.lt(minReserve)) {
+            logMessage(
+                `Pair reserves too low. reserve0: ${ethers.utils.formatEther(reserve0)} ETH, reserve1: ${ethers.utils.formatEther(reserve1)} ETH, minimum required: ${ethers.utils.formatEther(minReserve)} ETH`,
+                {},
+                'error'
+            );
             return false;
         }
 
@@ -150,8 +159,8 @@ async function monitorTokenPrice(tokenAddress) {
     try {
         logMessage(`Starting price monitoring for token ${tokenAddress}.`, {}, 'info');
 
-        const targetProfitPercentage = getSettings().PROFIT_THRESHOLD; // e.g., 5 for 5%
-        const checkPriceInterval = getSettings().CHECK_INTERVAL * 1000; // in milliseconds
+        const targetProfitPercentage = getSettings().PROFIT_THRESHOLD; // e.g., 8 for 8%
+        const checkPriceInterval = (getSettings().CHECK_INTERVAL || 60) * 1000; // Default to 60 seconds if not set
 
         const initialPrice = await getTokenPrice(tokenAddress);
         if (initialPrice === 0) {
@@ -216,3 +225,4 @@ module.exports = {
     monitorTokenPrice,
     getTokenPrice,
 };
+

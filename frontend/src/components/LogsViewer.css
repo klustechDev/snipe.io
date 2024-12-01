@@ -3,6 +3,7 @@
 .logs-viewer {
   padding: 20px;
   font-family: Arial, sans-serif;
+  color: #333;
 }
 
 .navbar {
@@ -23,37 +24,74 @@
 
 h2 {
   color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.logs {
-  background-color: #f9f9f9;
+.logs-table-container {
+  overflow-x: auto; /* Enable horizontal scrolling for longer data */
+}
+
+.logs-table {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ddd;
-  border-radius: 4px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 800px; /* Ensure table doesn't shrink for long content */
+}
+
+.logs-table-header {
+  display: flex;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.logs-header-cell {
+  flex: 1;
+  text-align: center;
   padding: 10px;
-  max-height: 400px;
-  overflow-y: auto;
+  border-right: 1px solid #ddd;
 }
 
-.logs ul {
-  list-style-type: none;
-  padding: 0;
+.logs-header-cell:last-child {
+  border-right: none;
 }
 
-.logs li {
-  padding: 8px;
+.logs-table-row {
+  display: flex;
   border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
 
-.logs li:last-child {
+.logs-cell {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  overflow-wrap: anywhere; /* Allow long strings like addresses to wrap */
+  font-family: monospace; /* Monospace for better readability of addresses */
+}
+
+.logs-info {
+  background-color: #e8f5e9;
+}
+
+.logs-error {
+  background-color: #ffebee;
+}
+
+.logs-warn {
+  background-color: #fff8e1;
+}
+
+.logs-table-row:last-child {
   border-bottom: none;
 }
 
-.timestamp {
-  font-weight: bold;
-  margin-right: 10px;
-  color: #555;
-}
-
-.message {
-  color: #000;
+pre {
+  margin: 0;
+  white-space: pre-wrap; /* Ensure preformatted text wraps nicely */
+  word-wrap: break-word; /* Break long words if necessary */
 }
