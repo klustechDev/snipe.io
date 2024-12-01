@@ -1,4 +1,6 @@
-Snipe.io Sniping Bot 🚀
+Snipe.io Sniping Bot 🚀  
+
+
 Welcome to the Snipe.io Sniping Bot, a cutting-edge cryptocurrency trading bot crafted to detect and capitalize on profitable trading pairs on decentralized exchanges (DEXes) like Uniswap. This bot automates the identification of newly created liquidity pools and executes buy and sell orders based on predefined profitability criteria, ensuring you stay ahead in the fast-paced crypto market.
  
 🛠️ Features
